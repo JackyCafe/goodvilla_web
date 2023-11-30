@@ -1,0 +1,149 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-color: #f0f0f0;
+}
+
+#cav{
+  border: 2px solid black;
+  border-radius: 4px;
+  box-shadow: 0px 0px 10px black;
+  -webkit-box-shadow: 0px 0px 10px black;
+  -moz-box-shadow: 0px 0px 10px black;
+}
+
+.vertical_left{
+  width: 125px;
+  height: 1200px;
+  position: absolute;
+  top:20px;
+  left:20px;
+
+}
+.vertical_right{
+  width: 100px;
+  height: 600px;
+  position: absolute;
+  top:20px;
+  left:775px;
+
+}
+.horizontal_up{
+  position:absolute ;
+  top:20px;
+  left: 150px;
+  text-align: center;
+  height: 130px;
+}
+.horizontal_down{
+  position:absolute ;
+  top:770px;
+  left: 150px;
+  text-align: center;
+  height: 120px;
+  width: 699px;
+
+}
+/*垂直軸每小時的大格子*/
+.empty{
+  text-align: center;
+  width: 125px;
+  height: 125px ;
+  border: 1px solid rgb(137, 137, 238);
+  border-radius: 10px;
+}
+
+.empty_horizontal{
+  float: left;
+  top:100px;
+  left:120px;
+  text-align: center;
+  border: 1px solid rgb(137, 137, 238);
+  height: 125px;
+  width: 125px;
+  border-radius: 10px;
+
+}
+
+
+
+.box{
+  height: 18px;
+  width: 100px;
+  left:10px;
+  top:0px;
+  position: relative;
+  margin: 0px;
+}
+/* .hbox{
+  height: 100px;
+  width: 18px;
+  top:10px;
+  left:0px;
+  position: relative;
+  margin: 0px;
+} */
+
+ul#mood li{
+  display: inline-block;
+}
+
+/* 在你的 CSS 文件中 */
+.grid-item.highlighted {
+  background-color: yellow; /* 這裡可以設置任何你想要的顏色 */
+}
+
+.highlighted-div {
+  background-color: lawngreen; /* 设置高亮颜色 */
+  /* 其他样式设置，根据需求自行调整 */
+}
+/*操作區*/
+.workspace{
+  font-size: 24px;
+  font-family: Helvetica;
+  background: #faf8f8;
+  position: absolute;
+  top:150px;
+  left: 950px;
+  height: 580px;
+  width: 580px;
+  border-radius: 20px;
+}
+.info{
+  font-size: 24px;
+  font-family: Helvetica;
+  background: #f3baff;
+  position: absolute;
+  top:150px;
+  left: 150px;
+  height: 580px;
+  width: 580px;
+  border-radius: 20px;
+}
+
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(1, 6fr);
+  grid-gap: 2px;
+
+}
+
+.grid-item {
+  border: 1px solid #ccc;
+  padding: 0px;
+  text-align: center;
+}
+
+
+.timer {
+  font-size: 8px;
+}
+
+.timer-horizontal {
+  font-size: 8px;
+  writing-mode:vertical-lr;
+}
