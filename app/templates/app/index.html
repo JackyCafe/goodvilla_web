@@ -2,11 +2,9 @@
 {%  block title %}
     工時大富翁
 {% endblock %}
+
 {% block content %}
-
-
 <div class="container">
-
     <div class="horizontal_down">
       <div class="empty_horizontal  grid-container" >
         <div class="grid-item box timer">00:50</div>
@@ -229,15 +227,14 @@
     <div class="info">
       <div  class="m-1 btn btn-light btn-outline-primary"
       >{{request.user}}</div>
+        {{ request.user.id }}
       <div id='report'></div>
 
-    </nav>
 
-    </nav>
     </div>
 
     <div class="workspace">
-      <div>   {{request.user}} </div>
+
       <div id='start-time'></div>
       <!--主選項-->
       <nav class="navbar navbar-expand-sm bg-light navbar-dark">
@@ -309,7 +306,11 @@
     // 将User传递给jobs.js中的函数
     $(document).ready(function () {
         loadJobs(userData);
-        inform();
+        /* todo
+           inform 有bug   要分帳號
+           需要修改api
+         */
+        inform(userData);
     });
 </script>
 

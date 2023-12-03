@@ -1,3 +1,4 @@
+from django.contrib.auth import authenticate, login
 from django.shortcuts import render
 
 # Create your views here.
@@ -14,7 +15,7 @@ import logging
 from rest_framework.decorators import api_view
 from rest_framework.response import Response
 
-from app.forms import WorkRecordForm
+from app.forms import WorkRecordForm, UserRegistrationForm
 from app.models import MajorItem, SubItem, DetailItem, WorkRecord
 from app.serializers import WorkRecordSerializer
 
@@ -64,4 +65,36 @@ def create_work_record(request,id):
         form = WorkRecordForm(initial=intaial_data)
     return render(request, 'app/create_work_record_views.html', {'form': form})
 
+@login_required
+def dashboard(request):
+    request.session['user']= request.user.id
+    return redirect('app:index')
 
+
+
+def register(request):
+    '''註冊'''
+    user_form: UserRegistrationForm
+    new_user: User
+    if request.method == 'POST':
+        user_form = UserRegistrationForm(request.POST)
+        if user_form.is_valid():
+            new_user = user_form.save(commit=False)
+            new_user.set_password(user_form.cleaned_data['password'])
+            new_user.save()
+            username = user_form.cleaned_data['username']
+            password = user_form.cleaned_data['password']
+            user = authenticate(username=username, password=password)
+            login(request, user)
+            return redirect('app:dashboard')
+
+        else:
+            return HttpResponse(user_form.errors)
+    else:
+        user_form = UserRegistrationForm
+    return render(request, 'account/register.html', {'user_form': user_form})
+
+
+#Todo
+def report(request):
+    return None

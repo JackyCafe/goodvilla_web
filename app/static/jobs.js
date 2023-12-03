@@ -130,12 +130,13 @@ function save(param){
             'X-CSRFToken':csrftoken,
         },
         body: jsonData,
-        protocol: 'HTTP/2.0',
+        //protocol: 'HTTP/2.0',
     })
     .then(response => {
-        if (response.status === 200) {
-
+        console.log(response.status)
+        if (response.status === 201) {
             console.log('工作记录创建成功');
+            inform();
             // 可以在这里处理成功后的逻辑
         } else {
             console.error(response.json);
@@ -144,17 +145,10 @@ function save(param){
     })
     .catch(error => {
         console.error('请求错误:', error);
-    });
-    inform();
+    })
+    // inform();
 }
 
-function getWorkRecord(){
-
-
-
-
-
-}
 
 
 $(document).ready(
@@ -189,14 +183,14 @@ $(document).ready(
 });
 
 
-function inform(){
+function inform(user_id){
     var now = new Date()
     var Today = now.getFullYear()+"-"+now.getMonth()+"-"+now.getDate()
-
+    console
     $.ajax(
         {
             method:'GET',
-            url: '/app/api/summary/'+Today+"/",
+            url: '/app/api/summary/'+user_id+"/"+Today+"/",
 
             success:function(result){
 
@@ -212,7 +206,7 @@ function inform(){
             },
 
             error:function(){
-                console.error('error'+param);
+                console.error('error'+error);
                 alert(error)
             }
         }

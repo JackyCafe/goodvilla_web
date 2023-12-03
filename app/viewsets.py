@@ -28,21 +28,24 @@ class WorkRecordSummaryView(viewsets.ModelViewSet):
     serializer_class = WorkRecordSerializer
 
     @action(detail=True, methods=['get'])
-    def summary(self, request, working_date):
-
-    # def get_queryset(self):
+    def summary(self, request,user_id, working_date):
+        w_date = self.kwargs['working_date']
+        user_id= self.kwargs['user_id']
+        logging.info(user_id)
+        # def get_queryset(self):
     #     working_date = self.kwargs['working_date']
         try:
             working_date = datetime.strptime(working_date, '%Y-%m-%d').date()
-            major_ids = WorkRecord.objects.filter(
+            major_ids = (WorkRecord.objects
+                         .filter(
                 working_date=working_date
-            ).values_list('detail__sub_item__major__id', flat=True).distinct()
+            ).values_list('detail__sub_item__major__id', flat=True).distinct())
             summary_data = []
             for major_id in major_ids:
                 work_records = WorkRecord.objects.filter(
                     detail__sub_item__major__id=major_id,
                     working_date=working_date
-                )
+                ).filter(user=user_id)
 
                 daily_spend = work_records.aggregate(total_spend=models.Sum('spend_time'))
                 daily_bonus = work_records.aggregate(total_bonus=models.Sum('bonus'))
@@ -99,7 +102,7 @@ class WorkRecordByDateViewSet(viewsets.ModelViewSet):
 
     def get_queryset(self):
         working_date = self.kwargs['working_date']
-        # detail_id = self.kwargs['detail_id']
-        logging.info(working_date)
+        # user_id = self.kwargs['user_id']
 
         return WorkRecord.objects.filter(working_date=working_date)
+

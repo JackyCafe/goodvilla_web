@@ -7,6 +7,7 @@ by yhlin
 import logging
 
 from django import forms
+from django.contrib.auth.models import User
 from django.utils.safestring import mark_safe
 from datetime import datetime
 
@@ -59,3 +60,17 @@ class WorkRecordForm(forms.ModelForm):
         if commit:
             instance.save()
         return instance
+
+class UserRegistrationForm(forms.ModelForm):
+    password = forms.CharField(label='請輸入密碼', widget=forms.PasswordInput)
+    password2 = forms.CharField(label='請再次輸入密碼', widget=forms.PasswordInput)
+
+    class Meta:
+        model = User
+        fields = ('username','first_name','email')
+
+    def clean_password2(self):
+        cd = self.cleaned_data
+        if cd['password'] != cd['password2']:
+            raise forms.ValidationError('兩次密碼不相同')
+        return cd['password2']

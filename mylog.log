@@ -65,3 +65,1257 @@ RuntimeError: You called this URL via POST, but the URL doesn't end in a slash a
 2023-11-30 15:59 INFO [{'major_id': 1, 'item': '食', 'daily_spend': 250, 'daily_bonus': 0, 'daily_moods': -10}, {'major_id': 3, 'item': '住', 'daily_spend': 170, 'daily_bonus': 0, 'daily_moods': -1}] 
 2023-11-30 16:00 INFO [{'major_id': 1, 'item': '食', 'daily_spend': 250, 'daily_bonus': 0, 'daily_moods': -10}, {'major_id': 3, 'item': '住', 'daily_spend': 170, 'daily_bonus': 0, 'daily_moods': -1}] 
 2023-11-30 16:00 INFO [{'major_id': 1, 'item': '食', 'daily_spend': 250, 'daily_bonus': 0, 'daily_moods': -10}, {'major_id': 3, 'item': '住', 'daily_spend': 170, 'daily_bonus': 0, 'daily_moods': -1}, {'major_id': 5, 'item': '育', 'daily_spend': 240, 'daily_bonus': 2000, 'daily_moods': 4}] 
+2023-12-01 09:54 WARNING Not Found: / 
+2023-12-01 09:54 WARNING Not Found: /favicon.ico 
+2023-12-01 10:21 WARNING Not Found: /accounts/login/ 
+2023-12-01 10:21 WARNING Not Found: /accounts/login/ 
+2023-12-01 10:21 WARNING Not Found: /accounts/login/ 
+2023-12-01 10:21 WARNING Not Found: /accounts/login/ 
+2023-12-01 10:21 INFO [] 
+2023-12-01 10:22 INFO [] 
+2023-12-01 10:22 INFO [{'major_id': 1, 'item': '食', 'daily_spend': 50, 'daily_bonus': 0, 'daily_moods': 1}] 
+2023-12-01 10:23 INFO [{'major_id': 1, 'item': '食', 'daily_spend': 100, 'daily_bonus': 0, 'daily_moods': 2}] 
+2023-12-01 10:23 INFO [{'major_id': 1, 'item': '食', 'daily_spend': 100, 'daily_bonus': 0, 'daily_moods': 2}, {'major_id': 3, 'item': '住', 'daily_spend': 50, 'daily_bonus': 0, 'daily_moods': 1}] 
+2023-12-01 10:23 INFO [{'major_id': 1, 'item': '食', 'daily_spend': 100, 'daily_bonus': 0, 'daily_moods': 2}, {'major_id': 3, 'item': '住', 'daily_spend': 50, 'daily_bonus': 0, 'daily_moods': 1}] 
+2023-12-01 10:23 INFO [{'major_id': 1, 'item': '食', 'daily_spend': 100, 'daily_bonus': 0, 'daily_moods': 2}, {'major_id': 3, 'item': '住', 'daily_spend': 50, 'daily_bonus': 0, 'daily_moods': 1}] 
+2023-12-01 10:24 INFO [] 
+2023-12-01 10:24 INFO [] 
+2023-12-01 10:25 INFO [{'major_id': 1, 'item': '食', 'daily_spend': 50, 'daily_bonus': 0, 'daily_moods': -2}] 
+2023-12-01 10:25 INFO [{'major_id': 1, 'item': '食', 'daily_spend': 100, 'daily_bonus': 0, 'daily_moods': -4}] 
+2023-12-01 10:25 INFO [{'major_id': 1, 'item': '食', 'daily_spend': 100, 'daily_bonus': 0, 'daily_moods': -4}] 
+2023-12-01 10:25 INFO [{'major_id': 1, 'item': '食', 'daily_spend': 100, 'daily_bonus': 0, 'daily_moods': -4}] 
+2023-12-01 10:26 INFO [] 
+2023-12-01 10:26 INFO [] 
+2023-12-01 10:26 INFO [{'major_id': 1, 'item': '食', 'daily_spend': 50, 'daily_bonus': 0, 'daily_moods': 1}] 
+2023-12-01 10:29 INFO [{'major_id': 1, 'item': '食', 'daily_spend': 50, 'daily_bonus': 0, 'daily_moods': 1}] 
+2023-12-01 10:29 INFO [{'major_id': 1, 'item': '食', 'daily_spend': 50, 'daily_bonus': 0, 'daily_moods': 1}, {'major_id': 3, 'item': '住', 'daily_spend': 50, 'daily_bonus': 0, 'daily_moods': -2}] 
+2023-12-01 10:30 INFO [{'major_id': 1, 'item': '食', 'daily_spend': 50, 'daily_bonus': 0, 'daily_moods': 1}, {'major_id': 3, 'item': '住', 'daily_spend': 50, 'daily_bonus': 0, 'daily_moods': -2}] 
+2023-12-01 10:30 INFO [{'major_id': 1, 'item': '食', 'daily_spend': 50, 'daily_bonus': 0, 'daily_moods': 1}, {'major_id': 3, 'item': '住', 'daily_spend': 50, 'daily_bonus': 0, 'daily_moods': -2}, {'major_id': 7, 'item': '住戶照顧', 'daily_spend': 170, 'daily_bonus': 1050, 'daily_moods': -2}] 
+2023-12-01 10:32 INFO [] 
+2023-12-01 10:32 INFO [] 
+2023-12-01 10:32 INFO [{'major_id': 1, 'item': '食', 'daily_spend': 50, 'daily_bonus': 0, 'daily_moods': 1}] 
+2023-12-01 10:33 INFO [{'major_id': 1, 'item': '食', 'daily_spend': 50, 'daily_bonus': 0, 'daily_moods': 1}] 
+2023-12-01 10:34 WARNING Not Found: /app/api/workrecord 
+2023-12-01 10:38 INFO [{'major_id': 1, 'item': '食', 'daily_spend': 50, 'daily_bonus': 0, 'daily_moods': 1}] 
+2023-12-01 10:38 INFO [{'major_id': 1, 'item': '食', 'daily_spend': 50, 'daily_bonus': 0, 'daily_moods': 1}, {'major_id': 7, 'item': '住戶照顧', 'daily_spend': 230, 'daily_bonus': 1600, 'daily_moods': -2}] 
+2023-12-01 10:39 INFO [{'major_id': 1, 'item': '食', 'daily_spend': 50, 'daily_bonus': 0, 'daily_moods': 1}, {'major_id': 7, 'item': '住戶照顧', 'daily_spend': 230, 'daily_bonus': 1600, 'daily_moods': -2}] 
+2023-12-01 10:39 INFO [{'major_id': 1, 'item': '食', 'daily_spend': 50, 'daily_bonus': 0, 'daily_moods': 1}, {'major_id': 7, 'item': '住戶照顧', 'daily_spend': 230, 'daily_bonus': 1600, 'daily_moods': -2}] 
+2023-12-01 10:39 INFO [{'major_id': 1, 'item': '食', 'daily_spend': 50, 'daily_bonus': 0, 'daily_moods': 1}, {'major_id': 7, 'item': '住戶照顧', 'daily_spend': 230, 'daily_bonus': 1600, 'daily_moods': -2}] 
+2023-12-01 11:37 WARNING Not Found: / 
+2023-12-01 11:37 WARNING Not Found: /favicon.ico 
+2023-12-01 11:37 INFO [{'major_id': 1, 'item': '食', 'daily_spend': 50, 'daily_bonus': 0, 'daily_moods': 1}, {'major_id': 7, 'item': '住戶照顧', 'daily_spend': 230, 'daily_bonus': 1600, 'daily_moods': -2}] 
+2023-12-01 11:38 WARNING Bad Request: /app/api/workrecord/1/ 
+2023-12-01 11:38 INFO [{'major_id': 1, 'item': '食', 'daily_spend': 50, 'daily_bonus': 0, 'daily_moods': 1}, {'major_id': 7, 'item': '住戶照顧', 'daily_spend': 230, 'daily_bonus': 1600, 'daily_moods': -2}] 
+2023-12-01 11:38 INFO [{'major_id': 1, 'item': '食', 'daily_spend': 50, 'daily_bonus': 0, 'daily_moods': 1}, {'major_id': 7, 'item': '住戶照顧', 'daily_spend': 230, 'daily_bonus': 1600, 'daily_moods': -2}] 
+2023-12-01 20:25 INFO [{'major_id': 1, 'item': '食', 'daily_spend': 50, 'daily_bonus': 0, 'daily_moods': 1}, {'major_id': 7, 'item': '住戶照顧', 'daily_spend': 230, 'daily_bonus': 1600, 'daily_moods': -2}] 
+2023-12-01 20:25 WARNING Not Found: /favicon.ico 
+2023-12-01 20:26 INFO [{'major_id': 1, 'item': '食', 'daily_spend': 50, 'daily_bonus': 0, 'daily_moods': 1}, {'major_id': 7, 'item': '住戶照顧', 'daily_spend': 230, 'daily_bonus': 1600, 'daily_moods': -2}] 
+2023-12-01 22:06 INFO [{'major_id': 1, 'item': '食', 'daily_spend': 50, 'daily_bonus': 0, 'daily_moods': 1}, {'major_id': 7, 'item': '住戶照顧', 'daily_spend': 230, 'daily_bonus': 1600, 'daily_moods': -2}] 
+2023-12-01 22:06 INFO [{'major_id': 1, 'item': '食', 'daily_spend': 50, 'daily_bonus': 0, 'daily_moods': 1}, {'major_id': 7, 'item': '住戶照顧', 'daily_spend': 230, 'daily_bonus': 1600, 'daily_moods': -2}] 
+2023-12-01 22:07 INFO [{'major_id': 1, 'item': '食', 'daily_spend': 50, 'daily_bonus': 0, 'daily_moods': 1}, {'major_id': 7, 'item': '住戶照顧', 'daily_spend': 230, 'daily_bonus': 1600, 'daily_moods': -2}] 
+2023-12-01 22:07 INFO [{'major_id': 1, 'item': '食', 'daily_spend': 50, 'daily_bonus': 0, 'daily_moods': 1}, {'major_id': 7, 'item': '住戶照顧', 'daily_spend': 230, 'daily_bonus': 1600, 'daily_moods': -2}] 
+2023-12-01 22:07 INFO [{'major_id': 1, 'item': '食', 'daily_spend': 50, 'daily_bonus': 0, 'daily_moods': 1}, {'major_id': 7, 'item': '住戶照顧', 'daily_spend': 230, 'daily_bonus': 1600, 'daily_moods': -2}] 
+2023-12-01 22:14 INFO [{'major_id': 1, 'item': '食', 'daily_spend': 50, 'daily_bonus': 0, 'daily_moods': 1}, {'major_id': 7, 'item': '住戶照顧', 'daily_spend': 230, 'daily_bonus': 1600, 'daily_moods': -2}] 
+2023-12-01 22:14 INFO [{'major_id': 1, 'item': '食', 'daily_spend': 50, 'daily_bonus': 0, 'daily_moods': 1}, {'major_id': 7, 'item': '住戶照顧', 'daily_spend': 230, 'daily_bonus': 1600, 'daily_moods': -2}] 
+2023-12-01 22:15 INFO [{'major_id': 1, 'item': '食', 'daily_spend': 50, 'daily_bonus': 0, 'daily_moods': 1}, {'major_id': 7, 'item': '住戶照顧', 'daily_spend': 230, 'daily_bonus': 1600, 'daily_moods': -2}] 
+2023-12-01 22:15 INFO [{'major_id': 1, 'item': '食', 'daily_spend': 50, 'daily_bonus': 0, 'daily_moods': 1}, {'major_id': 7, 'item': '住戶照顧', 'daily_spend': 230, 'daily_bonus': 1600, 'daily_moods': -2}] 
+2023-12-01 22:15 INFO [{'major_id': 1, 'item': '食', 'daily_spend': 50, 'daily_bonus': 0, 'daily_moods': 1}, {'major_id': 7, 'item': '住戶照顧', 'daily_spend': 230, 'daily_bonus': 1600, 'daily_moods': -2}] 
+2023-12-01 22:15 INFO [{'major_id': 1, 'item': '食', 'daily_spend': 50, 'daily_bonus': 0, 'daily_moods': 1}, {'major_id': 7, 'item': '住戶照顧', 'daily_spend': 230, 'daily_bonus': 1600, 'daily_moods': -2}] 
+2023-12-01 22:15 INFO [{'major_id': 1, 'item': '食', 'daily_spend': 50, 'daily_bonus': 0, 'daily_moods': 1}, {'major_id': 7, 'item': '住戶照顧', 'daily_spend': 230, 'daily_bonus': 1600, 'daily_moods': -2}] 
+2023-12-01 22:15 INFO [{'major_id': 1, 'item': '食', 'daily_spend': 50, 'daily_bonus': 0, 'daily_moods': 1}, {'major_id': 7, 'item': '住戶照顧', 'daily_spend': 230, 'daily_bonus': 1600, 'daily_moods': -2}] 
+2023-12-01 22:16 INFO [{'major_id': 1, 'item': '食', 'daily_spend': 50, 'daily_bonus': 0, 'daily_moods': 1}, {'major_id': 7, 'item': '住戶照顧', 'daily_spend': 230, 'daily_bonus': 1600, 'daily_moods': -2}] 
+2023-12-01 22:16 INFO [{'major_id': 1, 'item': '食', 'daily_spend': 50, 'daily_bonus': 0, 'daily_moods': 1}, {'major_id': 7, 'item': '住戶照顧', 'daily_spend': 230, 'daily_bonus': 1600, 'daily_moods': -2}] 
+2023-12-01 22:16 INFO [{'major_id': 1, 'item': '食', 'daily_spend': 50, 'daily_bonus': 0, 'daily_moods': 1}, {'major_id': 7, 'item': '住戶照顧', 'daily_spend': 230, 'daily_bonus': 1600, 'daily_moods': -2}] 
+2023-12-01 22:51 INFO [{'major_id': 1, 'item': '食', 'daily_spend': 50, 'daily_bonus': 0, 'daily_moods': 1}, {'major_id': 7, 'item': '住戶照顧', 'daily_spend': 230, 'daily_bonus': 1600, 'daily_moods': -2}] 
+2023-12-01 22:51 INFO [{'major_id': 1, 'item': '食', 'daily_spend': 50, 'daily_bonus': 0, 'daily_moods': 1}, {'major_id': 7, 'item': '住戶照顧', 'daily_spend': 230, 'daily_bonus': 1600, 'daily_moods': -2}] 
+2023-12-01 22:51 INFO [{'major_id': 1, 'item': '食', 'daily_spend': 50, 'daily_bonus': 0, 'daily_moods': 1}, {'major_id': 7, 'item': '住戶照顧', 'daily_spend': 230, 'daily_bonus': 1600, 'daily_moods': -2}] 
+2023-12-01 22:55 INFO [{'major_id': 1, 'item': '食', 'daily_spend': 50, 'daily_bonus': 0, 'daily_moods': 1}, {'major_id': 7, 'item': '住戶照顧', 'daily_spend': 230, 'daily_bonus': 1600, 'daily_moods': -2}] 
+2023-12-01 22:55 INFO [{'major_id': 1, 'item': '食', 'daily_spend': 50, 'daily_bonus': 0, 'daily_moods': 1}, {'major_id': 7, 'item': '住戶照顧', 'daily_spend': 230, 'daily_bonus': 1600, 'daily_moods': -2}] 
+2023-12-01 22:57 INFO [{'major_id': 1, 'item': '食', 'daily_spend': 50, 'daily_bonus': 0, 'daily_moods': 1}, {'major_id': 7, 'item': '住戶照顧', 'daily_spend': 230, 'daily_bonus': 1600, 'daily_moods': -2}] 
+2023-12-01 22:57 INFO [{'major_id': 1, 'item': '食', 'daily_spend': 50, 'daily_bonus': 0, 'daily_moods': 1}, {'major_id': 7, 'item': '住戶照顧', 'daily_spend': 230, 'daily_bonus': 1600, 'daily_moods': -2}] 
+2023-12-01 22:57 INFO [{'major_id': 1, 'item': '食', 'daily_spend': 50, 'daily_bonus': 0, 'daily_moods': 1}, {'major_id': 7, 'item': '住戶照顧', 'daily_spend': 230, 'daily_bonus': 1600, 'daily_moods': -2}] 
+2023-12-01 22:58 INFO [{'major_id': 1, 'item': '食', 'daily_spend': 50, 'daily_bonus': 0, 'daily_moods': 1}, {'major_id': 7, 'item': '住戶照顧', 'daily_spend': 230, 'daily_bonus': 1600, 'daily_moods': -2}] 
+2023-12-01 22:58 INFO [{'major_id': 1, 'item': '食', 'daily_spend': 50, 'daily_bonus': 0, 'daily_moods': 1}, {'major_id': 7, 'item': '住戶照顧', 'daily_spend': 230, 'daily_bonus': 1600, 'daily_moods': -2}] 
+2023-12-01 23:05 INFO [{'major_id': 1, 'item': '食', 'daily_spend': 50, 'daily_bonus': 0, 'daily_moods': 1}, {'major_id': 7, 'item': '住戶照顧', 'daily_spend': 230, 'daily_bonus': 1600, 'daily_moods': -2}] 
+2023-12-01 23:06 INFO [{'major_id': 1, 'item': '食', 'daily_spend': 50, 'daily_bonus': 0, 'daily_moods': 1}, {'major_id': 7, 'item': '住戶照顧', 'daily_spend': 230, 'daily_bonus': 1600, 'daily_moods': -2}] 
+2023-12-01 23:06 INFO [{'major_id': 1, 'item': '食', 'daily_spend': 50, 'daily_bonus': 0, 'daily_moods': 1}, {'major_id': 7, 'item': '住戶照顧', 'daily_spend': 230, 'daily_bonus': 1600, 'daily_moods': -2}] 
+2023-12-01 23:07 INFO [{'major_id': 1, 'item': '食', 'daily_spend': 50, 'daily_bonus': 0, 'daily_moods': 1}, {'major_id': 7, 'item': '住戶照顧', 'daily_spend': 230, 'daily_bonus': 1600, 'daily_moods': -2}] 
+2023-12-01 23:07 INFO [{'major_id': 1, 'item': '食', 'daily_spend': 50, 'daily_bonus': 0, 'daily_moods': 1}, {'major_id': 7, 'item': '住戶照顧', 'daily_spend': 230, 'daily_bonus': 1600, 'daily_moods': -2}] 
+2023-12-01 23:08 INFO [{'major_id': 1, 'item': '食', 'daily_spend': 50, 'daily_bonus': 0, 'daily_moods': 1}, {'major_id': 7, 'item': '住戶照顧', 'daily_spend': 230, 'daily_bonus': 1600, 'daily_moods': -2}] 
+2023-12-01 23:08 INFO [{'major_id': 1, 'item': '食', 'daily_spend': 50, 'daily_bonus': 0, 'daily_moods': 1}, {'major_id': 7, 'item': '住戶照顧', 'daily_spend': 230, 'daily_bonus': 1600, 'daily_moods': -2}] 
+2023-12-01 23:08 INFO [{'major_id': 1, 'item': '食', 'daily_spend': 50, 'daily_bonus': 0, 'daily_moods': 1}, {'major_id': 7, 'item': '住戶照顧', 'daily_spend': 230, 'daily_bonus': 1600, 'daily_moods': -2}] 
+2023-12-01 23:08 WARNING Not Found: / 
+2023-12-01 23:09 INFO [{'major_id': 1, 'item': '食', 'daily_spend': 50, 'daily_bonus': 0, 'daily_moods': 1}, {'major_id': 7, 'item': '住戶照顧', 'daily_spend': 230, 'daily_bonus': 1600, 'daily_moods': -2}] 
+2023-12-01 23:09 INFO [{'major_id': 1, 'item': '食', 'daily_spend': 50, 'daily_bonus': 0, 'daily_moods': 1}, {'major_id': 7, 'item': '住戶照顧', 'daily_spend': 230, 'daily_bonus': 1600, 'daily_moods': -2}] 
+2023-12-01 23:10 INFO [{'major_id': 1, 'item': '食', 'daily_spend': 100, 'daily_bonus': 0, 'daily_moods': -1}, {'major_id': 7, 'item': '住戶照顧', 'daily_spend': 230, 'daily_bonus': 1600, 'daily_moods': -2}] 
+2023-12-01 23:10 INFO [{'major_id': 1, 'item': '食', 'daily_spend': 100, 'daily_bonus': 0, 'daily_moods': -1}, {'major_id': 7, 'item': '住戶照顧', 'daily_spend': 230, 'daily_bonus': 1600, 'daily_moods': -2}] 
+2023-12-01 23:10 INFO [{'major_id': 1, 'item': '食', 'daily_spend': 100, 'daily_bonus': 0, 'daily_moods': -1}, {'major_id': 7, 'item': '住戶照顧', 'daily_spend': 230, 'daily_bonus': 1600, 'daily_moods': -2}] 
+2023-12-01 23:11 INFO [{'major_id': 1, 'item': '食', 'daily_spend': 100, 'daily_bonus': 0, 'daily_moods': -1}, {'major_id': 7, 'item': '住戶照顧', 'daily_spend': 230, 'daily_bonus': 1600, 'daily_moods': -2}] 
+2023-12-01 23:11 INFO [{'major_id': 1, 'item': '食', 'daily_spend': 100, 'daily_bonus': 0, 'daily_moods': -1}, {'major_id': 7, 'item': '住戶照顧', 'daily_spend': 230, 'daily_bonus': 1600, 'daily_moods': -2}] 
+2023-12-01 23:11 INFO [{'major_id': 1, 'item': '食', 'daily_spend': 100, 'daily_bonus': 0, 'daily_moods': -1}, {'major_id': 7, 'item': '住戶照顧', 'daily_spend': 230, 'daily_bonus': 1600, 'daily_moods': -2}] 
+2023-12-01 23:11 INFO [{'major_id': 1, 'item': '食', 'daily_spend': 100, 'daily_bonus': 0, 'daily_moods': -1}, {'major_id': 7, 'item': '住戶照顧', 'daily_spend': 230, 'daily_bonus': 1600, 'daily_moods': -2}] 
+2023-12-01 23:11 INFO [{'major_id': 1, 'item': '食', 'daily_spend': 100, 'daily_bonus': 0, 'daily_moods': -1}, {'major_id': 7, 'item': '住戶照顧', 'daily_spend': 230, 'daily_bonus': 1600, 'daily_moods': -2}] 
+2023-12-01 23:12 INFO [{'major_id': 1, 'item': '食', 'daily_spend': 100, 'daily_bonus': 0, 'daily_moods': -1}, {'major_id': 7, 'item': '住戶照顧', 'daily_spend': 230, 'daily_bonus': 1600, 'daily_moods': -2}] 
+2023-12-01 23:12 INFO [{'major_id': 1, 'item': '食', 'daily_spend': 100, 'daily_bonus': 0, 'daily_moods': -1}, {'major_id': 7, 'item': '住戶照顧', 'daily_spend': 230, 'daily_bonus': 1600, 'daily_moods': -2}] 
+2023-12-01 23:12 WARNING Not Found: /accounts/login/ 
+2023-12-01 23:25 WARNING Not Found: /accounts/login/ 
+2023-12-01 23:25 WARNING Not Found: /accounts/login/ 
+2023-12-01 23:26 WARNING Not Found: /accounts/login/ 
+2023-12-01 23:26 WARNING Not Found: /accounts/login/ 
+2023-12-01 23:26 INFO [{'major_id': 1, 'item': '食', 'daily_spend': 100, 'daily_bonus': 0, 'daily_moods': -1}, {'major_id': 7, 'item': '住戶照顧', 'daily_spend': 230, 'daily_bonus': 1600, 'daily_moods': -2}] 
+2023-12-01 23:27 INFO [{'major_id': 1, 'item': '食', 'daily_spend': 100, 'daily_bonus': 0, 'daily_moods': -1}, {'major_id': 7, 'item': '住戶照顧', 'daily_spend': 230, 'daily_bonus': 1600, 'daily_moods': -2}] 
+2023-12-01 23:27 INFO [{'major_id': 1, 'item': '食', 'daily_spend': 100, 'daily_bonus': 0, 'daily_moods': -1}, {'major_id': 7, 'item': '住戶照顧', 'daily_spend': 230, 'daily_bonus': 1600, 'daily_moods': -2}] 
+2023-12-01 23:27 WARNING Not Found: / 
+2023-12-01 23:27 INFO [{'major_id': 1, 'item': '食', 'daily_spend': 100, 'daily_bonus': 0, 'daily_moods': -1}, {'major_id': 7, 'item': '住戶照顧', 'daily_spend': 230, 'daily_bonus': 1600, 'daily_moods': -2}] 
+2023-12-01 23:32 ERROR Internal Server Error: /app/ 
+Traceback (most recent call last):
+  File "/Users/yhlin/yhworkspace/goodvilla_web/venv/lib/python3.9/site-packages/django/urls/base.py", line 71, in reverse
+    extra, resolver = resolver.namespace_dict[ns]
+KeyError: 'chamberlain'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/yhlin/yhworkspace/goodvilla_web/venv/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/yhlin/yhworkspace/goodvilla_web/venv/lib/python3.9/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/yhlin/yhworkspace/goodvilla_web/venv/lib/python3.9/site-packages/django/contrib/auth/decorators.py", line 23, in _wrapper_view
+    return view_func(request, *args, **kwargs)
+  File "/Users/yhlin/yhworkspace/goodvilla_web/app/views.py", line 35, in index
+    return  render(request,'app/index.html',{'major':major})
+  File "/Users/yhlin/yhworkspace/goodvilla_web/venv/lib/python3.9/site-packages/django/shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/Users/yhlin/yhworkspace/goodvilla_web/venv/lib/python3.9/site-packages/django/template/loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "/Users/yhlin/yhworkspace/goodvilla_web/venv/lib/python3.9/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/Users/yhlin/yhworkspace/goodvilla_web/venv/lib/python3.9/site-packages/django/template/base.py", line 175, in render
+    return self._render(context)
+  File "/Users/yhlin/yhworkspace/goodvilla_web/venv/lib/python3.9/site-packages/django/template/base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "/Users/yhlin/yhworkspace/goodvilla_web/venv/lib/python3.9/site-packages/django/template/base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/Users/yhlin/yhworkspace/goodvilla_web/venv/lib/python3.9/site-packages/django/template/base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/Users/yhlin/yhworkspace/goodvilla_web/venv/lib/python3.9/site-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+  File "/Users/yhlin/yhworkspace/goodvilla_web/venv/lib/python3.9/site-packages/django/template/loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+  File "/Users/yhlin/yhworkspace/goodvilla_web/venv/lib/python3.9/site-packages/django/template/base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "/Users/yhlin/yhworkspace/goodvilla_web/venv/lib/python3.9/site-packages/django/template/base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/Users/yhlin/yhworkspace/goodvilla_web/venv/lib/python3.9/site-packages/django/template/base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/Users/yhlin/yhworkspace/goodvilla_web/venv/lib/python3.9/site-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+  File "/Users/yhlin/yhworkspace/goodvilla_web/venv/lib/python3.9/site-packages/django/template/defaulttags.py", line 471, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "/Users/yhlin/yhworkspace/goodvilla_web/venv/lib/python3.9/site-packages/django/urls/base.py", line 82, in reverse
+    raise NoReverseMatch("%s is not a registered namespace" % key)
+django.urls.exceptions.NoReverseMatch: 'chamberlain' is not a registered namespace
+2023-12-01 23:33 ERROR Internal Server Error: /app/ 
+Traceback (most recent call last):
+  File "/Users/yhlin/yhworkspace/goodvilla_web/venv/lib/python3.9/site-packages/django/urls/base.py", line 71, in reverse
+    extra, resolver = resolver.namespace_dict[ns]
+KeyError: 'chamberlain'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/yhlin/yhworkspace/goodvilla_web/venv/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/yhlin/yhworkspace/goodvilla_web/venv/lib/python3.9/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/yhlin/yhworkspace/goodvilla_web/venv/lib/python3.9/site-packages/django/contrib/auth/decorators.py", line 23, in _wrapper_view
+    return view_func(request, *args, **kwargs)
+  File "/Users/yhlin/yhworkspace/goodvilla_web/app/views.py", line 35, in index
+    return  render(request,'app/index.html',{'major':major})
+  File "/Users/yhlin/yhworkspace/goodvilla_web/venv/lib/python3.9/site-packages/django/shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/Users/yhlin/yhworkspace/goodvilla_web/venv/lib/python3.9/site-packages/django/template/loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "/Users/yhlin/yhworkspace/goodvilla_web/venv/lib/python3.9/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/Users/yhlin/yhworkspace/goodvilla_web/venv/lib/python3.9/site-packages/django/template/base.py", line 175, in render
+    return self._render(context)
+  File "/Users/yhlin/yhworkspace/goodvilla_web/venv/lib/python3.9/site-packages/django/template/base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "/Users/yhlin/yhworkspace/goodvilla_web/venv/lib/python3.9/site-packages/django/template/base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/Users/yhlin/yhworkspace/goodvilla_web/venv/lib/python3.9/site-packages/django/template/base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/Users/yhlin/yhworkspace/goodvilla_web/venv/lib/python3.9/site-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+  File "/Users/yhlin/yhworkspace/goodvilla_web/venv/lib/python3.9/site-packages/django/template/loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+  File "/Users/yhlin/yhworkspace/goodvilla_web/venv/lib/python3.9/site-packages/django/template/base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "/Users/yhlin/yhworkspace/goodvilla_web/venv/lib/python3.9/site-packages/django/template/base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/Users/yhlin/yhworkspace/goodvilla_web/venv/lib/python3.9/site-packages/django/template/base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/Users/yhlin/yhworkspace/goodvilla_web/venv/lib/python3.9/site-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+  File "/Users/yhlin/yhworkspace/goodvilla_web/venv/lib/python3.9/site-packages/django/template/defaulttags.py", line 471, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "/Users/yhlin/yhworkspace/goodvilla_web/venv/lib/python3.9/site-packages/django/urls/base.py", line 82, in reverse
+    raise NoReverseMatch("%s is not a registered namespace" % key)
+django.urls.exceptions.NoReverseMatch: 'chamberlain' is not a registered namespace
+2023-12-01 23:33 INFO [{'major_id': 1, 'item': '食', 'daily_spend': 100, 'daily_bonus': 0, 'daily_moods': -1}, {'major_id': 7, 'item': '住戶照顧', 'daily_spend': 230, 'daily_bonus': 1600, 'daily_moods': -2}] 
+2023-12-01 23:33 INFO [{'major_id': 1, 'item': '食', 'daily_spend': 100, 'daily_bonus': 0, 'daily_moods': -1}, {'major_id': 7, 'item': '住戶照顧', 'daily_spend': 230, 'daily_bonus': 1600, 'daily_moods': -2}] 
+2023-12-01 23:34 INFO [{'major_id': 1, 'item': '食', 'daily_spend': 100, 'daily_bonus': 0, 'daily_moods': -1}, {'major_id': 7, 'item': '住戶照顧', 'daily_spend': 230, 'daily_bonus': 1600, 'daily_moods': -2}] 
+2023-12-01 23:34 INFO [{'major_id': 1, 'item': '食', 'daily_spend': 100, 'daily_bonus': 0, 'daily_moods': -1}, {'major_id': 7, 'item': '住戶照顧', 'daily_spend': 230, 'daily_bonus': 1600, 'daily_moods': -2}] 
+2023-12-01 23:34 INFO [{'major_id': 1, 'item': '食', 'daily_spend': 100, 'daily_bonus': 0, 'daily_moods': -1}, {'major_id': 7, 'item': '住戶照顧', 'daily_spend': 230, 'daily_bonus': 1600, 'daily_moods': -2}] 
+2023-12-01 23:34 WARNING Not Found: /accounts/login/ 
+2023-12-01 23:35 WARNING Not Found: /accounts/login/ 
+2023-12-01 23:35 INFO [{'major_id': 1, 'item': '食', 'daily_spend': 100, 'daily_bonus': 0, 'daily_moods': -1}, {'major_id': 7, 'item': '住戶照顧', 'daily_spend': 230, 'daily_bonus': 1600, 'daily_moods': -2}] 
+2023-12-01 23:52 INFO [{'major_id': 1, 'item': '食', 'daily_spend': 100, 'daily_bonus': 0, 'daily_moods': -1}, {'major_id': 7, 'item': '住戶照顧', 'daily_spend': 230, 'daily_bonus': 1600, 'daily_moods': -2}] 
+2023-12-02 00:12 INFO [] 
+2023-12-02 00:30 INFO /Users/yhlin/yhworkspace/goodvilla_web/goodvilla_web/settings.py changed, reloading. 
+2023-12-02 00:32 INFO /Users/yhlin/yhworkspace/goodvilla_web/app/urls.py changed, reloading. 
+2023-12-02 00:39 INFO /Users/yhlin/yhworkspace/goodvilla_web/app/views.py changed, reloading. 
+2023-12-02 00:45 INFO /Users/yhlin/yhworkspace/goodvilla_web/app/views.py changed, reloading. 
+2023-12-02 00:52 WARNING Not Found: / 
+2023-12-02 00:52 ERROR Internal Server Error: /app/ 
+Traceback (most recent call last):
+  File "/Users/yhlin/yhworkspace/goodvilla_web/venv/lib/python3.9/site-packages/django/urls/base.py", line 71, in reverse
+    extra, resolver = resolver.namespace_dict[ns]
+KeyError: 'chamberlain'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/yhlin/yhworkspace/goodvilla_web/venv/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/yhlin/yhworkspace/goodvilla_web/venv/lib/python3.9/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/yhlin/yhworkspace/goodvilla_web/venv/lib/python3.9/site-packages/django/contrib/auth/decorators.py", line 23, in _wrapper_view
+    return view_func(request, *args, **kwargs)
+  File "/Users/yhlin/yhworkspace/goodvilla_web/app/views.py", line 70, in dashboard
+    return render(request,'account/dashboard.html')
+  File "/Users/yhlin/yhworkspace/goodvilla_web/venv/lib/python3.9/site-packages/django/shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/Users/yhlin/yhworkspace/goodvilla_web/venv/lib/python3.9/site-packages/django/template/loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "/Users/yhlin/yhworkspace/goodvilla_web/venv/lib/python3.9/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/Users/yhlin/yhworkspace/goodvilla_web/venv/lib/python3.9/site-packages/django/template/base.py", line 175, in render
+    return self._render(context)
+  File "/Users/yhlin/yhworkspace/goodvilla_web/venv/lib/python3.9/site-packages/django/template/base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "/Users/yhlin/yhworkspace/goodvilla_web/venv/lib/python3.9/site-packages/django/template/base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/Users/yhlin/yhworkspace/goodvilla_web/venv/lib/python3.9/site-packages/django/template/base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/Users/yhlin/yhworkspace/goodvilla_web/venv/lib/python3.9/site-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+  File "/Users/yhlin/yhworkspace/goodvilla_web/venv/lib/python3.9/site-packages/django/template/loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+  File "/Users/yhlin/yhworkspace/goodvilla_web/venv/lib/python3.9/site-packages/django/template/base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "/Users/yhlin/yhworkspace/goodvilla_web/venv/lib/python3.9/site-packages/django/template/base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/Users/yhlin/yhworkspace/goodvilla_web/venv/lib/python3.9/site-packages/django/template/base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/Users/yhlin/yhworkspace/goodvilla_web/venv/lib/python3.9/site-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+  File "/Users/yhlin/yhworkspace/goodvilla_web/venv/lib/python3.9/site-packages/django/template/defaulttags.py", line 471, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "/Users/yhlin/yhworkspace/goodvilla_web/venv/lib/python3.9/site-packages/django/urls/base.py", line 82, in reverse
+    raise NoReverseMatch("%s is not a registered namespace" % key)
+django.urls.exceptions.NoReverseMatch: 'chamberlain' is not a registered namespace
+2023-12-02 00:52 ERROR Internal Server Error: /app/ 
+Traceback (most recent call last):
+  File "/Users/yhlin/yhworkspace/goodvilla_web/venv/lib/python3.9/site-packages/django/urls/base.py", line 71, in reverse
+    extra, resolver = resolver.namespace_dict[ns]
+KeyError: 'chamberlain'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/yhlin/yhworkspace/goodvilla_web/venv/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/yhlin/yhworkspace/goodvilla_web/venv/lib/python3.9/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/yhlin/yhworkspace/goodvilla_web/venv/lib/python3.9/site-packages/django/contrib/auth/decorators.py", line 23, in _wrapper_view
+    return view_func(request, *args, **kwargs)
+  File "/Users/yhlin/yhworkspace/goodvilla_web/app/views.py", line 70, in dashboard
+    return render(request,'account/dashboard.html')
+  File "/Users/yhlin/yhworkspace/goodvilla_web/venv/lib/python3.9/site-packages/django/shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/Users/yhlin/yhworkspace/goodvilla_web/venv/lib/python3.9/site-packages/django/template/loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "/Users/yhlin/yhworkspace/goodvilla_web/venv/lib/python3.9/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/Users/yhlin/yhworkspace/goodvilla_web/venv/lib/python3.9/site-packages/django/template/base.py", line 175, in render
+    return self._render(context)
+  File "/Users/yhlin/yhworkspace/goodvilla_web/venv/lib/python3.9/site-packages/django/template/base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "/Users/yhlin/yhworkspace/goodvilla_web/venv/lib/python3.9/site-packages/django/template/base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/Users/yhlin/yhworkspace/goodvilla_web/venv/lib/python3.9/site-packages/django/template/base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/Users/yhlin/yhworkspace/goodvilla_web/venv/lib/python3.9/site-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+  File "/Users/yhlin/yhworkspace/goodvilla_web/venv/lib/python3.9/site-packages/django/template/loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+  File "/Users/yhlin/yhworkspace/goodvilla_web/venv/lib/python3.9/site-packages/django/template/base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "/Users/yhlin/yhworkspace/goodvilla_web/venv/lib/python3.9/site-packages/django/template/base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/Users/yhlin/yhworkspace/goodvilla_web/venv/lib/python3.9/site-packages/django/template/base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/Users/yhlin/yhworkspace/goodvilla_web/venv/lib/python3.9/site-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+  File "/Users/yhlin/yhworkspace/goodvilla_web/venv/lib/python3.9/site-packages/django/template/defaulttags.py", line 471, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "/Users/yhlin/yhworkspace/goodvilla_web/venv/lib/python3.9/site-packages/django/urls/base.py", line 82, in reverse
+    raise NoReverseMatch("%s is not a registered namespace" % key)
+django.urls.exceptions.NoReverseMatch: 'chamberlain' is not a registered namespace
+2023-12-02 00:59 ERROR Internal Server Error: /app/ 
+Traceback (most recent call last):
+  File "/Users/yhlin/yhworkspace/goodvilla_web/venv/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/yhlin/yhworkspace/goodvilla_web/venv/lib/python3.9/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/yhlin/yhworkspace/goodvilla_web/venv/lib/python3.9/site-packages/django/contrib/auth/decorators.py", line 25, in _wrapper_view
+    resolved_login_url = resolve_url(login_url or settings.LOGIN_URL)
+  File "/Users/yhlin/yhworkspace/goodvilla_web/venv/lib/python3.9/site-packages/django/shortcuts.py", line 145, in resolve_url
+    return reverse(to, args=args, kwargs=kwargs)
+  File "/Users/yhlin/yhworkspace/goodvilla_web/venv/lib/python3.9/site-packages/django/urls/base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "/Users/yhlin/yhworkspace/goodvilla_web/venv/lib/python3.9/site-packages/django/urls/resolvers.py", line 828, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'login' not found. 'login' is not a valid view function or pattern name.
+2023-12-02 02:22 WARNING Not Found: / 
+2023-12-02 02:22 WARNING Not Found: /favicon.ico 
+2023-12-02 09:51 WARNING Not Found: /favicon.ico 
+2023-12-02 09:52 ERROR Internal Server Error: /app/ 
+Traceback (most recent call last):
+  File "/Users/yhlin/yhworkspace/goodvilla_web/venv/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/yhlin/yhworkspace/goodvilla_web/venv/lib/python3.9/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/yhlin/yhworkspace/goodvilla_web/venv/lib/python3.9/site-packages/django/contrib/auth/decorators.py", line 25, in _wrapper_view
+    resolved_login_url = resolve_url(login_url or settings.LOGIN_URL)
+  File "/Users/yhlin/yhworkspace/goodvilla_web/venv/lib/python3.9/site-packages/django/shortcuts.py", line 145, in resolve_url
+    return reverse(to, args=args, kwargs=kwargs)
+  File "/Users/yhlin/yhworkspace/goodvilla_web/venv/lib/python3.9/site-packages/django/urls/base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "/Users/yhlin/yhworkspace/goodvilla_web/venv/lib/python3.9/site-packages/django/urls/resolvers.py", line 828, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'login' not found. 'login' is not a valid view function or pattern name.
+2023-12-02 09:52 ERROR Internal Server Error: /app/ 
+Traceback (most recent call last):
+  File "/Users/yhlin/yhworkspace/goodvilla_web/venv/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/yhlin/yhworkspace/goodvilla_web/venv/lib/python3.9/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/yhlin/yhworkspace/goodvilla_web/venv/lib/python3.9/site-packages/django/contrib/auth/decorators.py", line 25, in _wrapper_view
+    resolved_login_url = resolve_url(login_url or settings.LOGIN_URL)
+  File "/Users/yhlin/yhworkspace/goodvilla_web/venv/lib/python3.9/site-packages/django/shortcuts.py", line 145, in resolve_url
+    return reverse(to, args=args, kwargs=kwargs)
+  File "/Users/yhlin/yhworkspace/goodvilla_web/venv/lib/python3.9/site-packages/django/urls/base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "/Users/yhlin/yhworkspace/goodvilla_web/venv/lib/python3.9/site-packages/django/urls/resolvers.py", line 828, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'login' not found. 'login' is not a valid view function or pattern name.
+2023-12-02 10:02 INFO /Users/yhlin/yhworkspace/goodvilla_web/app/urls.py changed, reloading. 
+2023-12-02 10:03 INFO /Users/yhlin/yhworkspace/goodvilla_web/app/urls.py changed, reloading. 
+2023-12-02 10:03 WARNING Not Found: / 
+2023-12-02 10:03 ERROR Internal Server Error: /app/login/ 
+Traceback (most recent call last):
+  File "/Users/yhlin/yhworkspace/goodvilla_web/venv/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/yhlin/yhworkspace/goodvilla_web/venv/lib/python3.9/site-packages/django/core/handlers/base.py", line 220, in _get_response
+    response = response.render()
+  File "/Users/yhlin/yhworkspace/goodvilla_web/venv/lib/python3.9/site-packages/django/template/response.py", line 114, in render
+    self.content = self.rendered_content
+  File "/Users/yhlin/yhworkspace/goodvilla_web/venv/lib/python3.9/site-packages/django/template/response.py", line 90, in rendered_content
+    template = self.resolve_template(self.template_name)
+  File "/Users/yhlin/yhworkspace/goodvilla_web/venv/lib/python3.9/site-packages/django/template/response.py", line 72, in resolve_template
+    return select_template(template, using=self.using)
+  File "/Users/yhlin/yhworkspace/goodvilla_web/venv/lib/python3.9/site-packages/django/template/loader.py", line 47, in select_template
+    raise TemplateDoesNotExist(", ".join(template_name_list), chain=chain)
+django.template.exceptions.TemplateDoesNotExist: registration/login.html
+2023-12-02 10:03 ERROR Internal Server Error: /app/login/ 
+Traceback (most recent call last):
+  File "/Users/yhlin/yhworkspace/goodvilla_web/venv/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/yhlin/yhworkspace/goodvilla_web/venv/lib/python3.9/site-packages/django/core/handlers/base.py", line 220, in _get_response
+    response = response.render()
+  File "/Users/yhlin/yhworkspace/goodvilla_web/venv/lib/python3.9/site-packages/django/template/response.py", line 114, in render
+    self.content = self.rendered_content
+  File "/Users/yhlin/yhworkspace/goodvilla_web/venv/lib/python3.9/site-packages/django/template/response.py", line 90, in rendered_content
+    template = self.resolve_template(self.template_name)
+  File "/Users/yhlin/yhworkspace/goodvilla_web/venv/lib/python3.9/site-packages/django/template/response.py", line 72, in resolve_template
+    return select_template(template, using=self.using)
+  File "/Users/yhlin/yhworkspace/goodvilla_web/venv/lib/python3.9/site-packages/django/template/loader.py", line 47, in select_template
+    raise TemplateDoesNotExist(", ".join(template_name_list), chain=chain)
+django.template.exceptions.TemplateDoesNotExist: registration/login.html
+2023-12-02 10:05 ERROR Internal Server Error: /app/login/ 
+Traceback (most recent call last):
+  File "/Users/yhlin/yhworkspace/goodvilla_web/venv/lib/python3.9/site-packages/django/urls/base.py", line 71, in reverse
+    extra, resolver = resolver.namespace_dict[ns]
+KeyError: 'chamberlain'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/yhlin/yhworkspace/goodvilla_web/venv/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/yhlin/yhworkspace/goodvilla_web/venv/lib/python3.9/site-packages/django/core/handlers/base.py", line 220, in _get_response
+    response = response.render()
+  File "/Users/yhlin/yhworkspace/goodvilla_web/venv/lib/python3.9/site-packages/django/template/response.py", line 114, in render
+    self.content = self.rendered_content
+  File "/Users/yhlin/yhworkspace/goodvilla_web/venv/lib/python3.9/site-packages/django/template/response.py", line 92, in rendered_content
+    return template.render(context, self._request)
+  File "/Users/yhlin/yhworkspace/goodvilla_web/venv/lib/python3.9/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/Users/yhlin/yhworkspace/goodvilla_web/venv/lib/python3.9/site-packages/django/template/base.py", line 175, in render
+    return self._render(context)
+  File "/Users/yhlin/yhworkspace/goodvilla_web/venv/lib/python3.9/site-packages/django/template/base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "/Users/yhlin/yhworkspace/goodvilla_web/venv/lib/python3.9/site-packages/django/template/base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/Users/yhlin/yhworkspace/goodvilla_web/venv/lib/python3.9/site-packages/django/template/base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/Users/yhlin/yhworkspace/goodvilla_web/venv/lib/python3.9/site-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+  File "/Users/yhlin/yhworkspace/goodvilla_web/venv/lib/python3.9/site-packages/django/template/loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+  File "/Users/yhlin/yhworkspace/goodvilla_web/venv/lib/python3.9/site-packages/django/template/base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "/Users/yhlin/yhworkspace/goodvilla_web/venv/lib/python3.9/site-packages/django/template/base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/Users/yhlin/yhworkspace/goodvilla_web/venv/lib/python3.9/site-packages/django/template/base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/Users/yhlin/yhworkspace/goodvilla_web/venv/lib/python3.9/site-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+  File "/Users/yhlin/yhworkspace/goodvilla_web/venv/lib/python3.9/site-packages/django/template/loader_tags.py", line 63, in render
+    result = block.nodelist.render(context)
+  File "/Users/yhlin/yhworkspace/goodvilla_web/venv/lib/python3.9/site-packages/django/template/base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/Users/yhlin/yhworkspace/goodvilla_web/venv/lib/python3.9/site-packages/django/template/base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/Users/yhlin/yhworkspace/goodvilla_web/venv/lib/python3.9/site-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+  File "/Users/yhlin/yhworkspace/goodvilla_web/venv/lib/python3.9/site-packages/django/template/defaulttags.py", line 471, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "/Users/yhlin/yhworkspace/goodvilla_web/venv/lib/python3.9/site-packages/django/urls/base.py", line 82, in reverse
+    raise NoReverseMatch("%s is not a registered namespace" % key)
+django.urls.exceptions.NoReverseMatch: 'chamberlain' is not a registered namespace
+2023-12-02 10:05 ERROR Internal Server Error: /app/login/ 
+Traceback (most recent call last):
+  File "/Users/yhlin/yhworkspace/goodvilla_web/venv/lib/python3.9/site-packages/django/urls/base.py", line 71, in reverse
+    extra, resolver = resolver.namespace_dict[ns]
+KeyError: 'chamberlain'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/yhlin/yhworkspace/goodvilla_web/venv/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/yhlin/yhworkspace/goodvilla_web/venv/lib/python3.9/site-packages/django/core/handlers/base.py", line 220, in _get_response
+    response = response.render()
+  File "/Users/yhlin/yhworkspace/goodvilla_web/venv/lib/python3.9/site-packages/django/template/response.py", line 114, in render
+    self.content = self.rendered_content
+  File "/Users/yhlin/yhworkspace/goodvilla_web/venv/lib/python3.9/site-packages/django/template/response.py", line 92, in rendered_content
+    return template.render(context, self._request)
+  File "/Users/yhlin/yhworkspace/goodvilla_web/venv/lib/python3.9/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/Users/yhlin/yhworkspace/goodvilla_web/venv/lib/python3.9/site-packages/django/template/base.py", line 175, in render
+    return self._render(context)
+  File "/Users/yhlin/yhworkspace/goodvilla_web/venv/lib/python3.9/site-packages/django/template/base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "/Users/yhlin/yhworkspace/goodvilla_web/venv/lib/python3.9/site-packages/django/template/base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/Users/yhlin/yhworkspace/goodvilla_web/venv/lib/python3.9/site-packages/django/template/base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/Users/yhlin/yhworkspace/goodvilla_web/venv/lib/python3.9/site-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+  File "/Users/yhlin/yhworkspace/goodvilla_web/venv/lib/python3.9/site-packages/django/template/loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+  File "/Users/yhlin/yhworkspace/goodvilla_web/venv/lib/python3.9/site-packages/django/template/base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "/Users/yhlin/yhworkspace/goodvilla_web/venv/lib/python3.9/site-packages/django/template/base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/Users/yhlin/yhworkspace/goodvilla_web/venv/lib/python3.9/site-packages/django/template/base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/Users/yhlin/yhworkspace/goodvilla_web/venv/lib/python3.9/site-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+  File "/Users/yhlin/yhworkspace/goodvilla_web/venv/lib/python3.9/site-packages/django/template/loader_tags.py", line 63, in render
+    result = block.nodelist.render(context)
+  File "/Users/yhlin/yhworkspace/goodvilla_web/venv/lib/python3.9/site-packages/django/template/base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/Users/yhlin/yhworkspace/goodvilla_web/venv/lib/python3.9/site-packages/django/template/base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/Users/yhlin/yhworkspace/goodvilla_web/venv/lib/python3.9/site-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+  File "/Users/yhlin/yhworkspace/goodvilla_web/venv/lib/python3.9/site-packages/django/template/defaulttags.py", line 471, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "/Users/yhlin/yhworkspace/goodvilla_web/venv/lib/python3.9/site-packages/django/urls/base.py", line 82, in reverse
+    raise NoReverseMatch("%s is not a registered namespace" % key)
+django.urls.exceptions.NoReverseMatch: 'chamberlain' is not a registered namespace
+2023-12-02 10:12 INFO /Users/yhlin/yhworkspace/goodvilla_web/app/urls.py changed, reloading. 
+2023-12-02 10:16 WARNING Not Found: / 
+2023-12-02 10:16 ERROR Internal Server Error: /app/ 
+Traceback (most recent call last):
+  File "/Users/yhlin/yhworkspace/goodvilla_web/venv/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/yhlin/yhworkspace/goodvilla_web/venv/lib/python3.9/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/yhlin/yhworkspace/goodvilla_web/venv/lib/python3.9/site-packages/django/contrib/auth/decorators.py", line 23, in _wrapper_view
+    return view_func(request, *args, **kwargs)
+  File "/Users/yhlin/yhworkspace/goodvilla_web/app/views.py", line 70, in dashboard
+    return render(request,'account/dashboard.html')
+  File "/Users/yhlin/yhworkspace/goodvilla_web/venv/lib/python3.9/site-packages/django/shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/Users/yhlin/yhworkspace/goodvilla_web/venv/lib/python3.9/site-packages/django/template/loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "/Users/yhlin/yhworkspace/goodvilla_web/venv/lib/python3.9/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/Users/yhlin/yhworkspace/goodvilla_web/venv/lib/python3.9/site-packages/django/template/base.py", line 175, in render
+    return self._render(context)
+  File "/Users/yhlin/yhworkspace/goodvilla_web/venv/lib/python3.9/site-packages/django/template/base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "/Users/yhlin/yhworkspace/goodvilla_web/venv/lib/python3.9/site-packages/django/template/base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/Users/yhlin/yhworkspace/goodvilla_web/venv/lib/python3.9/site-packages/django/template/base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/Users/yhlin/yhworkspace/goodvilla_web/venv/lib/python3.9/site-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+  File "/Users/yhlin/yhworkspace/goodvilla_web/venv/lib/python3.9/site-packages/django/template/loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+  File "/Users/yhlin/yhworkspace/goodvilla_web/venv/lib/python3.9/site-packages/django/template/base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "/Users/yhlin/yhworkspace/goodvilla_web/venv/lib/python3.9/site-packages/django/template/base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/Users/yhlin/yhworkspace/goodvilla_web/venv/lib/python3.9/site-packages/django/template/base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/Users/yhlin/yhworkspace/goodvilla_web/venv/lib/python3.9/site-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+  File "/Users/yhlin/yhworkspace/goodvilla_web/venv/lib/python3.9/site-packages/django/template/defaulttags.py", line 471, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "/Users/yhlin/yhworkspace/goodvilla_web/venv/lib/python3.9/site-packages/django/urls/base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "/Users/yhlin/yhworkspace/goodvilla_web/venv/lib/python3.9/site-packages/django/urls/resolvers.py", line 828, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'register' not found. 'register' is not a valid view function or pattern name.
+2023-12-02 10:16 ERROR Internal Server Error: /app/ 
+Traceback (most recent call last):
+  File "/Users/yhlin/yhworkspace/goodvilla_web/venv/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/yhlin/yhworkspace/goodvilla_web/venv/lib/python3.9/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/yhlin/yhworkspace/goodvilla_web/venv/lib/python3.9/site-packages/django/contrib/auth/decorators.py", line 23, in _wrapper_view
+    return view_func(request, *args, **kwargs)
+  File "/Users/yhlin/yhworkspace/goodvilla_web/app/views.py", line 70, in dashboard
+    return render(request,'account/dashboard.html')
+  File "/Users/yhlin/yhworkspace/goodvilla_web/venv/lib/python3.9/site-packages/django/shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/Users/yhlin/yhworkspace/goodvilla_web/venv/lib/python3.9/site-packages/django/template/loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "/Users/yhlin/yhworkspace/goodvilla_web/venv/lib/python3.9/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/Users/yhlin/yhworkspace/goodvilla_web/venv/lib/python3.9/site-packages/django/template/base.py", line 175, in render
+    return self._render(context)
+  File "/Users/yhlin/yhworkspace/goodvilla_web/venv/lib/python3.9/site-packages/django/template/base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "/Users/yhlin/yhworkspace/goodvilla_web/venv/lib/python3.9/site-packages/django/template/base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/Users/yhlin/yhworkspace/goodvilla_web/venv/lib/python3.9/site-packages/django/template/base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/Users/yhlin/yhworkspace/goodvilla_web/venv/lib/python3.9/site-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+  File "/Users/yhlin/yhworkspace/goodvilla_web/venv/lib/python3.9/site-packages/django/template/loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+  File "/Users/yhlin/yhworkspace/goodvilla_web/venv/lib/python3.9/site-packages/django/template/base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "/Users/yhlin/yhworkspace/goodvilla_web/venv/lib/python3.9/site-packages/django/template/base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/Users/yhlin/yhworkspace/goodvilla_web/venv/lib/python3.9/site-packages/django/template/base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/Users/yhlin/yhworkspace/goodvilla_web/venv/lib/python3.9/site-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+  File "/Users/yhlin/yhworkspace/goodvilla_web/venv/lib/python3.9/site-packages/django/template/defaulttags.py", line 471, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "/Users/yhlin/yhworkspace/goodvilla_web/venv/lib/python3.9/site-packages/django/urls/base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "/Users/yhlin/yhworkspace/goodvilla_web/venv/lib/python3.9/site-packages/django/urls/resolvers.py", line 828, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'register' not found. 'register' is not a valid view function or pattern name.
+2023-12-02 10:17 INFO /Users/yhlin/yhworkspace/goodvilla_web/app/views.py changed, reloading. 
+2023-12-02 10:18 INFO /Users/yhlin/yhworkspace/goodvilla_web/app/views.py changed, reloading. 
+2023-12-02 10:19 WARNING Not Found: / 
+2023-12-02 10:20 ERROR Internal Server Error: /app/ 
+Traceback (most recent call last):
+  File "/Users/yhlin/yhworkspace/goodvilla_web/venv/lib/python3.9/site-packages/django/urls/base.py", line 71, in reverse
+    extra, resolver = resolver.namespace_dict[ns]
+KeyError: 'chamberlain'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/yhlin/yhworkspace/goodvilla_web/venv/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/yhlin/yhworkspace/goodvilla_web/venv/lib/python3.9/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/yhlin/yhworkspace/goodvilla_web/venv/lib/python3.9/site-packages/django/contrib/auth/decorators.py", line 23, in _wrapper_view
+    return view_func(request, *args, **kwargs)
+  File "/Users/yhlin/yhworkspace/goodvilla_web/app/views.py", line 71, in dashboard
+    return render(request,'account/dashboard.html')
+  File "/Users/yhlin/yhworkspace/goodvilla_web/venv/lib/python3.9/site-packages/django/shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/Users/yhlin/yhworkspace/goodvilla_web/venv/lib/python3.9/site-packages/django/template/loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "/Users/yhlin/yhworkspace/goodvilla_web/venv/lib/python3.9/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/Users/yhlin/yhworkspace/goodvilla_web/venv/lib/python3.9/site-packages/django/template/base.py", line 175, in render
+    return self._render(context)
+  File "/Users/yhlin/yhworkspace/goodvilla_web/venv/lib/python3.9/site-packages/django/template/base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "/Users/yhlin/yhworkspace/goodvilla_web/venv/lib/python3.9/site-packages/django/template/base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/Users/yhlin/yhworkspace/goodvilla_web/venv/lib/python3.9/site-packages/django/template/base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/Users/yhlin/yhworkspace/goodvilla_web/venv/lib/python3.9/site-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+  File "/Users/yhlin/yhworkspace/goodvilla_web/venv/lib/python3.9/site-packages/django/template/loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+  File "/Users/yhlin/yhworkspace/goodvilla_web/venv/lib/python3.9/site-packages/django/template/base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "/Users/yhlin/yhworkspace/goodvilla_web/venv/lib/python3.9/site-packages/django/template/base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/Users/yhlin/yhworkspace/goodvilla_web/venv/lib/python3.9/site-packages/django/template/base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/Users/yhlin/yhworkspace/goodvilla_web/venv/lib/python3.9/site-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+  File "/Users/yhlin/yhworkspace/goodvilla_web/venv/lib/python3.9/site-packages/django/template/defaulttags.py", line 471, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "/Users/yhlin/yhworkspace/goodvilla_web/venv/lib/python3.9/site-packages/django/urls/base.py", line 82, in reverse
+    raise NoReverseMatch("%s is not a registered namespace" % key)
+django.urls.exceptions.NoReverseMatch: 'chamberlain' is not a registered namespace
+2023-12-02 10:21 ERROR Internal Server Error: /app/register/ 
+Traceback (most recent call last):
+  File "/Users/yhlin/yhworkspace/goodvilla_web/venv/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/yhlin/yhworkspace/goodvilla_web/venv/lib/python3.9/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/yhlin/yhworkspace/goodvilla_web/app/views.py", line 95, in register
+    return render(request, 'account/register.html', {'user_form': user_form})
+  File "/Users/yhlin/yhworkspace/goodvilla_web/venv/lib/python3.9/site-packages/django/shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/Users/yhlin/yhworkspace/goodvilla_web/venv/lib/python3.9/site-packages/django/template/loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/Users/yhlin/yhworkspace/goodvilla_web/venv/lib/python3.9/site-packages/django/template/loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: account/register.html
+2023-12-02 10:24 ERROR Internal Server Error: /app/login/ 
+Traceback (most recent call last):
+  File "/Users/yhlin/yhworkspace/goodvilla_web/venv/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/yhlin/yhworkspace/goodvilla_web/venv/lib/python3.9/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/yhlin/yhworkspace/goodvilla_web/venv/lib/python3.9/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/yhlin/yhworkspace/goodvilla_web/venv/lib/python3.9/site-packages/django/utils/decorators.py", line 46, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "/Users/yhlin/yhworkspace/goodvilla_web/venv/lib/python3.9/site-packages/django/views/decorators/debug.py", line 92, in sensitive_post_parameters_wrapper
+    return view(request, *args, **kwargs)
+  File "/Users/yhlin/yhworkspace/goodvilla_web/venv/lib/python3.9/site-packages/django/utils/decorators.py", line 46, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "/Users/yhlin/yhworkspace/goodvilla_web/venv/lib/python3.9/site-packages/django/utils/decorators.py", line 134, in _wrapper_view
+    response = view_func(request, *args, **kwargs)
+  File "/Users/yhlin/yhworkspace/goodvilla_web/venv/lib/python3.9/site-packages/django/utils/decorators.py", line 46, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "/Users/yhlin/yhworkspace/goodvilla_web/venv/lib/python3.9/site-packages/django/views/decorators/cache.py", line 62, in _wrapper_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/Users/yhlin/yhworkspace/goodvilla_web/venv/lib/python3.9/site-packages/django/contrib/auth/views.py", line 90, in dispatch
+    return super().dispatch(request, *args, **kwargs)
+  File "/Users/yhlin/yhworkspace/goodvilla_web/venv/lib/python3.9/site-packages/django/views/generic/base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/Users/yhlin/yhworkspace/goodvilla_web/venv/lib/python3.9/site-packages/django/views/generic/edit.py", line 153, in post
+    return self.form_valid(form)
+  File "/Users/yhlin/yhworkspace/goodvilla_web/venv/lib/python3.9/site-packages/django/contrib/auth/views.py", line 110, in form_valid
+    return HttpResponseRedirect(self.get_success_url())
+  File "/Users/yhlin/yhworkspace/goodvilla_web/venv/lib/python3.9/site-packages/django/contrib/auth/views.py", line 43, in get_success_url
+    return self.get_redirect_url() or self.get_default_redirect_url()
+  File "/Users/yhlin/yhworkspace/goodvilla_web/venv/lib/python3.9/site-packages/django/contrib/auth/views.py", line 97, in get_default_redirect_url
+    return resolve_url(settings.LOGIN_REDIRECT_URL)
+  File "/Users/yhlin/yhworkspace/goodvilla_web/venv/lib/python3.9/site-packages/django/shortcuts.py", line 145, in resolve_url
+    return reverse(to, args=args, kwargs=kwargs)
+  File "/Users/yhlin/yhworkspace/goodvilla_web/venv/lib/python3.9/site-packages/django/urls/base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "/Users/yhlin/yhworkspace/goodvilla_web/venv/lib/python3.9/site-packages/django/urls/resolvers.py", line 828, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'dashboard' not found. 'dashboard' is not a valid view function or pattern name.
+2023-12-02 10:24 ERROR Internal Server Error: /app/login/ 
+Traceback (most recent call last):
+  File "/Users/yhlin/yhworkspace/goodvilla_web/venv/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/yhlin/yhworkspace/goodvilla_web/venv/lib/python3.9/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/yhlin/yhworkspace/goodvilla_web/venv/lib/python3.9/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/yhlin/yhworkspace/goodvilla_web/venv/lib/python3.9/site-packages/django/utils/decorators.py", line 46, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "/Users/yhlin/yhworkspace/goodvilla_web/venv/lib/python3.9/site-packages/django/views/decorators/debug.py", line 92, in sensitive_post_parameters_wrapper
+    return view(request, *args, **kwargs)
+  File "/Users/yhlin/yhworkspace/goodvilla_web/venv/lib/python3.9/site-packages/django/utils/decorators.py", line 46, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "/Users/yhlin/yhworkspace/goodvilla_web/venv/lib/python3.9/site-packages/django/utils/decorators.py", line 134, in _wrapper_view
+    response = view_func(request, *args, **kwargs)
+  File "/Users/yhlin/yhworkspace/goodvilla_web/venv/lib/python3.9/site-packages/django/utils/decorators.py", line 46, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "/Users/yhlin/yhworkspace/goodvilla_web/venv/lib/python3.9/site-packages/django/views/decorators/cache.py", line 62, in _wrapper_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/Users/yhlin/yhworkspace/goodvilla_web/venv/lib/python3.9/site-packages/django/contrib/auth/views.py", line 90, in dispatch
+    return super().dispatch(request, *args, **kwargs)
+  File "/Users/yhlin/yhworkspace/goodvilla_web/venv/lib/python3.9/site-packages/django/views/generic/base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/Users/yhlin/yhworkspace/goodvilla_web/venv/lib/python3.9/site-packages/django/views/generic/edit.py", line 153, in post
+    return self.form_valid(form)
+  File "/Users/yhlin/yhworkspace/goodvilla_web/venv/lib/python3.9/site-packages/django/contrib/auth/views.py", line 110, in form_valid
+    return HttpResponseRedirect(self.get_success_url())
+  File "/Users/yhlin/yhworkspace/goodvilla_web/venv/lib/python3.9/site-packages/django/contrib/auth/views.py", line 43, in get_success_url
+    return self.get_redirect_url() or self.get_default_redirect_url()
+  File "/Users/yhlin/yhworkspace/goodvilla_web/venv/lib/python3.9/site-packages/django/contrib/auth/views.py", line 97, in get_default_redirect_url
+    return resolve_url(settings.LOGIN_REDIRECT_URL)
+  File "/Users/yhlin/yhworkspace/goodvilla_web/venv/lib/python3.9/site-packages/django/shortcuts.py", line 145, in resolve_url
+    return reverse(to, args=args, kwargs=kwargs)
+  File "/Users/yhlin/yhworkspace/goodvilla_web/venv/lib/python3.9/site-packages/django/urls/base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "/Users/yhlin/yhworkspace/goodvilla_web/venv/lib/python3.9/site-packages/django/urls/resolvers.py", line 828, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'dashboard' not found. 'dashboard' is not a valid view function or pattern name.
+2023-12-02 10:46 ERROR Internal Server Error: /app/login/ 
+Traceback (most recent call last):
+  File "/Users/yhlin/yhworkspace/goodvilla_web/venv/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/yhlin/yhworkspace/goodvilla_web/venv/lib/python3.9/site-packages/django/core/handlers/base.py", line 220, in _get_response
+    response = response.render()
+  File "/Users/yhlin/yhworkspace/goodvilla_web/venv/lib/python3.9/site-packages/django/template/response.py", line 114, in render
+    self.content = self.rendered_content
+  File "/Users/yhlin/yhworkspace/goodvilla_web/venv/lib/python3.9/site-packages/django/template/response.py", line 92, in rendered_content
+    return template.render(context, self._request)
+  File "/Users/yhlin/yhworkspace/goodvilla_web/venv/lib/python3.9/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/Users/yhlin/yhworkspace/goodvilla_web/venv/lib/python3.9/site-packages/django/template/base.py", line 175, in render
+    return self._render(context)
+  File "/Users/yhlin/yhworkspace/goodvilla_web/venv/lib/python3.9/site-packages/django/template/base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "/Users/yhlin/yhworkspace/goodvilla_web/venv/lib/python3.9/site-packages/django/template/base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/Users/yhlin/yhworkspace/goodvilla_web/venv/lib/python3.9/site-packages/django/template/base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/Users/yhlin/yhworkspace/goodvilla_web/venv/lib/python3.9/site-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+  File "/Users/yhlin/yhworkspace/goodvilla_web/venv/lib/python3.9/site-packages/django/template/loader_tags.py", line 132, in render
+    compiled_parent = self.get_parent(context)
+  File "/Users/yhlin/yhworkspace/goodvilla_web/venv/lib/python3.9/site-packages/django/template/loader_tags.py", line 129, in get_parent
+    return self.find_template(parent, context)
+  File "/Users/yhlin/yhworkspace/goodvilla_web/venv/lib/python3.9/site-packages/django/template/loader_tags.py", line 107, in find_template
+    template, origin = context.template.engine.find_template(
+  File "/Users/yhlin/yhworkspace/goodvilla_web/venv/lib/python3.9/site-packages/django/template/engine.py", line 157, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "/Users/yhlin/yhworkspace/goodvilla_web/venv/lib/python3.9/site-packages/django/template/loaders/cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+  File "/Users/yhlin/yhworkspace/goodvilla_web/venv/lib/python3.9/site-packages/django/template/loaders/base.py", line 28, in get_template
+    return Template(
+  File "/Users/yhlin/yhworkspace/goodvilla_web/venv/lib/python3.9/site-packages/django/template/base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "/Users/yhlin/yhworkspace/goodvilla_web/venv/lib/python3.9/site-packages/django/template/base.py", line 200, in compile_nodelist
+    return parser.parse()
+  File "/Users/yhlin/yhworkspace/goodvilla_web/venv/lib/python3.9/site-packages/django/template/base.py", line 513, in parse
+    raise self.error(token, e)
+  File "/Users/yhlin/yhworkspace/goodvilla_web/venv/lib/python3.9/site-packages/django/template/base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "/Users/yhlin/yhworkspace/goodvilla_web/venv/lib/python3.9/site-packages/django/templatetags/static.py", line 171, in do_static
+    return StaticNode.handle_token(parser, token)
+  File "/Users/yhlin/yhworkspace/goodvilla_web/venv/lib/python3.9/site-packages/django/templatetags/static.py", line 145, in handle_token
+    path = parser.compile_filter(bits[1])
+  File "/Users/yhlin/yhworkspace/goodvilla_web/venv/lib/python3.9/site-packages/django/template/base.py", line 600, in compile_filter
+    return FilterExpression(token, self)
+  File "/Users/yhlin/yhworkspace/goodvilla_web/venv/lib/python3.9/site-packages/django/template/base.py", line 703, in __init__
+    raise TemplateSyntaxError(
+django.template.exceptions.TemplateSyntaxError: Could not parse the remainder: '"css/' from '"css/'
+2023-12-02 10:46 WARNING Not Found: /favicon.ico 
+2023-12-02 10:46 ERROR Internal Server Error: /app/login/ 
+Traceback (most recent call last):
+  File "/Users/yhlin/yhworkspace/goodvilla_web/venv/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/yhlin/yhworkspace/goodvilla_web/venv/lib/python3.9/site-packages/django/core/handlers/base.py", line 220, in _get_response
+    response = response.render()
+  File "/Users/yhlin/yhworkspace/goodvilla_web/venv/lib/python3.9/site-packages/django/template/response.py", line 114, in render
+    self.content = self.rendered_content
+  File "/Users/yhlin/yhworkspace/goodvilla_web/venv/lib/python3.9/site-packages/django/template/response.py", line 92, in rendered_content
+    return template.render(context, self._request)
+  File "/Users/yhlin/yhworkspace/goodvilla_web/venv/lib/python3.9/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/Users/yhlin/yhworkspace/goodvilla_web/venv/lib/python3.9/site-packages/django/template/base.py", line 175, in render
+    return self._render(context)
+  File "/Users/yhlin/yhworkspace/goodvilla_web/venv/lib/python3.9/site-packages/django/template/base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "/Users/yhlin/yhworkspace/goodvilla_web/venv/lib/python3.9/site-packages/django/template/base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/Users/yhlin/yhworkspace/goodvilla_web/venv/lib/python3.9/site-packages/django/template/base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/Users/yhlin/yhworkspace/goodvilla_web/venv/lib/python3.9/site-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+  File "/Users/yhlin/yhworkspace/goodvilla_web/venv/lib/python3.9/site-packages/django/template/loader_tags.py", line 132, in render
+    compiled_parent = self.get_parent(context)
+  File "/Users/yhlin/yhworkspace/goodvilla_web/venv/lib/python3.9/site-packages/django/template/loader_tags.py", line 129, in get_parent
+    return self.find_template(parent, context)
+  File "/Users/yhlin/yhworkspace/goodvilla_web/venv/lib/python3.9/site-packages/django/template/loader_tags.py", line 107, in find_template
+    template, origin = context.template.engine.find_template(
+  File "/Users/yhlin/yhworkspace/goodvilla_web/venv/lib/python3.9/site-packages/django/template/engine.py", line 157, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "/Users/yhlin/yhworkspace/goodvilla_web/venv/lib/python3.9/site-packages/django/template/loaders/cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+  File "/Users/yhlin/yhworkspace/goodvilla_web/venv/lib/python3.9/site-packages/django/template/loaders/base.py", line 28, in get_template
+    return Template(
+  File "/Users/yhlin/yhworkspace/goodvilla_web/venv/lib/python3.9/site-packages/django/template/base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "/Users/yhlin/yhworkspace/goodvilla_web/venv/lib/python3.9/site-packages/django/template/base.py", line 200, in compile_nodelist
+    return parser.parse()
+  File "/Users/yhlin/yhworkspace/goodvilla_web/venv/lib/python3.9/site-packages/django/template/base.py", line 513, in parse
+    raise self.error(token, e)
+  File "/Users/yhlin/yhworkspace/goodvilla_web/venv/lib/python3.9/site-packages/django/template/base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "/Users/yhlin/yhworkspace/goodvilla_web/venv/lib/python3.9/site-packages/django/templatetags/static.py", line 171, in do_static
+    return StaticNode.handle_token(parser, token)
+  File "/Users/yhlin/yhworkspace/goodvilla_web/venv/lib/python3.9/site-packages/django/templatetags/static.py", line 145, in handle_token
+    path = parser.compile_filter(bits[1])
+  File "/Users/yhlin/yhworkspace/goodvilla_web/venv/lib/python3.9/site-packages/django/template/base.py", line 600, in compile_filter
+    return FilterExpression(token, self)
+  File "/Users/yhlin/yhworkspace/goodvilla_web/venv/lib/python3.9/site-packages/django/template/base.py", line 703, in __init__
+    raise TemplateSyntaxError(
+django.template.exceptions.TemplateSyntaxError: Could not parse the remainder: '"css/' from '"css/'
+2023-12-02 12:36 WARNING Not Found: / 
+2023-12-02 16:51 ERROR Internal Server Error: /app/ 
+Traceback (most recent call last):
+  File "/Users/yhlin/yhworkspace/goodvilla_web/venv/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/yhlin/yhworkspace/goodvilla_web/venv/lib/python3.9/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/yhlin/yhworkspace/goodvilla_web/venv/lib/python3.9/site-packages/django/contrib/auth/decorators.py", line 23, in _wrapper_view
+    return view_func(request, *args, **kwargs)
+  File "/Users/yhlin/yhworkspace/goodvilla_web/app/views.py", line 71, in dashboard
+    return render(request,'account/dashboard.html')
+  File "/Users/yhlin/yhworkspace/goodvilla_web/venv/lib/python3.9/site-packages/django/shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/Users/yhlin/yhworkspace/goodvilla_web/venv/lib/python3.9/site-packages/django/template/loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "/Users/yhlin/yhworkspace/goodvilla_web/venv/lib/python3.9/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/Users/yhlin/yhworkspace/goodvilla_web/venv/lib/python3.9/site-packages/django/template/base.py", line 175, in render
+    return self._render(context)
+  File "/Users/yhlin/yhworkspace/goodvilla_web/venv/lib/python3.9/site-packages/django/template/base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "/Users/yhlin/yhworkspace/goodvilla_web/venv/lib/python3.9/site-packages/django/template/base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/Users/yhlin/yhworkspace/goodvilla_web/venv/lib/python3.9/site-packages/django/template/base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/Users/yhlin/yhworkspace/goodvilla_web/venv/lib/python3.9/site-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+  File "/Users/yhlin/yhworkspace/goodvilla_web/venv/lib/python3.9/site-packages/django/template/loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+  File "/Users/yhlin/yhworkspace/goodvilla_web/venv/lib/python3.9/site-packages/django/template/base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "/Users/yhlin/yhworkspace/goodvilla_web/venv/lib/python3.9/site-packages/django/template/base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/Users/yhlin/yhworkspace/goodvilla_web/venv/lib/python3.9/site-packages/django/template/base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/Users/yhlin/yhworkspace/goodvilla_web/venv/lib/python3.9/site-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+  File "/Users/yhlin/yhworkspace/goodvilla_web/venv/lib/python3.9/site-packages/django/template/defaulttags.py", line 471, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "/Users/yhlin/yhworkspace/goodvilla_web/venv/lib/python3.9/site-packages/django/urls/base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "/Users/yhlin/yhworkspace/goodvilla_web/venv/lib/python3.9/site-packages/django/urls/resolvers.py", line 828, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'report' not found. 'report' is not a valid view function or pattern name.
+2023-12-02 16:55 ERROR Internal Server Error: /app/login/ 
+Traceback (most recent call last):
+  File "/Users/yhlin/yhworkspace/goodvilla_web/venv/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/yhlin/yhworkspace/goodvilla_web/venv/lib/python3.9/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/yhlin/yhworkspace/goodvilla_web/venv/lib/python3.9/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/yhlin/yhworkspace/goodvilla_web/venv/lib/python3.9/site-packages/django/utils/decorators.py", line 46, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "/Users/yhlin/yhworkspace/goodvilla_web/venv/lib/python3.9/site-packages/django/views/decorators/debug.py", line 92, in sensitive_post_parameters_wrapper
+    return view(request, *args, **kwargs)
+  File "/Users/yhlin/yhworkspace/goodvilla_web/venv/lib/python3.9/site-packages/django/utils/decorators.py", line 46, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "/Users/yhlin/yhworkspace/goodvilla_web/venv/lib/python3.9/site-packages/django/utils/decorators.py", line 134, in _wrapper_view
+    response = view_func(request, *args, **kwargs)
+  File "/Users/yhlin/yhworkspace/goodvilla_web/venv/lib/python3.9/site-packages/django/utils/decorators.py", line 46, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "/Users/yhlin/yhworkspace/goodvilla_web/venv/lib/python3.9/site-packages/django/views/decorators/cache.py", line 62, in _wrapper_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/Users/yhlin/yhworkspace/goodvilla_web/venv/lib/python3.9/site-packages/django/contrib/auth/views.py", line 90, in dispatch
+    return super().dispatch(request, *args, **kwargs)
+  File "/Users/yhlin/yhworkspace/goodvilla_web/venv/lib/python3.9/site-packages/django/views/generic/base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/Users/yhlin/yhworkspace/goodvilla_web/venv/lib/python3.9/site-packages/django/views/generic/edit.py", line 153, in post
+    return self.form_valid(form)
+  File "/Users/yhlin/yhworkspace/goodvilla_web/venv/lib/python3.9/site-packages/django/contrib/auth/views.py", line 110, in form_valid
+    return HttpResponseRedirect(self.get_success_url())
+  File "/Users/yhlin/yhworkspace/goodvilla_web/venv/lib/python3.9/site-packages/django/contrib/auth/views.py", line 43, in get_success_url
+    return self.get_redirect_url() or self.get_default_redirect_url()
+  File "/Users/yhlin/yhworkspace/goodvilla_web/venv/lib/python3.9/site-packages/django/contrib/auth/views.py", line 97, in get_default_redirect_url
+    return resolve_url(settings.LOGIN_REDIRECT_URL)
+  File "/Users/yhlin/yhworkspace/goodvilla_web/venv/lib/python3.9/site-packages/django/shortcuts.py", line 145, in resolve_url
+    return reverse(to, args=args, kwargs=kwargs)
+  File "/Users/yhlin/yhworkspace/goodvilla_web/venv/lib/python3.9/site-packages/django/urls/base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "/Users/yhlin/yhworkspace/goodvilla_web/venv/lib/python3.9/site-packages/django/urls/resolvers.py", line 828, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'dashboard' not found. 'dashboard' is not a valid view function or pattern name.
+2023-12-02 16:58 ERROR Internal Server Error: /app/login/ 
+Traceback (most recent call last):
+  File "/Users/yhlin/yhworkspace/goodvilla_web/venv/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/yhlin/yhworkspace/goodvilla_web/venv/lib/python3.9/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/yhlin/yhworkspace/goodvilla_web/venv/lib/python3.9/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/yhlin/yhworkspace/goodvilla_web/venv/lib/python3.9/site-packages/django/utils/decorators.py", line 46, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "/Users/yhlin/yhworkspace/goodvilla_web/venv/lib/python3.9/site-packages/django/views/decorators/debug.py", line 92, in sensitive_post_parameters_wrapper
+    return view(request, *args, **kwargs)
+  File "/Users/yhlin/yhworkspace/goodvilla_web/venv/lib/python3.9/site-packages/django/utils/decorators.py", line 46, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "/Users/yhlin/yhworkspace/goodvilla_web/venv/lib/python3.9/site-packages/django/utils/decorators.py", line 134, in _wrapper_view
+    response = view_func(request, *args, **kwargs)
+  File "/Users/yhlin/yhworkspace/goodvilla_web/venv/lib/python3.9/site-packages/django/utils/decorators.py", line 46, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "/Users/yhlin/yhworkspace/goodvilla_web/venv/lib/python3.9/site-packages/django/views/decorators/cache.py", line 62, in _wrapper_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/Users/yhlin/yhworkspace/goodvilla_web/venv/lib/python3.9/site-packages/django/contrib/auth/views.py", line 90, in dispatch
+    return super().dispatch(request, *args, **kwargs)
+  File "/Users/yhlin/yhworkspace/goodvilla_web/venv/lib/python3.9/site-packages/django/views/generic/base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/Users/yhlin/yhworkspace/goodvilla_web/venv/lib/python3.9/site-packages/django/views/generic/edit.py", line 153, in post
+    return self.form_valid(form)
+  File "/Users/yhlin/yhworkspace/goodvilla_web/venv/lib/python3.9/site-packages/django/contrib/auth/views.py", line 110, in form_valid
+    return HttpResponseRedirect(self.get_success_url())
+  File "/Users/yhlin/yhworkspace/goodvilla_web/venv/lib/python3.9/site-packages/django/contrib/auth/views.py", line 43, in get_success_url
+    return self.get_redirect_url() or self.get_default_redirect_url()
+  File "/Users/yhlin/yhworkspace/goodvilla_web/venv/lib/python3.9/site-packages/django/contrib/auth/views.py", line 97, in get_default_redirect_url
+    return resolve_url(settings.LOGIN_REDIRECT_URL)
+  File "/Users/yhlin/yhworkspace/goodvilla_web/venv/lib/python3.9/site-packages/django/shortcuts.py", line 145, in resolve_url
+    return reverse(to, args=args, kwargs=kwargs)
+  File "/Users/yhlin/yhworkspace/goodvilla_web/venv/lib/python3.9/site-packages/django/urls/base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "/Users/yhlin/yhworkspace/goodvilla_web/venv/lib/python3.9/site-packages/django/urls/resolvers.py", line 828, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'dashboard' not found. 'dashboard' is not a valid view function or pattern name.
+2023-12-02 17:20 INFO [] 
+2023-12-02 17:20 INFO [] 
+2023-12-02 17:22 INFO [] 
+2023-12-02 17:22 INFO [] 
+2023-12-02 17:23 INFO [] 
+2023-12-02 17:23 INFO [] 
+2023-12-02 17:24 INFO [] 
+2023-12-02 17:25 INFO [] 
+2023-12-02 17:25 INFO [] 
+2023-12-02 17:25 INFO [] 
+2023-12-02 17:27 INFO [] 
+2023-12-02 17:27 INFO [] 
+2023-12-02 17:27 INFO [] 
+2023-12-02 17:27 INFO [] 
+2023-12-02 17:29 INFO [] 
+2023-12-02 17:30 INFO [] 
+2023-12-02 17:31 INFO [{'major_id': 1, 'item': '食', 'daily_spend': 50, 'daily_bonus': 0, 'daily_moods': -2}] 
+2023-12-02 17:32 INFO [{'major_id': 1, 'item': '食', 'daily_spend': 50, 'daily_bonus': 0, 'daily_moods': -2}] 
+2023-12-02 17:32 INFO [{'major_id': 1, 'item': '食', 'daily_spend': 50, 'daily_bonus': 0, 'daily_moods': -2}] 
+2023-12-02 17:33 INFO [{'major_id': 1, 'item': '食', 'daily_spend': 50, 'daily_bonus': 0, 'daily_moods': -2}] 
+2023-12-02 17:34 INFO [{'major_id': 1, 'item': '食', 'daily_spend': 50, 'daily_bonus': 0, 'daily_moods': -2}] 
+2023-12-02 17:35 INFO [{'major_id': 1, 'item': '食', 'daily_spend': 50, 'daily_bonus': 0, 'daily_moods': -2}] 
+2023-12-02 17:35 INFO [{'major_id': 1, 'item': '食', 'daily_spend': 50, 'daily_bonus': 0, 'daily_moods': -2}] 
+2023-12-02 17:35 INFO [{'major_id': 1, 'item': '食', 'daily_spend': 50, 'daily_bonus': 0, 'daily_moods': -2}] 
+2023-12-02 17:38 INFO [{'major_id': 1, 'item': '食', 'daily_spend': 50, 'daily_bonus': 0, 'daily_moods': -2}] 
+2023-12-02 17:38 INFO [{'major_id': 1, 'item': '食', 'daily_spend': 50, 'daily_bonus': 0, 'daily_moods': -2}] 
+2023-12-02 17:39 INFO [{'major_id': 1, 'item': '食', 'daily_spend': 50, 'daily_bonus': 0, 'daily_moods': -2}] 
+2023-12-02 17:40 INFO [{'major_id': 1, 'item': '食', 'daily_spend': 100, 'daily_bonus': 0, 'daily_moods': -4}, {'major_id': 7, 'item': '住戶照顧', 'daily_spend': 230, 'daily_bonus': 1450, 'daily_moods': 2}] 
+2023-12-02 17:45 ERROR Internal Server Error: /app/register/ 
+Traceback (most recent call last):
+  File "/Users/yhlin/yhworkspace/goodvilla_web/venv/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/yhlin/yhworkspace/goodvilla_web/venv/lib/python3.9/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/yhlin/yhworkspace/goodvilla_web/app/views.py", line 95, in register
+    return render(request, 'account/register.html', {'user_form': user_form})
+  File "/Users/yhlin/yhworkspace/goodvilla_web/venv/lib/python3.9/site-packages/django/shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/Users/yhlin/yhworkspace/goodvilla_web/venv/lib/python3.9/site-packages/django/template/loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/Users/yhlin/yhworkspace/goodvilla_web/venv/lib/python3.9/site-packages/django/template/loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: account/register.html
+2023-12-03 09:42 WARNING Not Found: /favicon.ico 
+2023-12-03 09:42 INFO [] 
+2023-12-03 09:43 INFO [] 
+2023-12-03 09:44 INFO [] 
+2023-12-03 09:44 INFO [] 
+2023-12-03 09:44 INFO [{'major_id': 1, 'item': '食', 'daily_spend': 90, 'daily_bonus': 0, 'daily_moods': -2}] 
+2023-12-03 09:50 INFO [{'major_id': 1, 'item': '食', 'daily_spend': 90, 'daily_bonus': 0, 'daily_moods': -2}] 
+2023-12-03 09:52 INFO [{'major_id': 1, 'item': '食', 'daily_spend': 90, 'daily_bonus': 0, 'daily_moods': -2}, {'major_id': 3, 'item': '住', 'daily_spend': 50, 'daily_bonus': 0, 'daily_moods': -2}] 
+2023-12-03 10:10 INFO [{'major_id': 1, 'item': '食', 'daily_spend': 140, 'daily_bonus': 0, 'daily_moods': -4}, {'major_id': 3, 'item': '住', 'daily_spend': 50, 'daily_bonus': 0, 'daily_moods': -2}] 
+2023-12-03 10:16 INFO [{'major_id': 1, 'item': '食', 'daily_spend': 140, 'daily_bonus': 0, 'daily_moods': -4}, {'major_id': 3, 'item': '住', 'daily_spend': 50, 'daily_bonus': 0, 'daily_moods': -2}] 
+2023-12-03 10:27 INFO [{'major_id': 1, 'item': '食', 'daily_spend': 250, 'daily_bonus': 0, 'daily_moods': -6}, {'major_id': 3, 'item': '住', 'daily_spend': 50, 'daily_bonus': 0, 'daily_moods': -2}] 
+2023-12-03 10:27 INFO [{'major_id': 1, 'item': '食', 'daily_spend': 360, 'daily_bonus': 0, 'daily_moods': -8}, {'major_id': 3, 'item': '住', 'daily_spend': 50, 'daily_bonus': 0, 'daily_moods': -2}] 
+2023-12-03 10:29 INFO [{'major_id': 1, 'item': '食', 'daily_spend': 360, 'daily_bonus': 0, 'daily_moods': -8}, {'major_id': 3, 'item': '住', 'daily_spend': 220, 'daily_bonus': 100, 'daily_moods': -4}] 
+2023-12-03 10:29 INFO [{'major_id': 1, 'item': '食', 'daily_spend': 470, 'daily_bonus': 0, 'daily_moods': -10}, {'major_id': 3, 'item': '住', 'daily_spend': 220, 'daily_bonus': 100, 'daily_moods': -4}] 
+2023-12-03 10:35 INFO [{'major_id': 1, 'item': '食', 'daily_spend': 470, 'daily_bonus': 0, 'daily_moods': -10}, {'major_id': 3, 'item': '住', 'daily_spend': 220, 'daily_bonus': 100, 'daily_moods': -4}] 
+2023-12-03 10:35 WARNING Bad Request: /app/api/workrecord/1/ 
+2023-12-03 10:37 INFO [{'major_id': 1, 'item': '食', 'daily_spend': 470, 'daily_bonus': 0, 'daily_moods': -10}, {'major_id': 3, 'item': '住', 'daily_spend': 220, 'daily_bonus': 100, 'daily_moods': -4}] 
+2023-12-03 10:38 INFO [{'major_id': 1, 'item': '食', 'daily_spend': 470, 'daily_bonus': 0, 'daily_moods': -10}, {'major_id': 3, 'item': '住', 'daily_spend': 330, 'daily_bonus': 100, 'daily_moods': -6}] 
+2023-12-03 10:39 INFO [{'major_id': 1, 'item': '食', 'daily_spend': 470, 'daily_bonus': 0, 'daily_moods': -10}, {'major_id': 3, 'item': '住', 'daily_spend': 330, 'daily_bonus': 100, 'daily_moods': -6}] 
+2023-12-03 10:41 INFO [{'major_id': 1, 'item': '食', 'daily_spend': 470, 'daily_bonus': 0, 'daily_moods': -10}, {'major_id': 3, 'item': '住', 'daily_spend': 330, 'daily_bonus': 100, 'daily_moods': -6}] 
+2023-12-03 10:44 INFO [{'major_id': 1, 'item': '食', 'daily_spend': 470, 'daily_bonus': 0, 'daily_moods': -10}, {'major_id': 3, 'item': '住', 'daily_spend': 330, 'daily_bonus': 100, 'daily_moods': -6}, {'major_id': 4, 'item': '行', 'daily_spend': 170, 'daily_bonus': 1000, 'daily_moods': -2}] 
+2023-12-03 11:04 INFO [{'major_id': 1, 'item': '食', 'daily_spend': 470, 'daily_bonus': 0, 'daily_moods': -10}, {'major_id': 3, 'item': '住', 'daily_spend': 330, 'daily_bonus': 100, 'daily_moods': -6}, {'major_id': 4, 'item': '行', 'daily_spend': 170, 'daily_bonus': 1000, 'daily_moods': -2}, {'major_id': 6, 'item': '樂', 'daily_spend': 50, 'daily_bonus': 0, 'daily_moods': -2}] 
+2023-12-03 11:04 WARNING Not Found: /favicon.ico 
+2023-12-03 11:06 INFO [{'major_id': 1, 'item': '食', 'daily_spend': 520, 'daily_bonus': 0, 'daily_moods': -12}, {'major_id': 3, 'item': '住', 'daily_spend': 330, 'daily_bonus': 100, 'daily_moods': -6}, {'major_id': 4, 'item': '行', 'daily_spend': 170, 'daily_bonus': 1000, 'daily_moods': -2}, {'major_id': 6, 'item': '樂', 'daily_spend': 50, 'daily_bonus': 0, 'daily_moods': -2}] 
+2023-12-03 11:06 WARNING Not Found: /favicon.ico 
+2023-12-03 11:07 WARNING Not Found: / 
+2023-12-03 11:07 INFO [{'major_id': 1, 'item': '食', 'daily_spend': 520, 'daily_bonus': 0, 'daily_moods': -12}, {'major_id': 3, 'item': '住', 'daily_spend': 330, 'daily_bonus': 100, 'daily_moods': -6}, {'major_id': 4, 'item': '行', 'daily_spend': 170, 'daily_bonus': 1000, 'daily_moods': -2}, {'major_id': 6, 'item': '樂', 'daily_spend': 50, 'daily_bonus': 0, 'daily_moods': -2}] 
+2023-12-03 11:08 INFO [{'major_id': 1, 'item': '食', 'daily_spend': 520, 'daily_bonus': 0, 'daily_moods': -12}, {'major_id': 3, 'item': '住', 'daily_spend': 330, 'daily_bonus': 100, 'daily_moods': -6}, {'major_id': 4, 'item': '行', 'daily_spend': 170, 'daily_bonus': 1000, 'daily_moods': -2}, {'major_id': 6, 'item': '樂', 'daily_spend': 50, 'daily_bonus': 0, 'daily_moods': -2}, {'major_id': 5, 'item': '育', 'daily_spend': 50, 'daily_bonus': 0, 'daily_moods': -2}] 
+2023-12-03 11:10 WARNING Not Found: / 
+2023-12-03 11:10 INFO [{'major_id': 1, 'item': '食', 'daily_spend': 630, 'daily_bonus': 0, 'daily_moods': -14}, {'major_id': 3, 'item': '住', 'daily_spend': 330, 'daily_bonus': 100, 'daily_moods': -6}, {'major_id': 4, 'item': '行', 'daily_spend': 170, 'daily_bonus': 1000, 'daily_moods': -2}, {'major_id': 6, 'item': '樂', 'daily_spend': 50, 'daily_bonus': 0, 'daily_moods': -2}, {'major_id': 5, 'item': '育', 'daily_spend': 50, 'daily_bonus': 0, 'daily_moods': -2}] 
+2023-12-03 11:10 INFO [{'major_id': 1, 'item': '食', 'daily_spend': 800, 'daily_bonus': 0, 'daily_moods': -16}, {'major_id': 3, 'item': '住', 'daily_spend': 330, 'daily_bonus': 100, 'daily_moods': -6}, {'major_id': 4, 'item': '行', 'daily_spend': 170, 'daily_bonus': 1000, 'daily_moods': -2}, {'major_id': 6, 'item': '樂', 'daily_spend': 50, 'daily_bonus': 0, 'daily_moods': -2}, {'major_id': 5, 'item': '育', 'daily_spend': 50, 'daily_bonus': 0, 'daily_moods': -2}] 
+2023-12-03 11:11 INFO [] 
+2023-12-03 11:12 INFO [{'major_id': 1, 'item': '食', 'daily_spend': 50, 'daily_bonus': 0, 'daily_moods': -2}] 
+2023-12-03 11:12 INFO [{'major_id': 1, 'item': '食', 'daily_spend': 50, 'daily_bonus': 0, 'daily_moods': -2}, {'major_id': 6, 'item': '樂', 'daily_spend': 120, 'daily_bonus': 0, 'daily_moods': -2}] 
+2023-12-03 11:16 INFO [{'major_id': 1, 'item': '食', 'daily_spend': 50, 'daily_bonus': 0, 'daily_moods': -2}, {'major_id': 6, 'item': '樂', 'daily_spend': 120, 'daily_bonus': 0, 'daily_moods': -2}] 
+2023-12-03 11:16 ERROR Internal Server Error: /app/register/ 
+Traceback (most recent call last):
+  File "/Users/yhlin/yhworkspace/goodvilla_web/venv/lib/python3.9/site-packages/django/urls/base.py", line 71, in reverse
+    extra, resolver = resolver.namespace_dict[ns]
+KeyError: 'chamberlain'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/yhlin/yhworkspace/goodvilla_web/venv/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/yhlin/yhworkspace/goodvilla_web/venv/lib/python3.9/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/yhlin/yhworkspace/goodvilla_web/app/views.py", line 89, in register
+    return redirect('chamberlain:dashboard')
+  File "/Users/yhlin/yhworkspace/goodvilla_web/venv/lib/python3.9/site-packages/django/shortcuts.py", line 48, in redirect
+    return redirect_class(resolve_url(to, *args, **kwargs))
+  File "/Users/yhlin/yhworkspace/goodvilla_web/venv/lib/python3.9/site-packages/django/shortcuts.py", line 145, in resolve_url
+    return reverse(to, args=args, kwargs=kwargs)
+  File "/Users/yhlin/yhworkspace/goodvilla_web/venv/lib/python3.9/site-packages/django/urls/base.py", line 82, in reverse
+    raise NoReverseMatch("%s is not a registered namespace" % key)
+django.urls.exceptions.NoReverseMatch: 'chamberlain' is not a registered namespace
+2023-12-03 11:19 INFO [{'major_id': 1, 'item': '食', 'daily_spend': 50, 'daily_bonus': 0, 'daily_moods': -2}, {'major_id': 6, 'item': '樂', 'daily_spend': 120, 'daily_bonus': 0, 'daily_moods': -2}] 
+2023-12-03 11:23 WARNING Not Found: /app/index 
+2023-12-03 11:23 INFO [{'major_id': 1, 'item': '食', 'daily_spend': 50, 'daily_bonus': 0, 'daily_moods': -2}, {'major_id': 6, 'item': '樂', 'daily_spend': 120, 'daily_bonus': 0, 'daily_moods': -2}] 
+2023-12-03 11:25 INFO /Users/yhlin/yhworkspace/goodvilla_web/app/views.py changed, reloading. 
+2023-12-03 11:26 INFO [{'major_id': 1, 'item': '食', 'daily_spend': 50, 'daily_bonus': 0, 'daily_moods': -2}, {'major_id': 6, 'item': '樂', 'daily_spend': 120, 'daily_bonus': 0, 'daily_moods': -2}] 
+2023-12-03 11:26 INFO [{'major_id': 1, 'item': '食', 'daily_spend': 50, 'daily_bonus': 0, 'daily_moods': -2}, {'major_id': 6, 'item': '樂', 'daily_spend': 120, 'daily_bonus': 0, 'daily_moods': -2}] 
+2023-12-03 11:32 INFO [{'major_id': 1, 'item': '食', 'daily_spend': 50, 'daily_bonus': 0, 'daily_moods': -2}, {'major_id': 6, 'item': '樂', 'daily_spend': 120, 'daily_bonus': 0, 'daily_moods': -2}] 
+2023-12-03 11:46 INFO [{'major_id': 1, 'item': '食', 'daily_spend': 50, 'daily_bonus': 0, 'daily_moods': -2}, {'major_id': 6, 'item': '樂', 'daily_spend': 120, 'daily_bonus': 0, 'daily_moods': -2}] 
+2023-12-03 11:47 ERROR Internal Server Error: /app/dashboard 
+Traceback (most recent call last):
+  File "/Users/yhlin/yhworkspace/goodvilla_web/venv/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/yhlin/yhworkspace/goodvilla_web/venv/lib/python3.9/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/yhlin/yhworkspace/goodvilla_web/venv/lib/python3.9/site-packages/django/contrib/auth/decorators.py", line 23, in _wrapper_view
+    return view_func(request, *args, **kwargs)
+  File "/Users/yhlin/yhworkspace/goodvilla_web/app/views.py", line 71, in dashboard
+    return render(request,'account/index.html')
+  File "/Users/yhlin/yhworkspace/goodvilla_web/venv/lib/python3.9/site-packages/django/shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/Users/yhlin/yhworkspace/goodvilla_web/venv/lib/python3.9/site-packages/django/template/loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/Users/yhlin/yhworkspace/goodvilla_web/venv/lib/python3.9/site-packages/django/template/loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: account/index.html
+2023-12-03 11:49 INFO /Users/yhlin/yhworkspace/goodvilla_web/app/views.py changed, reloading. 
+2023-12-03 12:07 INFO [{'major_id': 1, 'item': '食', 'daily_spend': 50, 'daily_bonus': 0, 'daily_moods': -2}, {'major_id': 6, 'item': '樂', 'daily_spend': 120, 'daily_bonus': 0, 'daily_moods': -2}] 
+2023-12-03 12:09 INFO [{'major_id': 1, 'item': '食', 'daily_spend': 50, 'daily_bonus': 0, 'daily_moods': -2}, {'major_id': 6, 'item': '樂', 'daily_spend': 120, 'daily_bonus': 0, 'daily_moods': -2}] 
+2023-12-03 12:09 INFO [{'major_id': 1, 'item': '食', 'daily_spend': 50, 'daily_bonus': 0, 'daily_moods': -2}, {'major_id': 6, 'item': '樂', 'daily_spend': 120, 'daily_bonus': 0, 'daily_moods': -2}] 
+2023-12-03 12:12 INFO [{'major_id': 1, 'item': '食', 'daily_spend': 50, 'daily_bonus': 0, 'daily_moods': -2}, {'major_id': 6, 'item': '樂', 'daily_spend': 120, 'daily_bonus': 0, 'daily_moods': -2}] 
+2023-12-03 12:13 INFO [{'major_id': 1, 'item': '食', 'daily_spend': 50, 'daily_bonus': 0, 'daily_moods': -2}, {'major_id': 6, 'item': '樂', 'daily_spend': 120, 'daily_bonus': 0, 'daily_moods': -2}] 
+2023-12-03 12:13 INFO [{'major_id': 1, 'item': '食', 'daily_spend': 50, 'daily_bonus': 0, 'daily_moods': -2}, {'major_id': 6, 'item': '樂', 'daily_spend': 120, 'daily_bonus': 0, 'daily_moods': -2}] 
+2023-12-03 12:13 INFO [{'major_id': 1, 'item': '食', 'daily_spend': 160, 'daily_bonus': 0, 'daily_moods': -4}, {'major_id': 6, 'item': '樂', 'daily_spend': 120, 'daily_bonus': 0, 'daily_moods': -2}] 
+2023-12-03 12:14 INFO [{'major_id': 1, 'item': '食', 'daily_spend': 160, 'daily_bonus': 0, 'daily_moods': -4}, {'major_id': 6, 'item': '樂', 'daily_spend': 120, 'daily_bonus': 0, 'daily_moods': -2}] 
+2023-12-03 12:15 INFO [{'major_id': 1, 'item': '食', 'daily_spend': 160, 'daily_bonus': 0, 'daily_moods': -4}, {'major_id': 6, 'item': '樂', 'daily_spend': 120, 'daily_bonus': 0, 'daily_moods': -2}] 
+2023-12-03 12:15 INFO [{'major_id': 1, 'item': '食', 'daily_spend': 160, 'daily_bonus': 0, 'daily_moods': -4}, {'major_id': 6, 'item': '樂', 'daily_spend': 120, 'daily_bonus': 0, 'daily_moods': -2}] 
+2023-12-03 12:16 WARNING Not Found: / 
+2023-12-03 12:29 INFO /Users/yhlin/yhworkspace/goodvilla_web/app/viewsets.py changed, reloading. 
+2023-12-03 12:29 INFO [{'major_id': 1, 'item': '食', 'daily_spend': 160, 'daily_bonus': 0, 'daily_moods': -4}, {'major_id': 6, 'item': '樂', 'daily_spend': 120, 'daily_bonus': 0, 'daily_moods': -2}] 
+2023-12-03 12:31 WARNING Not Found: /app/api/summary/2023-11-3/ 
+2023-12-03 12:33 WARNING Not Found: /app/api/summary/2023-11-3/ 
+2023-12-03 12:33 WARNING Not Found: /app/api/summary/2023-11-3/ 
+2023-12-03 12:34 WARNING Not Found: /app/api/summary/2023-11-3/ 
+2023-12-03 12:36 WARNING Not Found: /api/summary/6/ 
+2023-12-03 12:36 WARNING Not Found: /api/summary/6/2023-12-3 
+2023-12-03 12:36 WARNING Not Found: /api/summary/6/ 
+2023-12-03 12:36 WARNING Not Found: /api/summary/ 
+2023-12-03 12:39 WARNING Not Found: /app/api/summary/2023-11-3/ 
+2023-12-03 12:39 WARNING Not Found: /app/api/summary/2023-11-3/ 
+2023-12-03 12:41 WARNING Not Found: /app/api/summary/2023-11-3/ 
+2023-12-03 12:41 WARNING Not Found: /app/api/summary/2023-11-3/ 
+2023-12-03 12:42 ERROR Internal Server Error: /app/api/summary/1/2023-11-3/ 
+Traceback (most recent call last):
+  File "/Users/yhlin/yhworkspace/goodvilla_web/venv/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/yhlin/yhworkspace/goodvilla_web/venv/lib/python3.9/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/yhlin/yhworkspace/goodvilla_web/venv/lib/python3.9/site-packages/django/views/decorators/csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+  File "/Users/yhlin/yhworkspace/goodvilla_web/venv/lib/python3.9/site-packages/rest_framework/viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/yhlin/yhworkspace/goodvilla_web/venv/lib/python3.9/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/Users/yhlin/yhworkspace/goodvilla_web/venv/lib/python3.9/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Users/yhlin/yhworkspace/goodvilla_web/venv/lib/python3.9/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/Users/yhlin/yhworkspace/goodvilla_web/venv/lib/python3.9/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+TypeError: summary() got an unexpected keyword argument 'user_id'
+2023-12-03 12:43 WARNING Not Found: /app/api/summary/2023-11-3/ 
+2023-12-03 12:43 INFO /Users/yhlin/yhworkspace/goodvilla_web/app/viewsets.py changed, reloading. 
+2023-12-03 12:43 ERROR Internal Server Error: /app/api/summary/1/2023-11-3/ 
+Traceback (most recent call last):
+  File "/Users/yhlin/yhworkspace/goodvilla_web/venv/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/yhlin/yhworkspace/goodvilla_web/venv/lib/python3.9/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/yhlin/yhworkspace/goodvilla_web/venv/lib/python3.9/site-packages/django/views/decorators/csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+  File "/Users/yhlin/yhworkspace/goodvilla_web/venv/lib/python3.9/site-packages/rest_framework/viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/yhlin/yhworkspace/goodvilla_web/venv/lib/python3.9/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/Users/yhlin/yhworkspace/goodvilla_web/venv/lib/python3.9/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Users/yhlin/yhworkspace/goodvilla_web/venv/lib/python3.9/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/Users/yhlin/yhworkspace/goodvilla_web/venv/lib/python3.9/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+TypeError: summary() got an unexpected keyword argument 'user_id'
+2023-12-03 12:44 INFO /Users/yhlin/yhworkspace/goodvilla_web/app/viewsets.py changed, reloading. 
+2023-12-03 12:44 ERROR Internal Server Error: /app/api/summary/1/2023-11-3/ 
+Traceback (most recent call last):
+  File "/Users/yhlin/yhworkspace/goodvilla_web/venv/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/yhlin/yhworkspace/goodvilla_web/venv/lib/python3.9/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/yhlin/yhworkspace/goodvilla_web/venv/lib/python3.9/site-packages/django/views/decorators/csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+  File "/Users/yhlin/yhworkspace/goodvilla_web/venv/lib/python3.9/site-packages/rest_framework/viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/yhlin/yhworkspace/goodvilla_web/venv/lib/python3.9/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/Users/yhlin/yhworkspace/goodvilla_web/venv/lib/python3.9/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Users/yhlin/yhworkspace/goodvilla_web/venv/lib/python3.9/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/Users/yhlin/yhworkspace/goodvilla_web/venv/lib/python3.9/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+TypeError: summary() got an unexpected keyword argument 'user_id'
+2023-12-03 12:44 WARNING Not Found: /app/api/summary/2023-11-3/ 
+2023-12-03 12:44 ERROR Internal Server Error: /app/api/summary/1/2023-11-3/ 
+Traceback (most recent call last):
+  File "/Users/yhlin/yhworkspace/goodvilla_web/venv/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/yhlin/yhworkspace/goodvilla_web/venv/lib/python3.9/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/yhlin/yhworkspace/goodvilla_web/venv/lib/python3.9/site-packages/django/views/decorators/csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+  File "/Users/yhlin/yhworkspace/goodvilla_web/venv/lib/python3.9/site-packages/rest_framework/viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/yhlin/yhworkspace/goodvilla_web/venv/lib/python3.9/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/Users/yhlin/yhworkspace/goodvilla_web/venv/lib/python3.9/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Users/yhlin/yhworkspace/goodvilla_web/venv/lib/python3.9/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/Users/yhlin/yhworkspace/goodvilla_web/venv/lib/python3.9/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+TypeError: summary() got an unexpected keyword argument 'user_id'
+2023-12-03 12:45 INFO /Users/yhlin/yhworkspace/goodvilla_web/app/urls.py changed, reloading. 
+2023-12-03 12:45 WARNING Not Found: /app/api/summary/1/2023-11-3/ 
+2023-12-03 12:46 INFO [{'major_id': 1, 'item': '食', 'daily_spend': 160, 'daily_bonus': 0, 'daily_moods': -4}, {'major_id': 6, 'item': '樂', 'daily_spend': 120, 'daily_bonus': 0, 'daily_moods': -2}] 
+2023-12-03 12:57 INFO /Users/yhlin/yhworkspace/goodvilla_web/app/viewsets.py changed, reloading. 
+2023-12-03 13:52 WARNING Not Found: /app/api/summary/1/12023-11-3/ 
+2023-12-03 13:53 INFO /Users/yhlin/yhworkspace/goodvilla_web/app/viewsets.py changed, reloading. 
+2023-12-03 13:53 INFO 12023-11-3 
+2023-12-03 13:53 WARNING Bad Request: /app/api/summary/12023-11-3/ 
+2023-12-03 13:54 INFO 12023-11-3 
+2023-12-03 13:54 WARNING Bad Request: /app/api/summary/12023-11-3/ 
+2023-12-03 13:54 INFO 2023-11-3 
+2023-12-03 13:54 INFO [{'major_id': 1, 'item': '食', 'daily_spend': 160, 'daily_bonus': 0, 'daily_moods': -4}, {'major_id': 6, 'item': '樂', 'daily_spend': 120, 'daily_bonus': 0, 'daily_moods': -2}] 
+2023-12-03 13:55 INFO /Users/yhlin/yhworkspace/goodvilla_web/app/viewsets.py changed, reloading. 
+2023-12-03 13:56 INFO /Users/yhlin/yhworkspace/goodvilla_web/app/urls.py changed, reloading. 
+2023-12-03 13:56 WARNING Not Found: /app/api/summary/2023-11-3 
+2023-12-03 13:56 ERROR Internal Server Error: /app/api/summary/6/2023-11-3/ 
+Traceback (most recent call last):
+  File "/Users/yhlin/yhworkspace/goodvilla_web/venv/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/yhlin/yhworkspace/goodvilla_web/venv/lib/python3.9/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/yhlin/yhworkspace/goodvilla_web/venv/lib/python3.9/site-packages/django/views/decorators/csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+  File "/Users/yhlin/yhworkspace/goodvilla_web/venv/lib/python3.9/site-packages/rest_framework/viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/yhlin/yhworkspace/goodvilla_web/venv/lib/python3.9/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/Users/yhlin/yhworkspace/goodvilla_web/venv/lib/python3.9/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Users/yhlin/yhworkspace/goodvilla_web/venv/lib/python3.9/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/Users/yhlin/yhworkspace/goodvilla_web/venv/lib/python3.9/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+TypeError: summary() got an unexpected keyword argument 'user_id'
+2023-12-03 13:56 ERROR Internal Server Error: /app/api/summary/1/2023-11-3/ 
+Traceback (most recent call last):
+  File "/Users/yhlin/yhworkspace/goodvilla_web/venv/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/yhlin/yhworkspace/goodvilla_web/venv/lib/python3.9/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/yhlin/yhworkspace/goodvilla_web/venv/lib/python3.9/site-packages/django/views/decorators/csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+  File "/Users/yhlin/yhworkspace/goodvilla_web/venv/lib/python3.9/site-packages/rest_framework/viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/yhlin/yhworkspace/goodvilla_web/venv/lib/python3.9/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/Users/yhlin/yhworkspace/goodvilla_web/venv/lib/python3.9/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Users/yhlin/yhworkspace/goodvilla_web/venv/lib/python3.9/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/Users/yhlin/yhworkspace/goodvilla_web/venv/lib/python3.9/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+TypeError: summary() got an unexpected keyword argument 'user_id'
+2023-12-03 13:57 INFO /Users/yhlin/yhworkspace/goodvilla_web/app/viewsets.py changed, reloading. 
+2023-12-03 13:57 INFO 1 
+2023-12-03 13:57 INFO [{'major_id': 1, 'item': '食', 'daily_spend': 160, 'daily_bonus': 0, 'daily_moods': -4}, {'major_id': 6, 'item': '樂', 'daily_spend': 120, 'daily_bonus': 0, 'daily_moods': -2}] 
+2023-12-03 13:58 INFO /Users/yhlin/yhworkspace/goodvilla_web/app/viewsets.py changed, reloading. 
+2023-12-03 13:58 INFO 6 
+2023-12-03 13:58 INFO [{'major_id': 1, 'item': '食', 'daily_spend': 160, 'daily_bonus': 0, 'daily_moods': -4}] 
+2023-12-03 13:59 INFO 1 
+2023-12-03 13:59 INFO [{'major_id': 1, 'item': '食', 'daily_spend': 160, 'daily_bonus': 0, 'daily_moods': -4}, {'major_id': 6, 'item': '樂', 'daily_spend': 120, 'daily_bonus': 0, 'daily_moods': -2}] 
+2023-12-03 13:59 INFO 6 
+2023-12-03 13:59 INFO [{'major_id': 1, 'item': '食', 'daily_spend': 160, 'daily_bonus': 0, 'daily_moods': -4}] 
+2023-12-03 14:01 INFO 1 
+2023-12-03 14:01 INFO [{'major_id': 1, 'item': '食', 'daily_spend': 160, 'daily_bonus': 0, 'daily_moods': -4}, {'major_id': 6, 'item': '樂', 'daily_spend': 120, 'daily_bonus': 0, 'daily_moods': -2}] 
+2023-12-03 14:02 INFO /Users/yhlin/yhworkspace/goodvilla_web/app/viewsets.py changed, reloading. 
+2023-12-03 14:02 INFO 1 
+2023-12-03 14:02 INFO [{'major_id': 1, 'item': '食', 'daily_spend': 50, 'daily_bonus': 0, 'daily_moods': -2}, {'major_id': 6, 'item': '樂', 'daily_spend': 120, 'daily_bonus': 0, 'daily_moods': -2}] 
+2023-12-03 14:03 INFO 6 
+2023-12-03 14:03 INFO [{'major_id': 1, 'item': '食', 'daily_spend': 110, 'daily_bonus': 0, 'daily_moods': -2}, {'major_id': 6, 'item': '樂', 'daily_spend': 0, 'daily_bonus': 0, 'daily_moods': 0}] 
+2023-12-03 14:03 INFO 1 
+2023-12-03 14:03 INFO [{'major_id': 1, 'item': '食', 'daily_spend': 50, 'daily_bonus': 0, 'daily_moods': -2}, {'major_id': 6, 'item': '樂', 'daily_spend': 120, 'daily_bonus': 0, 'daily_moods': -2}] 

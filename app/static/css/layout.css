@@ -1,11 +1,4 @@
-body {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  margin: 0;
-  background-color: #f0f0f0;
-}
+
 
 #cav{
   border: 2px solid black;
@@ -104,9 +97,9 @@ ul#mood li{
 .workspace{
   font-size: 24px;
   font-family: Helvetica;
-  background: #faf8f8;
-  position: absolute;
-  top:150px;
+  background: #fafafa;
+  position: fixed;
+  top:50px;
   left: 950px;
   height: 580px;
   width: 580px;
@@ -115,7 +108,7 @@ ul#mood li{
 .info{
   font-size: 24px;
   font-family: Helvetica;
-  background: #f3baff;
+  background: #ba7ac5;
   position: absolute;
   top:150px;
   left: 150px;
