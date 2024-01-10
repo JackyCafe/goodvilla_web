@@ -1319,3 +1319,213 @@ TypeError: summary() got an unexpected keyword argument 'user_id'
 2023-12-03 14:03 INFO [{'major_id': 1, 'item': '食', 'daily_spend': 110, 'daily_bonus': 0, 'daily_moods': -2}, {'major_id': 6, 'item': '樂', 'daily_spend': 0, 'daily_bonus': 0, 'daily_moods': 0}] 
 2023-12-03 14:03 INFO 1 
 2023-12-03 14:03 INFO [{'major_id': 1, 'item': '食', 'daily_spend': 50, 'daily_bonus': 0, 'daily_moods': -2}, {'major_id': 6, 'item': '樂', 'daily_spend': 120, 'daily_bonus': 0, 'daily_moods': -2}] 
+2024-01-10 12:04 WARNING Not Found: /favicon.ico 
+2024-01-10 12:04 INFO 1 
+2024-01-10 12:04 WARNING Bad Request: /app/api/summary/1/2024-0-10/ 
+2024-01-10 12:04 WARNING Bad Request: /app/api/workrecord/1/ 
+2024-01-10 12:05 INFO 1 
+2024-01-10 12:05 WARNING Bad Request: /app/api/summary/1/2024-0-10/ 
+2024-01-10 12:06 WARNING Not Found: / 
+2024-01-10 12:06 WARNING Not Found: /favicon.ico 
+2024-01-10 12:06 INFO 1 
+2024-01-10 12:06 WARNING Bad Request: /app/api/summary/1/2024-0-10/ 
+2024-01-10 12:06 WARNING Bad Request: /app/api/workrecord/1/ 
+2024-01-10 12:08 WARNING Not Found: /app/api/summary/1/ 
+2024-01-10 12:08 WARNING Not Found: /app/api/summary/ 
+2024-01-10 12:08 WARNING Method Not Allowed: /app/api/ 
+2024-01-10 12:08 ERROR Internal Server Error: /app 
+Traceback (most recent call last):
+  File "/Users/yhlin/yhworkspace/goodvilla_web/venv/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/yhlin/yhworkspace/goodvilla_web/venv/lib/python3.9/site-packages/django/utils/deprecation.py", line 136, in __call__
+    response = self.process_response(request, response)
+  File "/Users/yhlin/yhworkspace/goodvilla_web/venv/lib/python3.9/site-packages/django/middleware/common.py", line 108, in process_response
+    return self.response_redirect_class(self.get_full_path_with_slash(request))
+  File "/Users/yhlin/yhworkspace/goodvilla_web/venv/lib/python3.9/site-packages/django/middleware/common.py", line 87, in get_full_path_with_slash
+    raise RuntimeError(
+RuntimeError: You called this URL via POST, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining POST data. Change your form to point to 127.0.0.1:8000/app/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+2024-01-10 12:08 WARNING Forbidden (CSRF cookie not set.): /app/ 
+2024-01-10 12:09 WARNING Not Found: /app/api/workrecord 
+2024-01-10 12:13 ERROR Internal Server Error: /app/api/workrecord/1 
+Traceback (most recent call last):
+  File "/Users/yhlin/yhworkspace/goodvilla_web/venv/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/yhlin/yhworkspace/goodvilla_web/venv/lib/python3.9/site-packages/django/utils/deprecation.py", line 136, in __call__
+    response = self.process_response(request, response)
+  File "/Users/yhlin/yhworkspace/goodvilla_web/venv/lib/python3.9/site-packages/django/middleware/common.py", line 108, in process_response
+    return self.response_redirect_class(self.get_full_path_with_slash(request))
+  File "/Users/yhlin/yhworkspace/goodvilla_web/venv/lib/python3.9/site-packages/django/middleware/common.py", line 87, in get_full_path_with_slash
+    raise RuntimeError(
+RuntimeError: You called this URL via POST, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining POST data. Change your form to point to 127.0.0.1:8000/app/api/workrecord/1/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+2024-01-10 12:13 ERROR Internal Server Error: /app/api/workrecord/1 
+Traceback (most recent call last):
+  File "/Users/yhlin/yhworkspace/goodvilla_web/venv/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/yhlin/yhworkspace/goodvilla_web/venv/lib/python3.9/site-packages/django/utils/deprecation.py", line 136, in __call__
+    response = self.process_response(request, response)
+  File "/Users/yhlin/yhworkspace/goodvilla_web/venv/lib/python3.9/site-packages/django/middleware/common.py", line 108, in process_response
+    return self.response_redirect_class(self.get_full_path_with_slash(request))
+  File "/Users/yhlin/yhworkspace/goodvilla_web/venv/lib/python3.9/site-packages/django/middleware/common.py", line 87, in get_full_path_with_slash
+    raise RuntimeError(
+RuntimeError: You called this URL via POST, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining POST data. Change your form to point to 127.0.0.1:8000/app/api/workrecord/1/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+2024-01-10 12:14 WARNING Not Found: /app/api/workrecord/ 
+2024-01-10 12:14 ERROR Internal Server Error: /app/api/workrecord/1 
+Traceback (most recent call last):
+  File "/Users/yhlin/yhworkspace/goodvilla_web/venv/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/yhlin/yhworkspace/goodvilla_web/venv/lib/python3.9/site-packages/django/utils/deprecation.py", line 136, in __call__
+    response = self.process_response(request, response)
+  File "/Users/yhlin/yhworkspace/goodvilla_web/venv/lib/python3.9/site-packages/django/middleware/common.py", line 108, in process_response
+    return self.response_redirect_class(self.get_full_path_with_slash(request))
+  File "/Users/yhlin/yhworkspace/goodvilla_web/venv/lib/python3.9/site-packages/django/middleware/common.py", line 87, in get_full_path_with_slash
+    raise RuntimeError(
+RuntimeError: You called this URL via POST, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining POST data. Change your form to point to 127.0.0.1:8000/app/api/workrecord/1/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+2024-01-10 12:14 ERROR Internal Server Error: /app/api/workrecord/1 
+Traceback (most recent call last):
+  File "/Users/yhlin/yhworkspace/goodvilla_web/venv/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/yhlin/yhworkspace/goodvilla_web/venv/lib/python3.9/site-packages/django/utils/deprecation.py", line 136, in __call__
+    response = self.process_response(request, response)
+  File "/Users/yhlin/yhworkspace/goodvilla_web/venv/lib/python3.9/site-packages/django/middleware/common.py", line 108, in process_response
+    return self.response_redirect_class(self.get_full_path_with_slash(request))
+  File "/Users/yhlin/yhworkspace/goodvilla_web/venv/lib/python3.9/site-packages/django/middleware/common.py", line 87, in get_full_path_with_slash
+    raise RuntimeError(
+RuntimeError: You called this URL via POST, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining POST data. Change your form to point to 127.0.0.1:8000/app/api/workrecord/1/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+2024-01-10 12:14 ERROR Internal Server Error: /app/api/workrecord/1 
+Traceback (most recent call last):
+  File "/Users/yhlin/yhworkspace/goodvilla_web/venv/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/yhlin/yhworkspace/goodvilla_web/venv/lib/python3.9/site-packages/django/utils/deprecation.py", line 136, in __call__
+    response = self.process_response(request, response)
+  File "/Users/yhlin/yhworkspace/goodvilla_web/venv/lib/python3.9/site-packages/django/middleware/common.py", line 108, in process_response
+    return self.response_redirect_class(self.get_full_path_with_slash(request))
+  File "/Users/yhlin/yhworkspace/goodvilla_web/venv/lib/python3.9/site-packages/django/middleware/common.py", line 87, in get_full_path_with_slash
+    raise RuntimeError(
+RuntimeError: You called this URL via POST, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining POST data. Change your form to point to 127.0.0.1:8000/app/api/workrecord/1/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+2024-01-10 12:17 INFO 1 
+2024-01-10 12:17 WARNING Bad Request: /app/api/summary/1/2024-0-10/ 
+2024-01-10 12:18 ERROR Internal Server Error: /app/api/workrecord/1 
+Traceback (most recent call last):
+  File "/Users/yhlin/yhworkspace/goodvilla_web/venv/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/yhlin/yhworkspace/goodvilla_web/venv/lib/python3.9/site-packages/django/utils/deprecation.py", line 136, in __call__
+    response = self.process_response(request, response)
+  File "/Users/yhlin/yhworkspace/goodvilla_web/venv/lib/python3.9/site-packages/django/middleware/common.py", line 108, in process_response
+    return self.response_redirect_class(self.get_full_path_with_slash(request))
+  File "/Users/yhlin/yhworkspace/goodvilla_web/venv/lib/python3.9/site-packages/django/middleware/common.py", line 87, in get_full_path_with_slash
+    raise RuntimeError(
+RuntimeError: You called this URL via POST, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining POST data. Change your form to point to 127.0.0.1:8000/app/api/workrecord/1/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+2024-01-10 12:18 INFO 1 
+2024-01-10 12:18 WARNING Bad Request: /app/api/summary/1/2024-0-10/ 
+2024-01-10 12:20 INFO 1 
+2024-01-10 12:20 WARNING Bad Request: /app/api/summary/1/2024-0-10/ 
+2024-01-10 12:25 INFO 1 
+2024-01-10 12:25 INFO [{'major_id': 1, 'item': '食', 'daily_spend': 50, 'daily_bonus': 0, 'daily_moods': 1}] 
+2024-01-10 12:28 INFO 1 
+2024-01-10 12:28 WARNING Bad Request: /app/api/summary/1/2024-0-10/ 
+2024-01-10 12:28 INFO 1 
+2024-01-10 12:28 WARNING Bad Request: /app/api/summary/1/2024-0-10/ 
+2024-01-10 12:28 WARNING Bad Request: /app/api/workrecord/1/ 
+2024-01-10 12:28 INFO 1 
+2024-01-10 12:28 WARNING Bad Request: /app/api/summary/1/2024-0-10/ 
+2024-01-10 12:28 INFO 1 
+2024-01-10 12:28 WARNING Bad Request: /app/api/summary/1/2024-0-10/ 
+2024-01-10 12:32 INFO 1 
+2024-01-10 12:32 WARNING Bad Request: /app/api/summary/1/2024-0-10/ 
+2024-01-10 12:33 WARNING Bad Request: /app/api/workrecord/1/ 
+2024-01-10 12:34 INFO 1 
+2024-01-10 12:34 WARNING Bad Request: /app/api/summary/1/2024-0-10/ 
+2024-01-10 12:34 WARNING Bad Request: /app/api/workrecord/1/ 
+2024-01-10 12:35 INFO 1 
+2024-01-10 12:35 WARNING Bad Request: /app/api/summary/1/2024-0-10/ 
+2024-01-10 12:35 INFO 1 
+2024-01-10 12:35 WARNING Bad Request: /app/api/summary/1/2024-0-10/ 
+2024-01-10 12:35 WARNING Bad Request: /app/api/workrecord/1/ 
+2024-01-10 12:37 INFO 1 
+2024-01-10 12:37 WARNING Bad Request: /app/api/summary/1/2024-0-10/ 
+2024-01-10 12:38 INFO 1 
+2024-01-10 12:38 WARNING Bad Request: /app/api/summary/1/2024-0-10/ 
+2024-01-10 12:38 WARNING Bad Request: /app/api/workrecord/1/ 
+2024-01-10 12:39 INFO 1 
+2024-01-10 12:39 WARNING Bad Request: /app/api/summary/1/2024-0-10/ 
+2024-01-10 12:39 WARNING Not Found: /favicon.ico 
+2024-01-10 12:39 WARNING Bad Request: /app/api/workrecord/1/ 
+2024-01-10 12:42 INFO 1 
+2024-01-10 12:42 WARNING Bad Request: /app/api/summary/1/2024-0-10/ 
+2024-01-10 12:42 WARNING Not Found: /favicon.ico 
+2024-01-10 12:42 WARNING Bad Request: /app/api/workrecord/1/ 
+2024-01-10 12:43 INFO 1 
+2024-01-10 12:43 WARNING Bad Request: /app/api/summary/1/2024-0-10/ 
+2024-01-10 12:43 WARNING Bad Request: /app/api/workrecord/1/ 
+2024-01-10 12:44 INFO 1 
+2024-01-10 12:44 WARNING Bad Request: /app/api/summary/1/2024-0-10/ 
+2024-01-10 12:44 WARNING Bad Request: /app/api/workrecord/1/ 
+2024-01-10 12:45 INFO 1 
+2024-01-10 12:45 WARNING Bad Request: /app/api/summary/1/2024-0-10/ 
+2024-01-10 12:45 INFO 1 
+2024-01-10 12:45 WARNING Bad Request: /app/api/summary/1/2024-0-10/ 
+2024-01-10 12:45 INFO 1 
+2024-01-10 12:45 WARNING Bad Request: /app/api/summary/1/2024-0-10/ 
+2024-01-10 12:46 INFO 1 
+2024-01-10 12:46 WARNING Bad Request: /app/api/summary/1/2024-0-10/ 
+2024-01-10 12:46 WARNING Not Found: /favicon.ico 
+2024-01-10 12:46 WARNING Bad Request: /app/api/workrecord/1/ 
+2024-01-10 12:48 WARNING Not Found: / 
+2024-01-10 12:48 WARNING Not Found: /favicon.ico 
+2024-01-10 12:48 WARNING Not Found: /apple-touch-icon-precomposed.png 
+2024-01-10 12:48 WARNING Not Found: /apple-touch-icon.png 
+2024-01-10 12:48 INFO 1 
+2024-01-10 12:48 INFO [] 
+2024-01-10 12:49 WARNING Not Found: /app/api/summary/undefined/2024-01-10/ 
+2024-01-10 12:49 INFO 1 
+2024-01-10 12:49 INFO [{'major_id': 1, 'item': '食', 'daily_spend': 50, 'daily_bonus': 10, 'daily_moods': -2}] 
+2024-01-10 12:49 WARNING Bad Request: /app/api/workrecord/1/ 
+2024-01-10 12:49 INFO 1 
+2024-01-10 12:49 WARNING Bad Request: /app/api/summary/1/2024-0-10/ 
+2024-01-10 12:50 INFO 1 
+2024-01-10 12:50 INFO [{'major_id': 1, 'item': '食', 'daily_spend': 50, 'daily_bonus': 10, 'daily_moods': -2}] 
+2024-01-10 12:50 WARNING Not Found: /app/api/summary/undefined/2024-01-10/ 
+2024-01-10 12:50 INFO 1 
+2024-01-10 12:50 INFO [{'major_id': 1, 'item': '食', 'daily_spend': 100, 'daily_bonus': 10, 'daily_moods': -4}] 
+2024-01-10 12:51 WARNING Not Found: /app/api/summary/undefined/2024-01-10/ 
+2024-01-10 12:51 INFO 1 
+2024-01-10 12:51 INFO [{'major_id': 1, 'item': '食', 'daily_spend': 100, 'daily_bonus': 10, 'daily_moods': -4}, {'major_id': 3, 'item': '住', 'daily_spend': -110, 'daily_bonus': 100, 'daily_moods': -2}] 
+2024-01-10 13:39 INFO 1 
+2024-01-10 13:39 INFO [{'major_id': 1, 'item': '食', 'daily_spend': 100, 'daily_bonus': 10, 'daily_moods': -4}, {'major_id': 3, 'item': '住', 'daily_spend': -110, 'daily_bonus': 100, 'daily_moods': -2}] 
+2024-01-10 13:42 INFO 1 
+2024-01-10 13:42 WARNING Bad Request: /app/api/summary/1/2024-0-10/ 
+2024-01-10 13:43 INFO 1 
+2024-01-10 13:43 WARNING Bad Request: /app/api/summary/1/2024-0-10/ 
+2024-01-10 13:43 INFO 1 
+2024-01-10 13:43 WARNING Bad Request: /app/api/summary/1/2024-0-10/ 
+2024-01-10 13:43 WARNING Bad Request: /app/api/workrecord/1/ 
+2024-01-10 13:43 INFO 1 
+2024-01-10 13:43 WARNING Bad Request: /app/api/summary/1/2024-0-10/ 
+2024-01-10 13:43 INFO 1 
+2024-01-10 13:43 WARNING Bad Request: /app/api/summary/1/2024-0-10/ 
+2024-01-10 13:44 INFO 1 
+2024-01-10 13:44 WARNING Bad Request: /app/api/summary/1/2024-0-10/ 
+2024-01-10 13:44 WARNING Bad Request: /app/api/workrecord/1/ 
+2024-01-10 13:44 WARNING Bad Request: /app/api/workrecord/1/ 
+2024-01-10 13:45 INFO 1 
+2024-01-10 13:45 INFO [] 
+2024-01-10 13:45 INFO 1 
+2024-01-10 13:45 INFO [] 
+2024-01-10 13:45 WARNING Not Found: /app/api/summary/undefined/2024-01-10/ 
+2024-01-10 13:45 INFO 1 
+2024-01-10 13:45 INFO [{'major_id': 1, 'item': '食', 'daily_spend': 80, 'daily_bonus': 0, 'daily_moods': -2}] 
+2024-01-10 13:45 WARNING Not Found: /app/api/summary/undefined/2024-01-10/ 
+2024-01-10 13:45 INFO 1 
+2024-01-10 13:45 INFO [{'major_id': 1, 'item': '食', 'daily_spend': 80, 'daily_bonus': 0, 'daily_moods': -2}, {'major_id': 3, 'item': '住', 'daily_spend': 80, 'daily_bonus': 0, 'daily_moods': 1}] 
+2024-01-10 13:46 WARNING Bad Request: /app/api/workrecord/1/ 
+2024-01-10 13:46 INFO 1 
+2024-01-10 13:46 INFO [{'major_id': 1, 'item': '食', 'daily_spend': 80, 'daily_bonus': 0, 'daily_moods': -2}, {'major_id': 3, 'item': '住', 'daily_spend': 80, 'daily_bonus': 0, 'daily_moods': 1}] 
+2024-01-10 13:46 INFO 1 
+2024-01-10 13:46 INFO [{'major_id': 1, 'item': '食', 'daily_spend': 80, 'daily_bonus': 0, 'daily_moods': -2}, {'major_id': 3, 'item': '住', 'daily_spend': 80, 'daily_bonus': 0, 'daily_moods': 1}] 
+2024-01-10 13:46 INFO 1 
+2024-01-10 13:46 INFO [{'major_id': 1, 'item': '食', 'daily_spend': 80, 'daily_bonus': 0, 'daily_moods': -2}, {'major_id': 3, 'item': '住', 'daily_spend': 80, 'daily_bonus': 0, 'daily_moods': 1}] 
+2024-01-10 13:46 INFO 1 
+2024-01-10 13:46 INFO [{'major_id': 1, 'item': '食', 'daily_spend': 80, 'daily_bonus': 0, 'daily_moods': -2}, {'major_id': 3, 'item': '住', 'daily_spend': 80, 'daily_bonus': 0, 'daily_moods': 1}] 
+2024-01-10 13:47 WARNING Not Found: /app/api/summary/undefined/2024-01-10/ 
+2024-01-10 13:47 INFO 1 
+2024-01-10 13:47 INFO [{'major_id': 1, 'item': '食', 'daily_spend': 80, 'daily_bonus': 0, 'daily_moods': -2}, {'major_id': 3, 'item': '住', 'daily_spend': 80, 'daily_bonus': 0, 'daily_moods': 1}, {'major_id': 7, 'item': '住戶照顧', 'daily_spend': 170, 'daily_bonus': 1400, 'daily_moods': 2}] 

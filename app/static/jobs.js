@@ -96,9 +96,9 @@ function getCookie(name) {
 }
 function save(param){
     var csrftoken = getCookie('csrftoken');
-    console.log(csrftoken)
     var now = new Date()
-    var Today = now.getFullYear()+"-"+now.getMonth()+"-"+now.getDate()
+    var Today = now.getFullYear()+"-"+(now.getMonth())+"-"+now.getDate()
+    console.log(Today)
     var spend_time =  calculateTimeDifference(startTime,endTime)
     var selectedValue=0
     var radioButtons = $('.form-check-input');
@@ -111,7 +111,7 @@ function save(param){
     }
     postData.detail =detail
     postData.user=job_user
-    postData.working_date=Today
+    postData.working_date="2024-01-10"
     postData.start_time = startTime
     postData.end_time = endTime
     postData.spend_time = spend_time
@@ -185,12 +185,12 @@ $(document).ready(
 
 function inform(user_id){
     var now = new Date()
-    var Today = now.getFullYear()+"-"+now.getMonth()+"-"+now.getDate()
+    var Today = now.getFullYear()+"-"+(now.getMonth()+1)+"-"+now.getDate()
     console
     $.ajax(
         {
             method:'GET',
-            url: '/app/api/summary/'+user_id+"/"+Today+"/",
+            url: '/app/api/summary/'+user_id+"/"+"2024-01-10"+"/",
 
             success:function(result){
 
