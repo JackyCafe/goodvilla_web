@@ -8,7 +8,9 @@ import json
 import logging
 
 from django.db import models
-from django.http import JsonResponse
+from django.db.models import Sum
+from django.db.models.functions import TruncMonth
+from django.http import JsonResponse, HttpResponse
 from rest_framework import viewsets, status
 from rest_framework.decorators import action
 from rest_framework.response import Response
@@ -22,7 +24,9 @@ class MajorItemViewSet(viewsets.ModelViewSet):
     queryset = MajorItem.objects.all()
     serializer_class = MajorItemSerializer
 
-
+'''
+首頁摘要
+'''
 class WorkRecordSummaryView(viewsets.ModelViewSet):
     queryset = WorkRecord.objects.all()
     serializer_class = WorkRecordSerializer
@@ -31,11 +35,12 @@ class WorkRecordSummaryView(viewsets.ModelViewSet):
     def summary(self, request,user_id, working_date):
         w_date = self.kwargs['working_date']
         user_id= self.kwargs['user_id']
-        logging.info(user_id)
         # def get_queryset(self):
     #     working_date = self.kwargs['working_date']
         try:
-            working_date = datetime.strptime(working_date, '%Y-%m-%d').date()
+            date = datetime.strptime(working_date, '%Y-%m-%d').date()
+            # working_month = datetime.strptime(working_date, '%Y-%m')
+            logging.info(date)
             major_ids = (WorkRecord.objects
                          .filter(
                 working_date=working_date
@@ -70,6 +75,75 @@ class WorkRecordSummaryView(viewsets.ModelViewSet):
                 {"detail": "Invalid date format. Use YYYY-MM-DD."},
                 status=status.HTTP_400_BAD_REQUEST
             )
+
+'''每月摘要'''
+class MonthBonusViewSet(viewsets.ModelViewSet):
+    queryset = WorkRecord.objects.all()
+    serializer_class = WorkRecordSerializer
+
+    @action(methods=['get'], detail=True)
+    def summary(self, request,year, month):
+        try:
+            year = int(year)
+            month = int(month)
+
+            monthly_bonus_by_major = WorkRecord.objects.filter(
+                working_date__year=year,
+                working_date__month=month
+            ).annotate(
+                total_bonus=Sum('bonus')
+            ).values('user__username', 'detail__sub_item__major__item', 'total_bonus')
+
+            result = {}
+            for entry in monthly_bonus_by_major:
+                username = entry['user__username']
+                major = entry['detail__sub_item__major__item']
+                total_bonus = entry['total_bonus']
+
+                if username not in result:
+                    result[username] = []
+
+                result[username].append({'major': major, 'bonus': total_bonus})
+
+            return Response(result, status=status.HTTP_200_OK)
+
+        except ValueError:
+            return Response({'error': 'Invalid year or month format'}, status=status.HTTP_400_BAD_REQUEST)
+
+        except Exception as e:
+            return Response({'error': str(e)}, status=status.HTTP_500_INTERNAL_SERVER_ERROR)
+
+
+    # try:
+        #     monthly_bonus_by_major = WorkRecord.objects.annotate(
+        #         month=TruncMonth('working_date')
+        #     ).values('month', 'user__username', 'detail__sub_item__major__item').annotate(
+        #         total_bonus=Sum('bonus')
+        #     )
+        #
+        #     result = []
+        #     user_data = {}
+        #
+        #     for entry in monthly_bonus_by_major:
+        #         month = entry['month'].strftime('%Y-%m')
+        #         username = entry['user__username']
+        #         major = entry['detail__sub_item__major__item']
+        #         total_bonus = entry['total_bonus']
+        #
+        #         if username not in user_data:
+        #             user_data[username] = []
+        #
+        #         user_data[username].append({'major': major, 'bonus': total_bonus})
+        #
+        #     for user, data in user_data.items():
+        #         result.append({user: data})
+        #
+        #     return Response(result, status=status.HTTP_200_OK)
+        #
+        # except Exception as e:
+        #     return Response({'error': str(e)}, status=status.HTTP_500_INTERNAL_SERVER_ERROR)
+
+
 
 class SubItemViewSet(viewsets.ModelViewSet):
     # queryset =  SubItem.objects.all()

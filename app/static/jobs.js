@@ -94,10 +94,12 @@ function getCookie(name) {
     }
     return cookieValue;
 }
+//Todo JS 的日期格式會比實際日期少一個月
+//
 function save(param){
     var csrftoken = getCookie('csrftoken');
     var now = new Date()
-    var Today = now.getFullYear()+"-"+(now.getMonth())+"-"+now.getDate()
+    var Today = now.getFullYear()+"-"+(now.getMonth()+1)+"-"+now.getDate()
     console.log(Today)
     var spend_time =  calculateTimeDifference(startTime,endTime)
     var selectedValue=0
@@ -111,7 +113,7 @@ function save(param){
     }
     postData.detail =detail
     postData.user=job_user
-    postData.working_date="2024-01-10"
+    postData.working_date=Today
     postData.start_time = startTime
     postData.end_time = endTime
     postData.spend_time = spend_time
@@ -135,6 +137,7 @@ function save(param){
     .then(response => {
         console.log(response.status)
         if (response.status === 201) {
+            alert("新增完成")
             console.log('工作记录创建成功');
             inform();
             // 可以在这里处理成功后的逻辑
@@ -170,32 +173,39 @@ $(document).ready(
                 selectedDivs.push(div);
                 $('#workRecordForm').hide();
             }
+
+            /* 修正*/
             if (selectedDivs.length === 2) {
                 // 记录starttime和endtime
-                startTime = selectedDivs[0].text();
-                endTime = selectedDivs[1].text();
+                t1 = selectedDivs[0].text();
+                t2 = selectedDivs[1].text();
+                startTime = t1<t2?t1:t2
+                endTime = t1>t2?t1:t2
+                console.log(startTime)
+
                 var start = $('#start-time')
-                var end = $('#end-time')
+
+
                 start.html(startTime+"-"+endTime)
             }
         }
     )
 });
 
+//Todo 調整日期
 
 function inform(user_id){
     var now = new Date()
     var Today = now.getFullYear()+"-"+(now.getMonth()+1)+"-"+now.getDate()
-    console
     $.ajax(
         {
             method:'GET',
-            url: '/app/api/summary/'+user_id+"/"+"2024-01-10"+"/",
+            url: '/app/api/summary/'+user_id+"/"+Today+"/",
 
             success:function(result){
 
                 var report=$('#report')
-                html='<table border=1> <tr><th>項目</th> <th>工時</th> <th>收益</th> </tr>'
+                html='<table border=1 class="info-table"> <tr><th>項目</th> <th>工時</th> <th>收益</th> </tr>'
                 $.each(result, function (index, item) {
                     html +='<tr><td>'+item.item+'</td><td>'+item.daily_spend+'</td><td>'+item.daily_bonus+'</td></tr>'
 

@@ -5,7 +5,7 @@ from rest_framework.routers import DefaultRouter
 from app import views
 from app.views import create_work_record, detail_view, index, subitem_view
 from app.viewsets import (DetailItemViewSet, MajorItemViewSet, SubItemViewSet,
-                          WorkRecordViewSet, WorkRecordByDateViewSet, WorkRecordSummaryView)
+                          WorkRecordViewSet, WorkRecordByDateViewSet, WorkRecordSummaryView, MonthBonusViewSet)
 from django.contrib.auth import views as auth_views
 
 
@@ -17,7 +17,6 @@ router.register(r'subitem/(?P<major_id>\d+)', SubItemViewSet, basename='subitem'
 router.register(r'detail/(?P<subitem_id>\d+)', DetailItemViewSet, basename='detail'),
 router.register(r'workrecord/(?P<detail_id>\d+)',WorkRecordViewSet,basename='workrecord'),
 router.register(r'workrecord/(?P<working_date>\d{4}-\d{2}-\d{2})',WorkRecordByDateViewSet,basename='workrecord_by_date'),
-
 
 
 urlpatterns = [
@@ -33,5 +32,6 @@ urlpatterns = [
     path('api/',include(router.urls)),
     path('api/summary/<int:user_id>/<str:working_date>/', WorkRecordSummaryView.as_view({'get': 'summary'}),
          name='workrecord-summary'),
+    path('api/monthbonus/<int:year>/<int:month>/',MonthBonusViewSet.as_view({'get':'summary'}))
 
 ]
