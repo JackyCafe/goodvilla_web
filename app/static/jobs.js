@@ -152,11 +152,21 @@ function save(param){
     // inform();
 }
 
+function strToMin(timeString) {
+    // 将时间字符串拆分为小时和分钟
+    let [hours, minutes] = timeString.split(':').map(Number);
 
+    // 将小时转换为分钟并加上分钟数
+    let totalMinutes = hours * 60 + minutes;
+
+    return totalMinutes;
+    }
 
 $(document).ready(
+
     function(){
     $('#workRecordForm').hide();
+
 
     $('.timer').click(
         function(){
@@ -174,13 +184,15 @@ $(document).ready(
                 $('#workRecordForm').hide();
             }
 
-            /* 修正*/
+            /* 修正日期先後關係*/
             if (selectedDivs.length === 2) {
                 // 记录starttime和endtime
                 t1 = selectedDivs[0].text();
                 t2 = selectedDivs[1].text();
-                startTime = t1<t2?t1:t2
-                endTime = t1>t2?t1:t2
+                console.log(strToMin(t1))
+                console.log(strToMin(t2))
+                startTime = strToMin(t1)<strToMin(t2)?t1:t2
+                endTime = strToMin(t1)>strToMin(t2)?t1:t2
                 console.log(startTime)
 
                 var start = $('#start-time')
@@ -205,7 +217,7 @@ function inform(user_id){
             success:function(result){
 
                 var report=$('#report')
-                html='<table border=1 class="info-table"> <tr><th>項目</th> <th>工時</th> <th>收益</th> </tr>'
+                html='<table border=1 class="table"> <tr><th>項目</th> <th>工時</th> <th>收益</th> </tr>'
                 $.each(result, function (index, item) {
                     html +='<tr><td>'+item.item+'</td><td>'+item.daily_spend+'</td><td>'+item.daily_bonus+'</td></tr>'
 

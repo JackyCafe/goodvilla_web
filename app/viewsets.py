@@ -91,19 +91,19 @@ class MonthBonusViewSet(viewsets.ModelViewSet):
                 working_date__year=year,
                 working_date__month=month
             ).annotate(
-                total_bonus=Sum('bonus')
-            ).values('user__username', 'detail__sub_item__major__item', 'total_bonus')
+                total_bonus=Sum('bonus'),total_mins=Sum('spend_time')
+            ).values('user__username', 'detail__sub_item__major__item', 'total_bonus', 'total_mins')
 
             result = {}
             for entry in monthly_bonus_by_major:
                 username = entry['user__username']
                 major = entry['detail__sub_item__major__item']
                 total_bonus = entry['total_bonus']
-
+                total_mins = entry['total_mins']
                 if username not in result:
                     result[username] = []
 
-                result[username].append({'major': major, 'bonus': total_bonus})
+                result[username].append({'major': major, 'bonus': total_bonus, 'total_mins': total_mins})
 
             return Response(result, status=status.HTTP_200_OK)
 

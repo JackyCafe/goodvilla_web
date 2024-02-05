@@ -1,0 +1,40 @@
+{% extends 'base.html' %}
+{% block title %}
+	報表
+{% endblock %}
+{% block content %}
+        <div class="container mt-4">
+        <h1 class="mb-4">Monthly Report</h1>
+        <div class="row">
+        {% for username, details in datas.items %}
+            <div class="col-md-4 mt-4">
+                <div class="card-header">
+                    <h2>{{ username }}</h2>
+                </div>
+                <div class="card-body">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th>主項</th>
+                                <th>Bonus</th>
+                                <th>Time(分)</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            {% for detail in details %}
+                                <tr>
+                                    <td>{{ detail.major }}</td>
+                                    <td>{{ detail.bonus }}</td>
+                                    <td>{{ detail.total_time }}</td>
+                                </tr>
+                            {% endfor %}
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        {% endfor %}
+        </div>
+    </div>
+
+{% endblock %}
+</table>

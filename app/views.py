@@ -1,4 +1,5 @@
 from django.contrib.auth import authenticate, login
+from django.db.models import Sum
 from django.shortcuts import render
 
 # Create your views here.
@@ -12,6 +13,7 @@ from django.shortcuts import render, get_object_or_404, get_list_or_404, redirec
 # Create your views here.
 import logging
 
+from rest_framework import status
 from rest_framework.decorators import api_view
 from rest_framework.response import Response
 
@@ -96,5 +98,40 @@ def register(request):
 
 
 #Todo
-def report(request):
-    return None
+def report(request,year,month):
+
+    try:
+        year = int(year)
+        month = int(month)
+        datas = WorkRecord.objects.filter(
+            working_date__year=year,
+            working_date__month=month
+        ).annotate(
+            total_bonus=Sum('bonus'),
+            total_time = Sum('spend_time'),
+        ).values('user__username', 'detail__sub_item__major__item', 'total_bonus','total_time')
+        result = {}
+        for entry in datas:
+            username = entry['user__username']
+            major = entry['detail__sub_item__major__item']
+            total_bonus = entry['total_bonus']
+            total_time = entry['total_time']
+            if username not in result:
+                result[username] = []
+            existing_entry = next((item for item in result[username] if item['major'] == major), None)
+            if existing_entry:
+                # If the major already exists, update the bonus
+                existing_entry['bonus'] += total_bonus
+                existing_entry['total_time'] += total_time
+            else:
+                # If the major doesn't exist, add a new entry
+                result[username].append({'major': major, 'bonus': total_bonus, 'total_time':total_time})
+
+        print(result)
+        return render(request, 'account/report.html'
+                      ,{'datas':result})
+    except ValueError:
+        return Response({'error': 'Invalid year or month format'}, status=status.HTTP_400_BAD_REQUEST)
+
+    except Exception as e:
+        return HttpResponse({str(e)})
