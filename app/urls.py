@@ -32,6 +32,5 @@ urlpatterns = [
     path('api/',include(router.urls)),
     path('api/summary/<int:user_id>/<str:working_date>/', WorkRecordSummaryView.as_view({'get': 'summary'}),
          name='workrecord-summary'),
-    path('api/monthbonus/<int:year>/<int:month>/',MonthBonusViewSet.as_view({'get':'summary'}))
-
+    # path('api/monthbonus/<int:year>/<int:month>/',MonthBonusViewSet.as_view({'get':'summary'}))
 ]
