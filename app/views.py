@@ -30,48 +30,50 @@ logging.basicConfig(level=logging.INFO,
                     ]
                     )
 
-@login_required
 
+@login_required
 def index(request):
     request.session['user'] = request.user.id
     major = MajorItem.objects.all()
-    return  render(request,'app/index.html',{'major':major})
+    return render(request, 'app/index.html', {'major': major})
 
 
-def subitem_view(request,id):
-    item = get_list_or_404(SubItem,major_id=id)
-    return  render(request,'app/sub_views.html',{'subitems':item})
+def subitem_view(request, id):
+    item = get_list_or_404(SubItem, major_id=id)
+    return render(request, 'app/sub_views.html', {'subitems': item})
 
 
-def detail_view(request,id):
-    item = get_list_or_404(DetailItem,sub_item_id=id)
-    return  render(request,'app/detail_views.html',{'detailitems':item})
+def detail_view(request, id):
+    item = get_list_or_404(DetailItem, sub_item_id=id)
+    return render(request, 'app/detail_views.html', {'detailitems': item})
+
 
 #
-def create_work_record(request,id):
+def create_work_record(request, id):
     user_id = request.session.get('user')
-    #yhlin
+    # yhlin
     user = User.objects.get(id=user_id)
-    detail = get_object_or_404(DetailItem,id = id)
+    detail = get_object_or_404(DetailItem, id=id)
     # logging.info(detail)
-    intaial_data={'user':user,
-                  'detail':detail}
+    intaial_data = {'user': user,
+                    'detail': detail}
     logging.info(request.POST)
     if request.method == 'POST':
-        form = WorkRecordForm(request.POST or None,initial=intaial_data)
+        form = WorkRecordForm(request.POST or None, initial=intaial_data)
         if form.is_valid():
-            instance = form.save(commit=False)  # The overridden save() method will call calculate_spend_time() before saving
+            instance = form.save(
+                commit=False)  # The overridden save() method will call calculate_spend_time() before saving
             return redirect('app:index')  # Replace 'success_url' with the URL to redirect after form submission
     else:
-       # form = WorkRecordForm()
+        # form = WorkRecordForm()
         form = WorkRecordForm(initial=intaial_data)
     return render(request, 'app/create_work_record_views.html', {'form': form})
 
+
 @login_required
 def dashboard(request):
-    request.session['user']= request.user.id
+    request.session['user'] = request.user.id
     return redirect('app:index')
-
 
 
 def register(request):
@@ -97,20 +99,33 @@ def register(request):
     return render(request, 'account/register.html', {'user_form': user_form})
 
 
-#Todo
-def report(request,year,month):
+# Todo
+def report(request, year, month):
+    user = request.user
+    permission = user.is_superuser
+    year = int(year)
+    month = int(month)
 
     try:
-        year = int(year)
-        month = int(month)
-        datas = WorkRecord.objects.filter(
-            working_date__year=year,
-            working_date__month=month
-        ).annotate(
-            total_bonus=Sum('bonus'),
-            total_time = Sum('spend_time'),
-        ).values('user__username', 'detail__sub_item__major__item', 'total_bonus','total_time')
-        result = {}
+        if permission:
+            datas = WorkRecord.objects.filter(
+                working_date__year=year,
+                working_date__month=month
+            ).annotate(
+                total_bonus=Sum('bonus'),
+                total_time=Sum('spend_time'),
+            ).values('user__username', 'detail__sub_item__major__item', 'total_bonus', 'total_time')
+            result = {}
+        else:
+            datas = WorkRecord.objects.filter(
+                user_id=user,
+                working_date__year=year,
+                working_date__month=month
+            ).annotate(
+                total_bonus=Sum('bonus'),
+                total_time=Sum('spend_time'),
+            ).values('user__username', 'detail__sub_item__major__item', 'total_bonus', 'total_time')
+            result = {}
         for entry in datas:
             username = entry['user__username']
             major = entry['detail__sub_item__major__item']
@@ -125,11 +140,11 @@ def report(request,year,month):
                 existing_entry['total_time'] += total_time
             else:
                 # If the major doesn't exist, add a new entry
-                result[username].append({'major': major, 'bonus': total_bonus, 'total_time':total_time})
+                result[username].append({'major': major, 'bonus': total_bonus, 'total_time': total_time})
 
         print(result)
         return render(request, 'account/report.html'
-                      ,{'datas':result})
+                      , {'datas': result})
     except ValueError:
         return Response({'error': 'Invalid year or month format'}, status=status.HTTP_400_BAD_REQUEST)
 
