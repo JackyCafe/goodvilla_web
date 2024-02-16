@@ -46,7 +46,10 @@ class WorkRecordSummaryView(viewsets.ModelViewSet):
                 working_date=working_date
             ).values_list('detail__sub_item__major__id', flat=True).distinct())
             summary_data = []
+            total_bonus = 0
+            total_times = 0
             for major_id in major_ids:
+
                 work_records = WorkRecord.objects.filter(
                     detail__sub_item__major__id=major_id,
                     working_date=working_date
@@ -57,6 +60,8 @@ class WorkRecordSummaryView(viewsets.ModelViewSet):
                 daily_moods = work_records.aggregate(total_moods=models.Sum('mood'))
                 major_item = MajorItem.objects.get(pk=major_id)
                 item = json.loads(f'"{major_item.item}"')
+                total_bonus = total_bonus+daily_bonus['total_bonus']
+                total_times = total_times+ daily_spend['total_spend']
 
                 summary_data.append({
                     'major_id': major_id,
@@ -66,8 +71,13 @@ class WorkRecordSummaryView(viewsets.ModelViewSet):
                     'daily_moods': daily_moods['total_moods'] if daily_moods['total_moods'] is not None else 0,
 
                 })
+
+            summary_data.append({'major_id': 0, 'item': '小計',
+                                 'daily_spend': total_times if total_times is not None else 0,
+                                 'daily_bonus': total_bonus if total_bonus is not None else 0,
+
+                                 })
             logging.info(summary_data)
-            #
             return JsonResponse(summary_data, safe=False, status=status.HTTP_200_OK, json_dumps_params={'ensure_ascii': False})
 
         except ValueError:
@@ -114,34 +124,7 @@ class MonthBonusViewSet(viewsets.ModelViewSet):
             return Response({'error': str(e)}, status=status.HTTP_500_INTERNAL_SERVER_ERROR)
 
 
-    # try:
-        #     monthly_bonus_by_major = WorkRecord.objects.annotate(
-        #         month=TruncMonth('working_date')
-        #     ).values('month', 'user__username', 'detail__sub_item__major__item').annotate(
-        #         total_bonus=Sum('bonus')
-        #     )
-        #
-        #     result = []
-        #     user_data = {}
-        #
-        #     for entry in monthly_bonus_by_major:
-        #         month = entry['month'].strftime('%Y-%m')
-        #         username = entry['user__username']
-        #         major = entry['detail__sub_item__major__item']
-        #         total_bonus = entry['total_bonus']
-        #
-        #         if username not in user_data:
-        #             user_data[username] = []
-        #
-        #         user_data[username].append({'major': major, 'bonus': total_bonus})
-        #
-        #     for user, data in user_data.items():
-        #         result.append({user: data})
-        #
-        #     return Response(result, status=status.HTTP_200_OK)
-        #
-        # except Exception as e:
-        #     return Response({'error': str(e)}, status=status.HTTP_500_INTERNAL_SERVER_ERROR)
+
 
 
 
