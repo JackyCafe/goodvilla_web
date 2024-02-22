@@ -4,9 +4,28 @@
 {% endblock %}
 {% block content %}
         <div class="container mt-4">
-        <h1 class="mb-4">Monthly Report</h1>
+        <h1 class="mb-4">總表</h1>
         <div class="row">
-        {% for username, details in datas.items %}
+          <table class="table">
+           <thead>
+                            <tr>
+                                <th>主項</th>
+                                <th>Bonus</th>
+                                <th>Time(分)</th>
+                            </tr>
+                        </thead>
+           {% for username,details in data.items %}
+               <tr><td>{{ username }} </td>
+                   <td>{{details.bonus}} </td>
+                   <td>{{details.total_time  }}</td>
+                </tr>
+           {% endfor %}
+        </table>
+        </div>
+
+        <h1 class="mb-4">個人總表</h1>
+        <div class="row">
+        {% for username, details in results.items %}
             <div class="col-md-4 mt-4">
                 <div class="card-header">
                     <h2>{{ username }}</h2>

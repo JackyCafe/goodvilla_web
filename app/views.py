@@ -101,12 +101,16 @@ def register(request):
 
 # Todo
 def report(request, year, month):
+    '''月報表
+       對應到http://127.0.0.1:8000/app/report/2024/02
+    '''
     user = request.user
     permission = user.is_superuser
     year = int(year)
     month = int(month)
 
     try:
+        '''如果是管理者看所有人資料'''
         if permission:
             datas = WorkRecord.objects.filter(
                 working_date__year=year,
@@ -116,7 +120,9 @@ def report(request, year, month):
                 total_time=Sum('spend_time'),
             ).values('user__username', 'detail__sub_item__major__item', 'total_bonus', 'total_time')
             result = {}
+
         else:
+            '''非管理者看個人資料'''
             datas = WorkRecord.objects.filter(
                 user_id=user,
                 working_date__year=year,
@@ -126,13 +132,18 @@ def report(request, year, month):
                 total_time=Sum('spend_time'),
             ).values('user__username', 'detail__sub_item__major__item', 'total_bonus', 'total_time')
             result = {}
+        '''進行加總'''
+
+
         for entry in datas:
             username = entry['user__username']
             major = entry['detail__sub_item__major__item']
             total_bonus = entry['total_bonus']
             total_time = entry['total_time']
+            #user 不在result 清單中，就加進去
             if username not in result:
                 result[username] = []
+
             existing_entry = next((item for item in result[username] if item['major'] == major), None)
             if existing_entry:
                 # If the major already exists, update the bonus
@@ -142,9 +153,16 @@ def report(request, year, month):
                 # If the major doesn't exist, add a new entry
                 result[username].append({'major': major, 'bonus': total_bonus, 'total_time': total_time})
 
+        data={}
+        for name,records in result.items():
+            subtotal_bonus = sum(record['bonus'] for record in records)
+            subtotal_total_time = sum(record['total_time'] for record in records)
+            data[name] = {'major': '小計', 'bonus': subtotal_bonus, 'total_time': subtotal_total_time}
+
+            result[name].append({'bonus': subtotal_bonus, 'total_time': subtotal_total_time})
         print(result)
         return render(request, 'account/report.html'
-                      , {'datas': result})
+                      , {'results': result, 'data': data})
     except ValueError:
         return Response({'error': 'Invalid year or month format'}, status=status.HTTP_400_BAD_REQUEST)
 

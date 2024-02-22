@@ -86,8 +86,9 @@ class WorkRecordSummaryView(viewsets.ModelViewSet):
                 status=status.HTTP_400_BAD_REQUEST
             )
 
-'''每月摘要'''
 class MonthBonusViewSet(viewsets.ModelViewSet):
+    '''月報表'''
+
     queryset = WorkRecord.objects.all()
     serializer_class = WorkRecordSerializer
 
@@ -105,6 +106,8 @@ class MonthBonusViewSet(viewsets.ModelViewSet):
             ).values('user__username', 'detail__sub_item__major__item', 'total_bonus', 'total_mins')
 
             result = {}
+            bonus = 0
+            times = 0
             for entry in monthly_bonus_by_major:
                 username = entry['user__username']
                 major = entry['detail__sub_item__major__item']
@@ -114,6 +117,14 @@ class MonthBonusViewSet(viewsets.ModelViewSet):
                     result[username] = []
 
                 result[username].append({'major': major, 'bonus': total_bonus, 'total_mins': total_mins})
+                # todo 20240219
+                bonus = bonus + total_bonus
+                times = times + total_mins
+                logging.info(str(bonus))
+                # 加一個result[username].append({'major':'小計','bonus':total_bonus,'total_mins':total_mins})
+                # todo
+                # 加一個總表
+            # logging.info(result)
 
             return Response(result, status=status.HTTP_200_OK)
 
@@ -122,10 +133,6 @@ class MonthBonusViewSet(viewsets.ModelViewSet):
 
         except Exception as e:
             return Response({'error': str(e)}, status=status.HTTP_500_INTERNAL_SERVER_ERROR)
-
-
-
-
 
 
 class SubItemViewSet(viewsets.ModelViewSet):
