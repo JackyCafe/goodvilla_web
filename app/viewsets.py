@@ -24,32 +24,35 @@ class MajorItemViewSet(viewsets.ModelViewSet):
     queryset = MajorItem.objects.all()
     serializer_class = MajorItemSerializer
 
+
 '''
 首頁摘要
 '''
+
+
 class WorkRecordSummaryView(viewsets.ModelViewSet):
     queryset = WorkRecord.objects.all()
     serializer_class = WorkRecordSerializer
 
     @action(detail=True, methods=['get'])
-    def summary(self, request,user_id, working_date):
+    def summary(self, request, user_id, working_date):
         w_date = self.kwargs['working_date']
-        user_id= self.kwargs['user_id']
+        user_id = self.kwargs['user_id']
         # def get_queryset(self):
-    #     working_date = self.kwargs['working_date']
+        #     working_date = self.kwargs['working_date']
         try:
             date = datetime.strptime(working_date, '%Y-%m-%d').date()
             # working_month = datetime.strptime(working_date, '%Y-%m')
-            logging.info(date)
             major_ids = (WorkRecord.objects
                          .filter(
-                working_date=working_date
+                working_date=working_date,
+                user=user_id
             ).values_list('detail__sub_item__major__id', flat=True).distinct())
+
             summary_data = []
             total_bonus = 0
             total_times = 0
             for major_id in major_ids:
-
                 work_records = WorkRecord.objects.filter(
                     detail__sub_item__major__id=major_id,
                     working_date=working_date
@@ -58,14 +61,15 @@ class WorkRecordSummaryView(viewsets.ModelViewSet):
                 daily_spend = work_records.aggregate(total_spend=models.Sum('spend_time'))
                 daily_bonus = work_records.aggregate(total_bonus=models.Sum('bonus'))
                 daily_moods = work_records.aggregate(total_moods=models.Sum('mood'))
+
                 major_item = MajorItem.objects.get(pk=major_id)
                 item = json.loads(f'"{major_item.item}"')
-                total_bonus = total_bonus+daily_bonus['total_bonus']
-                total_times = total_times+ daily_spend['total_spend']
+                total_bonus = total_bonus + daily_bonus['total_bonus']
+                total_times = total_times + daily_spend['total_spend']
 
                 summary_data.append({
                     'major_id': major_id,
-                    'item':item,
+                    'item': item,
                     'daily_spend': daily_spend['total_spend'] if daily_spend['total_spend'] is not None else 0,
                     'daily_bonus': daily_bonus['total_bonus'] if daily_bonus['total_bonus'] is not None else 0,
                     'daily_moods': daily_moods['total_moods'] if daily_moods['total_moods'] is not None else 0,
@@ -77,14 +81,15 @@ class WorkRecordSummaryView(viewsets.ModelViewSet):
                                  'daily_bonus': total_bonus if total_bonus is not None else 0,
 
                                  })
-            logging.info(summary_data)
-            return JsonResponse(summary_data, safe=False, status=status.HTTP_200_OK, json_dumps_params={'ensure_ascii': False})
+            return JsonResponse(summary_data, safe=False, status=status.HTTP_200_OK,
+                                json_dumps_params={'ensure_ascii': False})
 
         except ValueError:
             return Response(
                 {"detail": "Invalid date format. Use YYYY-MM-DD."},
                 status=status.HTTP_400_BAD_REQUEST
             )
+
 
 class MonthBonusViewSet(viewsets.ModelViewSet):
     '''月報表'''
@@ -93,7 +98,7 @@ class MonthBonusViewSet(viewsets.ModelViewSet):
     serializer_class = WorkRecordSerializer
 
     @action(methods=['get'], detail=True)
-    def summary(self, request,year, month):
+    def summary(self, request, year, month):
         try:
             year = int(year)
             month = int(month)
@@ -102,7 +107,7 @@ class MonthBonusViewSet(viewsets.ModelViewSet):
                 working_date__year=year,
                 working_date__month=month
             ).annotate(
-                total_bonus=Sum('bonus'),total_mins=Sum('spend_time')
+                total_bonus=Sum('bonus'), total_mins=Sum('spend_time')
             ).values('user__username', 'detail__sub_item__major__item', 'total_bonus', 'total_mins')
 
             result = {}
@@ -138,11 +143,10 @@ class MonthBonusViewSet(viewsets.ModelViewSet):
 class SubItemViewSet(viewsets.ModelViewSet):
     # queryset =  SubItem.objects.all()
     serializer_class = SubItemSerializer
+
     def get_queryset(self):
         major_id = self.kwargs['major_id']
         return SubItem.objects.filter(major_id=major_id)
-
-
 
 
 class DetailItemViewSet(viewsets.ModelViewSet):
@@ -161,6 +165,7 @@ class WorkRecordViewSet(viewsets.ModelViewSet):
         detail_id = self.kwargs['detail_id']
         return WorkRecord.objects.filter(detail_id=detail_id)
 
+
 class WorkRecordByDateViewSet(viewsets.ModelViewSet):
     serializer_class = WorkRecordSerializer
 
@@ -169,4 +174,3 @@ class WorkRecordByDateViewSet(viewsets.ModelViewSet):
         # user_id = self.kwargs['user_id']
 
         return WorkRecord.objects.filter(working_date=working_date)
-

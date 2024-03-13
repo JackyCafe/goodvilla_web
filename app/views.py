@@ -1,3 +1,6 @@
+import json
+from typing import Type
+
 from django.contrib.auth import authenticate, login
 from django.db.models import Sum
 from django.shortcuts import render
@@ -99,18 +102,23 @@ def register(request):
     return render(request, 'account/register.html', {'user_form': user_form})
 
 
-# Todo
-def report(request, year, month):
-    '''月報表
-       對應到http://127.0.0.1:8000/app/report/2024/02
-    '''
-    user = request.user
+# todo 個人月報
+def person_report(request, year, month):
+    """
+    對應到http://127.0.0.1:8000/app/report/2024/02
+
+    :param request:
+    :param year:
+    :param month:
+    :return:
+    """
+    user = request.user  # 抓登入user
     permission = user.is_superuser
     year = int(year)
     month = int(month)
-
+    result = {}
     try:
-        '''如果是管理者看所有人資料'''
+        # 如果是superuser
         if permission:
             datas = WorkRecord.objects.filter(
                 working_date__year=year,
@@ -119,52 +127,86 @@ def report(request, year, month):
                 total_bonus=Sum('bonus'),
                 total_time=Sum('spend_time'),
             ).values('user__username', 'detail__sub_item__major__item', 'total_bonus', 'total_time')
-            result = {}
 
         else:
-            '''非管理者看個人資料'''
+            # 一般user
             datas = WorkRecord.objects.filter(
-                user_id=user,
                 working_date__year=year,
-                working_date__month=month
+                working_date__month=month,
+                user_id=user
             ).annotate(
                 total_bonus=Sum('bonus'),
                 total_time=Sum('spend_time'),
             ).values('user__username', 'detail__sub_item__major__item', 'total_bonus', 'total_time')
-            result = {}
-        '''進行加總'''
-
-
+        logging.info(datas)
         for entry in datas:
             username = entry['user__username']
             major = entry['detail__sub_item__major__item']
             total_bonus = entry['total_bonus']
             total_time = entry['total_time']
-            #user 不在result 清單中，就加進去
+            # reset result
             if username not in result:
                 result[username] = []
+            exist_entry = next((item for item in result[username] if item['major'] == major), None)
 
-            existing_entry = next((item for item in result[username] if item['major'] == major), None)
-            if existing_entry:
-                # If the major already exists, update the bonus
-                existing_entry['bonus'] += total_bonus
-                existing_entry['total_time'] += total_time
+            if exist_entry:
+                exist_entry['total_bonus'] += total_bonus
+                exist_entry['total_time'] += total_time
             else:
-                # If the major doesn't exist, add a new entry
-                result[username].append({'major': major, 'bonus': total_bonus, 'total_time': total_time})
+                result[username].append({'major': major, 'total_bonus': total_bonus, 'total_time': total_time})
+        return render(request, 'account/person_report.html'
+                      , {'results': result})
+    except ValueError:
+        return Response({'error': 'Invalid year or month format'}, status=status.HTTP_400_BAD_REQUEST)
+    except Exception as e:
+        return HttpResponse(str(e))
 
-        data={}
-        for name,records in result.items():
-            subtotal_bonus = sum(record['bonus'] for record in records)
-            subtotal_total_time = sum(record['total_time'] for record in records)
-            data[name] = {'major': '小計', 'bonus': subtotal_bonus, 'total_time': subtotal_total_time}
 
-            result[name].append({'bonus': subtotal_bonus, 'total_time': subtotal_total_time})
-        print(result)
-        return render(request, 'account/report.html'
-                      , {'results': result, 'data': data})
+# Todo
+def report(request, year, month):
+    """
+    月報表
+    對應到http://127.0.0.1:8000/app/report/2024/02
+
+    :param request:
+    :param year:
+    :param month:
+    :return:
+    """
+
+    user = request.user
+    permission = user.is_superuser
+    year = int(year)
+    month = int(month)
+
+    try:
+        '''如果是管理者看所有人資料'''
+        datas = WorkRecord.objects.filter(
+            working_date__year=year,
+            working_date__month=month
+        ).annotate(
+            total_bonus=Sum('bonus'),
+            total_time=Sum('spend_time')
+        ).values('detail__sub_item__major__item', 'total_bonus', 'total_time')
+
+        result = {}
+        for entry in datas:
+            major = entry['detail__sub_item__major__item']
+            total_bonus = entry['total_bonus']
+            total_time = entry['total_time']
+            if major not in result:
+                result[major] = []
+
+
+            #if major:
+            # result[major]['total_bonus'] += total_bonus
+            # result[major]['total_time'] += total_time
+            #else:
+            result[major].append({'total_bonus': total_bonus, 'total_time': total_time})
+        logging.info(result)
+        return HttpResponse(datas)
     except ValueError:
         return Response({'error': 'Invalid year or month format'}, status=status.HTTP_400_BAD_REQUEST)
 
     except Exception as e:
-        return HttpResponse({str(e)})
+        return HttpResponse(f'error:{str(e)}')
