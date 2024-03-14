@@ -181,30 +181,16 @@ def report(request, year, month):
 
     try:
         '''如果是管理者看所有人資料'''
-        datas = WorkRecord.objects.filter(
+        datas = (WorkRecord.objects.filter(
             working_date__year=year,
             working_date__month=month
-        ).annotate(
+        ).values('detail__sub_item__major__item')
+                 .annotate(
             total_bonus=Sum('bonus'),
             total_time=Sum('spend_time')
-        ).values('detail__sub_item__major__item', 'total_bonus', 'total_time')
+        ))
 
-        result = {}
-        for entry in datas:
-            major = entry['detail__sub_item__major__item']
-            total_bonus = entry['total_bonus']
-            total_time = entry['total_time']
-            if major not in result:
-                result[major] = []
-
-
-            #if major:
-            # result[major]['total_bonus'] += total_bonus
-            # result[major]['total_time'] += total_time
-            #else:
-            result[major].append({'total_bonus': total_bonus, 'total_time': total_time})
-        logging.info(result)
-        return HttpResponse(datas)
+        return render(request, 'account/report.html',{'datas': datas})
     except ValueError:
         return Response({'error': 'Invalid year or month format'}, status=status.HTTP_400_BAD_REQUEST)
 

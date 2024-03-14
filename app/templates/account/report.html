@@ -4,7 +4,9 @@
 {% endblock %}
 {% block content %}
         <div class="container mt-4">
-        <h1 class="mb-4">總表</h1>
+        <h1 class="mb-4">
+        <div class="card-header">總表</div>
+        </h1>
         <div class="row">
           <table class="table">
            <thead>
@@ -14,46 +16,19 @@
                                 <th>Time(分)</th>
                             </tr>
                         </thead>
-           {% for username,details in data.items %}
-               <tr><td>{{ username }} </td>
-                   <td>{{details.bonus}} </td>
-                   <td>{{details.total_time  }}</td>
+          <tbody>
+           {% for items in datas %}
+               <tr><td>{{ items.detail__sub_item__major__item }} </td>
+                   <td>{{items.total_bonus}} </td>
+
+                   <td>{{items.total_time  }}</td>
                 </tr>
            {% endfor %}
+
+
+          </tbody>
+
         </table>
         </div>
-
-        <h1 class="mb-4">個人總表</h1>
-        <div class="row">
-        {% for username, details in results.items %}
-            <div class="col-md-4 mt-4">
-                <div class="card-header">
-                    <h2>{{ username }}</h2>
-                </div>
-                <div class="card-body">
-                    <table class="table">
-                        <thead>
-                            <tr>
-                                <th>主項</th>
-                                <th>Bonus</th>
-                                <th>Time(分)</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            {% for detail in details %}
-                                <tr>
-                                    <td>{{ detail.major }}</td>
-                                    <td>{{ detail.bonus }}</td>
-                                    <td>{{ detail.total_time }}</td>
-                                </tr>
-                            {% endfor %}
-                        </tbody>
-                    </table>
-                </div>
-            </div>
-        {% endfor %}
         </div>
-    </div>
-
 {% endblock %}
-</table>
