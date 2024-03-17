@@ -26,7 +26,8 @@ class MajorItemViewSet(viewsets.ModelViewSet):
 
 
 '''
-首頁摘要
+    首頁摘要
+    
 '''
 
 
@@ -91,6 +92,37 @@ class WorkRecordSummaryView(viewsets.ModelViewSet):
             )
 
 
+"""
+    檢查該時段有沒有已經有人輸入
+
+"""
+
+
+class WorkoutViewSet(viewsets.ModelViewSet):
+    serializer_class = WorkRecordSerializer
+
+    @action(methods=['get'], detail=True)
+    def check(self, request, *args, **kwargs):
+        user = self.kwargs['user_id']
+        working_date = self.kwargs['working_date']
+        start_time = self.kwargs['start_time']
+        end_time = self.kwargs['end_time']
+        try:
+            query = WorkRecord.objects.filter(user_id=user,
+                                              working_date=working_date,
+                                              start_time=start_time,
+                                              end_time=end_time
+                                              )
+            # 該時段有資料回傳0, 否則回傳1
+            if query.count():
+                return JsonResponse("0", safe=False, status=status.HTTP_200_OK)
+            else:
+                return JsonResponse("1", safe=False, status=status.HTTP_200_OK)
+
+        except WorkRecord.DoesNotExist:
+            return JsonResponse("False", status=status.HTTP_200_OK)
+
+
 class MonthBonusViewSet(viewsets.ModelViewSet):
     '''月報表'''
 
@@ -127,7 +159,6 @@ class MonthBonusViewSet(viewsets.ModelViewSet):
                 times = times + total_mins
                 logging.info(str(bonus))
                 # 加一個result[username].append({'major':'小計','bonus':total_bonus,'total_mins':total_mins})
-                # todo
                 # 加一個總表
             # logging.info(result)
 
@@ -156,6 +187,13 @@ class DetailItemViewSet(viewsets.ModelViewSet):
     def get_queryset(self):
         sub_item_id = self.kwargs['subitem_id']
         return DetailItem.objects.filter(sub_item_id=sub_item_id)
+
+
+"""
+    將每日作業項目寫到WorkRecord 
+    
+
+"""
 
 
 class WorkRecordViewSet(viewsets.ModelViewSet):

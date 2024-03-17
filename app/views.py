@@ -52,6 +52,7 @@ def detail_view(request, id):
 
 
 #
+
 def create_work_record(request, id):
     user_id = request.session.get('user')
     # yhlin
@@ -80,7 +81,10 @@ def dashboard(request):
 
 
 def register(request):
-    '''註冊'''
+    """
+    註冊
+
+    """
     user_form: UserRegistrationForm
     new_user: User
     if request.method == 'POST':
@@ -180,17 +184,43 @@ def report(request, year, month):
     month = int(month)
 
     try:
-        '''如果是管理者看所有人資料'''
-        datas = (WorkRecord.objects.filter(
-            working_date__year=year,
-            working_date__month=month
-        ).values('detail__sub_item__major__item')
-                 .annotate(
-            total_bonus=Sum('bonus'),
-            total_time=Sum('spend_time')
-        ))
 
-        return render(request, 'account/report.html',{'datas': datas})
+        if permission:
+            """
+                    如果是管理者看所有人資料
+                    摘要 食,衣,住...等摘要資料
+                     主項   bouns total_spend 
+                     食      0     14280
+                    """
+
+            datas = (WorkRecord.objects.filter(
+                working_date__year=year,
+                working_date__month=month
+            ).values('detail__sub_item__major__item')
+            .annotate(
+                total_bonus=Sum('bonus'),
+                total_time=Sum('spend_time')
+            ))
+
+            """ 
+                摘要 食...衣 ...住..行 by 個人
+                user   摘要  bonus total_spend
+                yhlin  食    0      1220
+                yhlin  住    0      1330
+            
+            """
+            user_datas = WorkRecord.objects.filter(
+                working_date__year=year,
+                working_date__month=month
+            ).values('user__username', 'detail__sub_item__major__item').annotate(
+                total_bonus=Sum('bonus'),
+                total_time=Sum('spend_time')
+            ).order_by()
+            logging.info(user_datas)
+            return render(request, 'account/report.html',
+                          {'datas': datas, 'user_datas': user_datas})
+        else:
+            return HttpResponse("權限不足")
     except ValueError:
         return Response({'error': 'Invalid year or month format'}, status=status.HTTP_400_BAD_REQUEST)
 

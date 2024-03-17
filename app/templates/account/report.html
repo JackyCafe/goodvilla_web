@@ -5,30 +5,57 @@
 {% block content %}
         <div class="container mt-4">
         <h1 class="mb-4">
-        <div class="card-header">總表</div>
         </h1>
         <div class="row">
+                <div class="card-header">總表</div>
           <table class="table">
            <thead>
                             <tr>
                                 <th>主項</th>
-                                <th>Bonus</th>
                                 <th>Time(分)</th>
+                                <th>Bonus</th>
                             </tr>
                         </thead>
           <tbody>
            {% for items in datas %}
                <tr><td>{{ items.detail__sub_item__major__item }} </td>
+                   <td>{{items.total_time  }}</td>
                    <td>{{items.total_bonus}} </td>
 
-                   <td>{{items.total_time  }}</td>
                 </tr>
            {% endfor %}
-
-
           </tbody>
 
         </table>
         </div>
+        <div class="row">
+            <div class="card-header">個人總表</div>
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>管家</th>
+                        <th>主項</th>
+                        <th>時間</th>
+                        <th>收益</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for item in user_datas %}
+                        <tr>
+                          <td> {{ item.user__username  }}</td>
+                          <td> {{ item.detail__sub_item__major__item }} </td>
+                          <td> {{ item.total_time }}</td>
+                          <td> {{ item.total_bonus}}</td>
+                        </tr>
+                    {% endfor %}
+                </tbody>
+
+            </table>
+
+        </div>
+
+
+
+
         </div>
 {% endblock %}
