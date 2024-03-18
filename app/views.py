@@ -1,5 +1,4 @@
-import json
-from typing import Type
+import datetime
 
 from django.contrib.auth import authenticate, login
 from django.db.models import Sum
@@ -17,12 +16,10 @@ from django.shortcuts import render, get_object_or_404, get_list_or_404, redirec
 import logging
 
 from rest_framework import status
-from rest_framework.decorators import api_view
 from rest_framework.response import Response
 
 from app.forms import WorkRecordForm, UserRegistrationForm
 from app.models import MajorItem, SubItem, DetailItem, WorkRecord
-from app.serializers import WorkRecordSerializer
 
 logging.basicConfig(level=logging.INFO,
                     format='%(asctime)s %(levelname)s %(message)s ',
@@ -38,7 +35,10 @@ logging.basicConfig(level=logging.INFO,
 def index(request):
     request.session['user'] = request.user.id
     major = MajorItem.objects.all()
-    return render(request, 'app/index.html', {'major': major})
+    today = datetime.date.today()
+    datas = WorkRecord.objects.filter(user_id=request.user.id, working_date=today)
+    logging.info(datas)
+    return render(request, 'app/index.html', {'major': major, 'datas': datas})
 
 
 def subitem_view(request, id):
@@ -226,3 +226,10 @@ def report(request, year, month):
 
     except Exception as e:
         return HttpResponse(f'error:{str(e)}')
+
+
+def work_record(request, work):
+    logging.info(work)
+    post = get_object_or_404(WorkRecord, slug=work).delete()
+    logging.info(post)
+    return redirect("app:index")

@@ -303,17 +303,56 @@
 
   </div>
 
+
   {% load static %}
   <script type="text/javascript" src="{% static 'jobs.js' %}"></script>
   <script>
-    var userData = "{{ request.user.id }}"; // 将User值包含在JavaScript中
+  function toTime(timeString){
+        const today = new Date();
+        const [hours, minutes] = timeString.split(':');
+        return new Date(
+            today.getFullYear(),
+            today.getMonth(),
+            today.getDate(),
+            hours, minutes
+        );
+    }
+
+  const userData = "{{ request.user.id }}"; // 将User值包含在JavaScript中
+  const datas = [
+          {% for data in datas %}{
+              start_time: "{{ data.start_time }}",
+              end_time: "{{ data.end_time }}",
+              }
+              {% if not forloop.last %},{% endif %}
+
+          {% endfor %}
+  ];
+  datas.forEach(function(data) {
+      const firstClick = toTime(data.start_time);
+      const secondClick = toTime(data.end_time);
+
+      $('.grid-item').each(function (){
+                const itemTime = toTime($(this).text())
+                console.log(itemTime)
+                if (itemTime >= firstClick && itemTime <= secondClick) {
+                    $(this).css('background-color', 'yellow');
+                }
+            })
+
+
+});
+
+
+
 
     // 将User传递给jobs.js中的函数
     $(document).ready(function () {
         loadJobs(userData);
-
         inform(userData);
     });
+
+
 </script>
 
 {% endblock %}

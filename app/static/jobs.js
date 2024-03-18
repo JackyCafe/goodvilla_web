@@ -237,6 +237,9 @@ $(document).ready(
         }
 
     })
+
+
+
 });
 
 
@@ -268,6 +271,8 @@ function inform(user_id){
         }
     );
 }
+
+
 
 
 

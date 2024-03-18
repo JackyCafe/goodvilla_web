@@ -3,7 +3,7 @@ from django.urls import include, path
 from rest_framework.routers import DefaultRouter
 
 from app import views
-from app.views import create_work_record, detail_view, index, subitem_view
+from app.views import create_work_record, detail_view, index, subitem_view, work_record
 from app.viewsets import (DetailItemViewSet, MajorItemViewSet, SubItemViewSet,
                           WorkRecordViewSet, WorkRecordByDateViewSet, WorkRecordSummaryView, MonthBonusViewSet,
                           WorkoutViewSet)
@@ -14,12 +14,12 @@ app_name = 'app'
 router = DefaultRouter()
 router.register('major', viewset=MajorItemViewSet),
 router.register(r'subitem/(?P<major_id>\d+)', SubItemViewSet, basename='subitem'),
-# router.register('subitem/<int:major_id>/',viewset=SubItemViewSet,basename='subitem'),
 router.register(r'detail/(?P<subitem_id>\d+)', DetailItemViewSet, basename='detail'),
-#
+# jobs.js 的 save() 使用
 router.register(r'workrecord/(?P<detail_id>\d+)', WorkRecordViewSet, basename='workrecord'),
 router.register(r'workrecord/(?P<working_date>\d{4}-\d{2}-\d{2})', WorkRecordByDateViewSet,
                 basename='workrecord_by_date'),
+
 
 urlpatterns = [
     path('', views.index, name='index'),
@@ -37,5 +37,6 @@ urlpatterns = [
          name='workrecord-summary'),
     # 檢查該時段是否有資料
     path('api/working/<int:user_id>/<str:working_date>/<str:start_time>/<str:end_time>/',
-         WorkoutViewSet.as_view({'get': 'check'}), name='workout')
+         WorkoutViewSet.as_view({'get': 'check'}), name='workout'),
+    path('work_record/<slug:work>/', work_record, name='work_record')
 ]
