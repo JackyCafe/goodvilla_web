@@ -1319,3 +1319,93 @@ TypeError: summary() got an unexpected keyword argument 'user_id'
 2023-12-03 14:03 INFO [{'major_id': 1, 'item': '食', 'daily_spend': 110, 'daily_bonus': 0, 'daily_moods': -2}, {'major_id': 6, 'item': '樂', 'daily_spend': 0, 'daily_bonus': 0, 'daily_moods': 0}] 
 2023-12-03 14:03 INFO 1 
 2023-12-03 14:03 INFO [{'major_id': 1, 'item': '食', 'daily_spend': 50, 'daily_bonus': 0, 'daily_moods': -2}, {'major_id': 6, 'item': '樂', 'daily_spend': 120, 'daily_bonus': 0, 'daily_moods': -2}] 
+2023-12-07 11:03 WARNING Not Found: / 
+2023-12-07 11:03 WARNING Not Found: /favicon.ico 
+2023-12-07 11:03 INFO 1 
+2023-12-07 11:03 INFO [] 
+2023-12-07 11:04 WARNING Not Found: / 
+2023-12-07 11:04 WARNING Not Found: /favicon.ico 
+2023-12-07 11:04 INFO 1 
+2023-12-07 11:04 INFO [] 
+2023-12-07 13:31 INFO 1 
+2023-12-07 13:31 INFO [] 
+2023-12-07 15:36 INFO 1 
+2023-12-07 15:36 INFO [] 
+2023-12-07 16:00 INFO 1 
+2023-12-07 16:00 INFO [] 
+2023-12-07 16:00 WARNING Bad Request: /app/api/workrecord/1/ 
+2023-12-07 16:00 INFO 1 
+2023-12-07 16:00 INFO [] 
+2023-12-11 21:54 INFO 1 
+2023-12-11 21:54 INFO [] 
+2023-12-11 21:54 WARNING Not Found: /favicon.ico 
+2023-12-12 22:32 INFO 1 
+2023-12-12 22:32 INFO [] 
+2023-12-12 22:32 WARNING Not Found: /favicon.ico 
+2023-12-21 10:23 INFO 1 
+2023-12-21 10:23 INFO [] 
+2023-12-21 10:23 WARNING Not Found: /favicon.ico 
+2023-12-21 10:23 WARNING Not Found: /app/api/summary/undefined/2023-11-21/ 
+2023-12-21 10:23 INFO 1 
+2023-12-21 10:23 INFO [{'major_id': 1, 'item': '食', 'daily_spend': 50, 'daily_bonus': 0, 'daily_moods': -2}] 
+2023-12-21 10:24 WARNING Not Found: /app/api/summary/undefined/2023-11-21/ 
+2023-12-21 10:24 WARNING Not Found: /favicon.ico 
+2023-12-21 10:24 INFO 1 
+2023-12-21 10:24 INFO [{'major_id': 1, 'item': '食', 'daily_spend': 50, 'daily_bonus': 0, 'daily_moods': -2}, {'major_id': 3, 'item': '住', 'daily_spend': 50, 'daily_bonus': 100, 'daily_moods': -2}] 
+2023-12-21 10:25 WARNING Forbidden (CSRF token from POST incorrect.): /app/login/ 
+2023-12-21 10:25 INFO 1 
+2023-12-21 10:25 INFO [{'major_id': 1, 'item': '食', 'daily_spend': 50, 'daily_bonus': 0, 'daily_moods': -2}, {'major_id': 3, 'item': '住', 'daily_spend': 50, 'daily_bonus': 100, 'daily_moods': -2}] 
+2023-12-21 10:25 INFO 1 
+2023-12-21 10:25 INFO [{'major_id': 1, 'item': '食', 'daily_spend': 50, 'daily_bonus': 0, 'daily_moods': -2}, {'major_id': 3, 'item': '住', 'daily_spend': 50, 'daily_bonus': 100, 'daily_moods': -2}] 
+2023-12-21 10:25 WARNING Not Found: /app/api/summary/undefined/2023-11-21/ 
+2023-12-21 10:25 INFO 1 
+2023-12-21 10:25 INFO [{'major_id': 1, 'item': '食', 'daily_spend': 100, 'daily_bonus': 0, 'daily_moods': -1}, {'major_id': 3, 'item': '住', 'daily_spend': 50, 'daily_bonus': 100, 'daily_moods': -2}] 
+2023-12-21 10:26 WARNING Not Found: /app/api/summary/undefined/2023-11-21/ 
+2023-12-21 10:26 INFO 1 
+2023-12-21 10:26 INFO [{'major_id': 1, 'item': '食', 'daily_spend': 100, 'daily_bonus': 0, 'daily_moods': -1}, {'major_id': 3, 'item': '住', 'daily_spend': 50, 'daily_bonus': 100, 'daily_moods': -2}, {'major_id': 5, 'item': '育', 'daily_spend': 50, 'daily_bonus': 100, 'daily_moods': 2}] 
+2023-12-21 16:16 WARNING Not Found: /favicon.ico 
+2023-12-21 16:16 INFO 1 
+2023-12-21 16:16 INFO [{'major_id': 1, 'item': '食', 'daily_spend': 100, 'daily_bonus': 0, 'daily_moods': -1}, {'major_id': 3, 'item': '住', 'daily_spend': 50, 'daily_bonus': 100, 'daily_moods': -2}, {'major_id': 5, 'item': '育', 'daily_spend': 50, 'daily_bonus': 100, 'daily_moods': 2}] 
+2023-12-22 14:38 INFO 1 
+2023-12-22 14:38 INFO [] 
+2023-12-22 14:38 WARNING Not Found: /favicon.ico 
+2023-12-22 14:38 WARNING Not Found: /api/ 
+2023-12-22 14:38 INFO 1 
+2023-12-22 14:38 INFO [] 
+2023-12-24 12:37 INFO 1 
+2023-12-24 12:37 INFO [] 
+2023-12-25 08:51 WARNING Not Found: / 
+2023-12-25 08:52 WARNING Not Found: /favicon.ico 
+2023-12-25 08:52 WARNING Not Found: /robots.txt 
+2023-12-25 08:52 WARNING Not Found: /sitemap.xml 
+2023-12-25 08:52 WARNING Not Found: /cgi-bin/admin_console.cgi 
+2024-01-10 11:59 WARNING Not Found: / 
+2024-01-10 11:59 WARNING Not Found: /favicon.ico 
+2024-01-10 11:59 INFO 1 
+2024-01-10 11:59 WARNING Bad Request: /app/api/summary/1/2024-0-10/ 
+2024-01-10 12:01 INFO 1 
+2024-01-10 12:01 WARNING Bad Request: /app/api/summary/1/2024-0-10/ 
+2024-01-10 12:01 WARNING Bad Request: /app/api/workrecord/1/ 
+2024-01-10 12:01 INFO 1 
+2024-01-10 12:01 WARNING Bad Request: /app/api/summary/1/2024-0-10/ 
+2024-01-10 12:01 WARNING Bad Request: /app/api/workrecord/1/ 
+2024-01-10 12:01 INFO 1 
+2024-01-10 12:01 WARNING Bad Request: /app/api/summary/1/2024-0-10/ 
+2024-01-10 12:01 INFO 1 
+2024-01-10 12:01 WARNING Bad Request: /app/api/summary/1/2024-0-10/ 
+2024-01-10 12:25 INFO 1 
+2024-01-10 12:25 WARNING Bad Request: /app/api/summary/1/2024-0-10/ 
+2024-01-10 12:25 WARNING Bad Request: /app/api/workrecord/1/ 
+2024-01-10 12:25 INFO 1 
+2024-01-10 12:25 WARNING Bad Request: /app/api/summary/1/2024-0-10/ 
+2024-01-10 12:26 INFO 1 
+2024-01-10 12:26 WARNING Bad Request: /app/api/summary/1/2024-0-10/ 
+2024-01-10 12:43 WARNING Not Found: /favicon.ico 
+2024-01-10 13:38 WARNING Not Found: /favicon.ico 
+2024-01-10 13:40 INFO 1 
+2024-01-10 13:40 INFO [{'major_id': 1, 'item': '食', 'daily_spend': 50, 'daily_bonus': 0, 'daily_moods': 1}] 
+2024-01-10 13:40 WARNING Not Found: /app/api/summary/undefined/2024-01-10/ 
+2024-01-10 13:40 INFO 1 
+2024-01-10 13:40 INFO [{'major_id': 1, 'item': '食', 'daily_spend': 50, 'daily_bonus': 0, 'daily_moods': 1}, {'major_id': 3, 'item': '住', 'daily_spend': 80, 'daily_bonus': 0, 'daily_moods': -2}] 
+2024-01-10 14:23 WARNING Not Found: /favicon.ico 
+2024-01-10 16:10 WARNING Not Found: /favicon.ico 
