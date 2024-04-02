@@ -131,6 +131,14 @@ def person_report(request, year, month):
                 total_bonus=Sum('bonus'),
                 total_time=Sum('spend_time'),
             ).values('user__username', 'detail__sub_item__major__item', 'total_bonus', 'total_time')
+            total_datas = (WorkRecord.objects.filter(
+                working_date__year=year,
+                working_date__month=month
+            ).values('user__username')
+            .annotate(
+                total_bonus=Sum('bonus'),
+                total_time=Sum('spend_time')
+            ))
 
         else:
             # 一般user
@@ -142,7 +150,15 @@ def person_report(request, year, month):
                 total_bonus=Sum('bonus'),
                 total_time=Sum('spend_time'),
             ).values('user__username', 'detail__sub_item__major__item', 'total_bonus', 'total_time')
-        logging.info(datas)
+            total_datas = (WorkRecord.objects.filter(
+                working_date__year=year,
+                working_date__month=month,
+                user_id=user
+            ).values()
+            .aggregate(
+                total_bonus=Sum('bonus'),
+                total_time=Sum('spend_time')
+            ))
         for entry in datas:
             username = entry['user__username']
             major = entry['detail__sub_item__major__item']
@@ -158,8 +174,9 @@ def person_report(request, year, month):
                 exist_entry['total_time'] += total_time
             else:
                 result[username].append({'major': major, 'total_bonus': total_bonus, 'total_time': total_time})
+
         return render(request, 'account/person_report.html'
-                      , {'results': result})
+                      , {'results': result, 'total_data':total_datas})
     except ValueError:
         return Response({'error': 'Invalid year or month format'}, status=status.HTTP_400_BAD_REQUEST)
     except Exception as e:
