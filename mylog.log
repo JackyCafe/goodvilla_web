@@ -1,0 +1,18 @@
+2024-04-02 12:10 WARNING Not Found: / 
+2024-04-02 12:10 WARNING Not Found: /favicon.ico 
+2024-04-02 12:11 INFO <QuerySet []> 
+2024-04-02 13:11 INFO D:\yhWorkSpace\Pycharm\goodvilla_web\app\views.py changed, reloading. 
+2024-04-02 13:12 INFO <QuerySet [<WorkRecord: yhlin: 碎餐>]> 
+2024-04-02 13:21 INFO D:\yhWorkSpace\Pycharm\goodvilla_web\app\views.py changed, reloading. 
+2024-04-02 14:19 INFO <QuerySet [<WorkRecord: yhlin: 碎餐>]> 
+2024-04-02 14:21 WARNING Not Found: / 
+2024-04-02 14:21 INFO <QuerySet [<WorkRecord: yhlin: 碎餐>]> 
+2024-04-02 14:22 INFO D:\yhWorkSpace\Pycharm\goodvilla_web\app\views.py changed, reloading. 
+2024-04-02 14:22 INFO <QuerySet [<WorkRecord: yhlin: 碎餐>]> 
+2024-04-02 14:23 INFO <QuerySet [<WorkRecord: yhlin: 碎餐>]> 
+2024-04-02 14:23 INFO <QuerySet [{'user__username': 'yhlin', 'detail__sub_item__major__item': '食', 'total_bonus': 0, 'total_time': 60}, {'user__username': 'yhlin', 'detail__sub_item__major__item': '食', 'total_bonus': 0, 'total_time': 60}]> 
+2024-04-02 14:23 INFO <QuerySet [{'user__username': 'yhlin', 'detail__sub_item__major__item': '食', 'total_bonus': 0, 'total_time': 120}]> 
+2024-04-02 14:23 INFO <QuerySet [{'user__username': 'yhlin', 'total_bonus': 0, 'total_time': 120}]> 
+2024-04-02 21:21 INFO D:\yhWorkSpace\Pycharm\goodvilla_web\app\urls.py changed, reloading. 
+2024-04-02 21:22 INFO D:\yhWorkSpace\Pycharm\goodvilla_web\app\views.py changed, reloading. 
+2024-04-02 21:23 INFO D:\yhWorkSpace\Pycharm\goodvilla_web\app\views.py changed, reloading. 
