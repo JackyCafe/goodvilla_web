@@ -3,9 +3,10 @@
 	報表
 {% endblock %}
 {% block content %}
+
+
         <div class="container mt-4">
-        <h1 class="mb-4">
-        </h1>
+        <h1 class="mb-4">        </h1>
         <div class="row">
                 <div class="card-header">總表</div>
           <table class="table">
@@ -16,46 +17,80 @@
                                 <th>Bonus</th>
                             </tr>
                         </thead>
-          <tbody>
-           {% for items in datas %}
-               <tr><td>{{ items.detail__sub_item__major__item }} </td>
-                   <td>{{items.total_time  }}</td>
-                   <td>{{items.total_bonus}} </td>
+              {% for items in datas %}
+                  <tr><td>{{ items.detail__sub_item__major__item }} </td>
+                      <td>{{items.total_time  }}</td>
+                      <td>{{items.total_bonus}} </td>
 
-                </tr>
-           {% endfor %}
-          </tbody>
+                  </tr>
+              {% endfor %}
 
-        </table>
-        </div>
-        <div class="row">
-            <div class="card-header">個人總表</div>
-            <table class="table">
-                <thead>
-                    <tr>
-                        <th>管家</th>
-                        <th>主項</th>
-                        <th>時間</th>
-                        <th>收益</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    {% for item in user_datas %}
-                        <tr>
-                          <td> {{ item.user__username  }}</td>
-                          <td> {{ item.detail__sub_item__major__item }} </td>
-                          <td> {{ item.total_time }}</td>
-                          <td> {{ item.total_bonus}}</td>
-                        </tr>
-                    {% endfor %}
-                </tbody>
-
-            </table>
-
+          </table>
         </div>
 
+  <div class="accordion  accordion-flush" id="accordionExample">
+  <table class="table">
+      <thead>
 
+        <th>管家</th>
+        <th>工時(分)</th>
+        <th>收益</th>
+        <th></th>
+      </thead>
+    {% for ps in person_summary %}
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="heading{{ forloop.counter }}">
+            <tr>
+             <td>{{ ps.user__username }}</td>
+              <td>{{ ps.total_time }}</td>
+              <td>{{ ps.total_bonus }}</td>
+              <td>
+
+                  <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                          data-bs-target="#collapse{{ forloop.counter }}" aria-expanded="true" aria-controls="collapse{{ forloop.counter }}">
+                      詳情
+                  </button>
+                  <div id="collapse{{ forloop.counter }}"
+                       class="accordion-collapse collapse show" aria-labelledby="heading{{ forloop.counter }}" data-bs-parent="#accordionExample">
+                          <div class="accordion-body">
+                              <table class="table">
+                                <thead>
+                                  <tr>
+                                    <th>主項</th>
+                                    <th>工時</th>
+                                    <th>收益</th>
+                                    <th></th>
+                                  </tr></thead>
+                                  {% for data in user_datas %}
+                                    <tbody>
+                                      {% if data.user__username == ps.user__username %}
+                                          <tr>
+                                         <td> {{ data.detail__sub_item__major__item }}</td>
+                                         <td> {{ data.total_time }}</td>
+                                         <td> {{ data.total_bonus }}</td>
+                                          </tr>
+                                      {% endif %}
+                                     </tbody>
+                                  {% endfor %}
+                              </table>
+                          </div>
+                  </div>
+              </td>
+
+            </tr>
+      </h2>
+
+    </div>
+    {% endfor %}
+  </table>
+</div>
 
 
         </div>
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8" crossorigin="anonymous"></script>
+
 {% endblock %}

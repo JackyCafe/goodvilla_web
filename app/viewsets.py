@@ -15,9 +15,9 @@ from rest_framework import viewsets, status
 from rest_framework.decorators import action
 from rest_framework.response import Response
 from datetime import datetime
-from app.models import DetailItem, MajorItem, SubItem, WorkRecord
+from app.models import DetailItem, MajorItem, SubItem, WorkRecord, ToDo
 from app.serializers import (DetailItemSerializer, MajorItemSerializer,
-                             SubItemSerializer, WorkRecordSerializer)
+                             SubItemSerializer, WorkRecordSerializer, TodoItemSerializer)
 
 
 class MajorItemViewSet(viewsets.ModelViewSet):
@@ -212,3 +212,11 @@ class WorkRecordByDateViewSet(viewsets.ModelViewSet):
         # user_id = self.kwargs['user_id']
 
         return WorkRecord.objects.filter(working_date=working_date)
+
+
+class ToDoViewSet(viewsets.ModelViewSet):
+    """待辦事項"""
+    queryset = ToDo.objects.all()
+    serializer_class = TodoItemSerializer
+
+

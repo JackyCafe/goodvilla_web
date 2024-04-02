@@ -215,10 +215,20 @@ def report(request, year, month):
             ).values('user__username', 'detail__sub_item__major__item').annotate(
                 total_bonus=Sum('bonus'),
                 total_time=Sum('spend_time')
-            ).order_by()
+            ).order_by('user__username')
             logging.info(user_datas)
+
+            person_summary = WorkRecord.objects.filter(
+                working_date__year=year,
+                working_date__month=month
+            ).values('user__username').annotate(
+                total_bonus=Sum('bonus'),
+                total_time=Sum('spend_time')
+            )
+            logging.info(person_summary)
+
             return render(request, 'account/report.html',
-                          {'datas': datas, 'user_datas': user_datas})
+                          {'datas': datas, 'user_datas': user_datas, 'person_summary': person_summary})
         else:
             return HttpResponse("權限不足")
     except ValueError:
@@ -233,3 +243,5 @@ def work_record(request, work):
     post = get_object_or_404(WorkRecord, slug=work).delete()
     logging.info(post)
     return redirect("app:index")
+
+

@@ -1,3 +1,4 @@
+
 let startTime, endTime;
 let job_user;
 const postData = {};
@@ -96,9 +97,39 @@ function getCookie(name) {
     }
     return cookieValue;
 }
+
+function todo_add(){
+   /*** 新增待辦事項
+    */
+    const csrftoken = getCookie('csrftoken');
+    const text = $('#todo_area').val()
+    postData.todo_user = job_user
+    postData.todo_text=text
+    jsonData = JSON.stringify(postData)
+    console.log(jsonData)
+    fetch('/app/api/todo/',{
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+                'X-CSRFToken':csrftoken,
+            },
+            body: jsonData,}).then(response => {
+        if (response.status === 201) {
+            alert("新增完成")
+            selectedDivs = []
+        } else {
+            console.error(response.json);
+            // 可以在这里处理失败后的逻辑
+        }
+    })
+
+
+}
 // 選完後 Insert
 //
 function save(param){
+    /** 將每個時段的資料寫入
+    * */
     const csrftoken = getCookie('csrftoken');
     // 抓系統時間，要將今天資料寫入db
     const now = new Date();
@@ -140,7 +171,7 @@ function save(param){
                     body: jsonData,
                 }).then(response => {
                     if (response.status === 201) {
-                        alert("新增成功")
+                        alert("新增完成")
                         selectedDivs = []
                     } else {
                         console.error(response.json);
@@ -160,6 +191,18 @@ function save(param){
     // inform();
 }
 
+function todo_form(){
+    $('#todo').toggle();
+
+
+}
+
+
+function createToast(msg) {
+
+  }
+
+  // 調用createToast函數以顯示Toast
 function strToMin(timeString) {
     // 将时间字符串拆分为小时和分钟
     let [hours, minutes] = timeString.split(':').map(Number);
@@ -174,6 +217,7 @@ $(document).ready(
 
     function(){
     $('#workRecordForm').hide();
+    $('#todo').hide()
 
 
     $('.timer').click(
@@ -271,12 +315,3 @@ function inform(user_id){
         }
     );
 }
-
-
-
-
-
-
-
-
-

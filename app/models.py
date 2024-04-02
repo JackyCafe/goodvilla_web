@@ -68,3 +68,11 @@ class WorkRecord(models.Model):
 
     def get_absolute_url(self):
         return reverse('app:work_record', args=[self.slug])
+
+
+#   代辦交接
+class ToDo(models.Model):
+    todo_user = models.ForeignKey(User, on_delete=models.CASCADE, related_name='todo_user')
+    created = models.DateTimeField(auto_now_add=True)
+    todo_text = models.TextField(max_length=200, null=True, blank=True)
+

@@ -1,3 +1,4 @@
+
 {% extends 'base.html' %}
 {%  block title %}
     工時大富翁
@@ -297,16 +298,39 @@
         </div>
 
       </form>
-      <button class="m-1 btn btn-light btn-outline-primary" onClick='save()'>登錄</button>
+        <button class="m-1 btn btn-light btn-outline-primary" onClick='save()'>登錄</button>
+
+
     </div>
+
+    <nav class="navbar navbar-expand-sm bg-light navbar-dark">
+            <ul class="navbar-nav">
+              <button  class="m-1 btn btn-light btn-outline-primary"
+                       onClick='todo_form()'>交辦事項</button>
+            </ul>
+    </nav>
 
 
   </div>
+    <div id="todo" >
+        <nav class="navbar navbar-expand-sm bg-light navbar-dark">
+        <label for="todo_area"> 代辦交接事項
+            <textarea id="todo_area" name="todo_area"  rows="5" cols="40"></textarea>
+        </label>
+        </nav>
+        <nav class="navbar navbar-expand-sm bg-light navbar-dark">
+            <button class="m-1 btn btn-light btn-outline-primary" onclick="todo_add()">登錄</button>
+        </nav>
 
+
+
+
+    </div>
 
   {% load static %}
   <script type="text/javascript" src="{% static 'jobs.js' %}"></script>
   <script>
+
   function toTime(timeString){
         const today = new Date();
         const [hours, minutes] = timeString.split(':');
@@ -334,7 +358,6 @@
 
       $('.grid-item').each(function (){
                 const itemTime = toTime($(this).text())
-                console.log(itemTime)
                 if (itemTime >= firstClick && itemTime <= secondClick) {
                     $(this).css('background-color', 'yellow');
                 }
