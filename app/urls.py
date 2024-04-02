@@ -3,7 +3,7 @@ from django.urls import include, path
 from rest_framework.routers import DefaultRouter
 
 from app import views
-from app.views import create_work_record, detail_view, index, subitem_view, work_record
+from app.views import create_work_record, detail_view, index, subitem_view, work_record,todo_list
 from app.viewsets import (DetailItemViewSet, MajorItemViewSet, SubItemViewSet,
                           WorkRecordViewSet, WorkRecordByDateViewSet, WorkRecordSummaryView, MonthBonusViewSet,
                           WorkoutViewSet, ToDoViewSet)
@@ -40,5 +40,6 @@ urlpatterns = [
     path('api/working/<int:user_id>/<str:working_date>/<str:start_time>/<str:end_time>/',
          WorkoutViewSet.as_view({'get': 'check'}), name='workout'),
     path('work_record/<slug:work>/', work_record, name='work_record'),
+    path('todo_list/',todo_list, name='todo_list')
 
 ]

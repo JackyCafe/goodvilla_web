@@ -19,7 +19,7 @@ from rest_framework import status
 from rest_framework.response import Response
 
 from app.forms import WorkRecordForm, UserRegistrationForm
-from app.models import MajorItem, SubItem, DetailItem, WorkRecord
+from app.models import MajorItem, SubItem, DetailItem, WorkRecord, ToDo
 
 logging.basicConfig(level=logging.INFO,
                     format='%(asctime)s %(levelname)s %(message)s ',
@@ -245,3 +245,6 @@ def work_record(request, work):
     return redirect("app:index")
 
 
+def todo_list(request):
+    todos = ToDo.objects.all()
+    return render(request, 'account/todo_list.html', {'todos':todos})
