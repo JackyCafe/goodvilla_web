@@ -1,3 +1,4 @@
+
 {% extends 'base.html' %}
 {%  block title %}
     工時大富翁
@@ -227,8 +228,14 @@
     <div class="info">
       <div  class="m-1 btn btn-light btn-outline-primary"
       >{{request.user}}</div>
-        {{ request.user.id }}
-      <div id='report'></div>
+    <div class="container mt-4">
+        <div class="card mb-4">
+                <div class="card-body">
+      <div id='report'>
+
+
+      </div>
+                </div></div></div>
 
 
     </div>
@@ -282,7 +289,7 @@
           <label class="form-check-label" for="mood2">-1</label>
         </div>
         <div class="form-check form-check-inline">
-          <input class="form-check-input" type="radio" name="inlineRadioOptions" id="mood3" value="1">
+          <input class="form-check-input" type="radio" name="inlineRadioOptions" id="mood3" value="1" checked="checked">
           <label class="form-check-label" for="mood3">1</label>
         </div>
         <div class="form-check form-check-inline">
@@ -291,27 +298,84 @@
         </div>
 
       </form>
-      <button class="m-1 btn btn-light btn-outline-primary" onClick='save()'>登錄</button>
+        <button class="m-1 btn btn-light btn-outline-primary" onClick='save()'>登錄</button>
+
 
     </div>
 
+    <nav class="navbar navbar-expand-sm bg-light navbar-dark">
+            <ul class="navbar-nav">
+              <button  class="m-1 btn btn-light btn-outline-primary"
+                       onClick='todo_form()'>交辦事項</button>
+            </ul>
+    </nav>
+
 
   </div>
+    <div id="todo" >
+        <nav class="navbar navbar-expand-sm bg-light navbar-dark">
+        <label for="todo_area"> 代辦交接事項
+            <textarea id="todo_area" name="todo_area"  rows="5" cols="40"></textarea>
+        </label>
+        </nav>
+        <nav class="navbar navbar-expand-sm bg-light navbar-dark">
+            <button class="m-1 btn btn-light btn-outline-primary" onclick="todo_add()">登錄</button>
+        </nav>
+
+
+
+
+    </div>
 
   {% load static %}
   <script type="text/javascript" src="{% static 'jobs.js' %}"></script>
   <script>
-    var userData = "{{ request.user.id }}"; // 将User值包含在JavaScript中
+
+  function toTime(timeString){
+        const today = new Date();
+        const [hours, minutes] = timeString.split(':');
+        return new Date(
+            today.getFullYear(),
+            today.getMonth(),
+            today.getDate(),
+            hours, minutes
+        );
+    }
+
+  const userData = "{{ request.user.id }}"; // 将User值包含在JavaScript中
+  const datas = [
+          {% for data in datas %}{
+              start_time: "{{ data.start_time }}",
+              end_time: "{{ data.end_time }}",
+              }
+              {% if not forloop.last %},{% endif %}
+
+          {% endfor %}
+  ];
+  datas.forEach(function(data) {
+      const firstClick = toTime(data.start_time);
+      const secondClick = toTime(data.end_time);
+
+      $('.grid-item').each(function (){
+                const itemTime = toTime($(this).text())
+                if (itemTime >= firstClick && itemTime <= secondClick) {
+                    $(this).css('background-color', 'yellow');
+                }
+            })
+
+
+});
+
+
+
 
     // 将User传递给jobs.js中的函数
     $(document).ready(function () {
         loadJobs(userData);
-        /* todo
-           inform 有bug   要分帳號
-           需要修改api
-         */
         inform(userData);
     });
+
+
 </script>
 
 {% endblock %}

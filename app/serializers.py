@@ -6,7 +6,7 @@ by yhlin
 '''
 from rest_framework import serializers
 
-from app.models import MajorItem, SubItem,DetailItem,WorkRecord
+from app.models import MajorItem, SubItem, DetailItem, WorkRecord, ToDo
 
 
 class MajorItemSerializer(serializers.ModelSerializer):
@@ -29,5 +29,14 @@ class DetailItemSerializer(serializers.ModelSerializer):
 
 class WorkRecordSerializer(serializers.ModelSerializer):
     class Meta:
-        model = WorkRecord;
+        model = WorkRecord
         fields = '__all__'
+
+
+class TodoItemSerializer(serializers.ModelSerializer):
+    """待辦事項"""
+    class Meta:
+        model = ToDo
+        fields = '__all__'
+
+
