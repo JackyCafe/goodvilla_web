@@ -30,6 +30,23 @@
                                 </tr>
                             {% endfor %}
                         </tbody>
+                        <tr>
+                            {% if request.user.is_superuser  %}
+                            {% for d in total_data %}
+                                {% if d.user__username == username  %}
+                            <td>
+                            </td>
+                            <td>{{ d.total_bonus }}</td>
+                            <td>{{ d.total_time }}</td>{% endif %}
+                            {% endfor %}
+                          {% else %}
+                            <td>
+
+                            </td>
+                            <td>{{ total_data.total_bonus }}</td>
+                            <td>{{ total_data.total_time }} </td>
+                          {% endif %}
+                        </tr>
                     </table>
                 </div>
             </div>
