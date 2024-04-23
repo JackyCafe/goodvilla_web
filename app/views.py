@@ -1,6 +1,6 @@
 import datetime
 
-from django.contrib.auth import authenticate, login
+from django.contrib.auth import authenticate, login, logout
 from django.db.models import Sum
 from django.shortcuts import render
 
@@ -9,12 +9,13 @@ import sys
 
 from django.contrib.auth.decorators import login_required
 from django.contrib.auth.models import User
-from django.http import HttpResponse
+from django.http import HttpResponse, HttpResponseRedirect
 from django.shortcuts import render, get_object_or_404, get_list_or_404, redirect
 
 # Create your views here.
 import logging
 
+from django.urls import reverse
 from rest_framework import status
 from rest_framework.response import Response
 
@@ -29,6 +30,14 @@ logging.basicConfig(level=logging.INFO,
                         logging.StreamHandler(sys.stdout)
                     ]
                     )
+
+
+def logout_user(request):
+    # Log out the user.
+    # since function cannot be same as django method, esle it will turn into recursive calls
+    logout(request)
+    # Return to homepage.
+    return HttpResponseRedirect(reverse('app:index'))
 
 
 @login_required
@@ -218,6 +227,13 @@ def report(request, year, month):
                 total_bonus=Sum('bonus'),
                 total_time=Sum('spend_time')
             ))
+            total_data = (WorkRecord.objects.filter(
+                working_date__year=year,
+                working_date__month=month
+            )).aggregate(
+                total_bonus=Sum('bonus'),
+                total_time=Sum('spend_time')
+            )
 
             """ 
                 摘要 食...衣 ...住..行 by 個人
@@ -243,9 +259,12 @@ def report(request, year, month):
                 total_time=Sum('spend_time')
             )
             logging.info(person_summary)
-
+            logging.info(total_data)
             return render(request, 'account/report.html',
-                          {'datas': datas, 'user_datas': user_datas, 'person_summary': person_summary})
+                          {'datas': datas, 'user_datas': user_datas
+                              , 'person_summary': person_summary
+                              , 'total_data':total_data
+                           })
         else:
             return HttpResponse("權限不足")
     except ValueError:

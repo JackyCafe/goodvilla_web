@@ -27,7 +27,8 @@ urlpatterns = [
     path('api/', include(router.urls)),
     path('dashboard', views.dashboard, name='dashboard'),  # 首頁 dashboard
     path('login/', auth_views.LoginView.as_view(), name='login'),  # 首頁 login
-    path('logout/', auth_views.LogoutView.as_view(), {'next_page': '/'}, name='logout'),  # 首頁 logout
+    path('logout/',views.logout_user,name='logout'),
+   # path('logout/', auth_views.LogoutView.as_view(), {'next_page': '/app'}, name='logout'),  # 首頁 logout
     path('register/', views.register, name='register'),
     path('report/<int:year>/<int:month>', views.report, name='report'),  # 月報總表
     path('person-report/<int:year>/<int:month>', views.person_report, name='person_report'),  # 個人月報總表
