@@ -106,7 +106,6 @@ function todo_add(){
     postData.todo_user = job_user
     postData.todo_text=text
     jsonData = JSON.stringify(postData)
-    console.log(jsonData)
     fetch('/app/api/todo/',{
             method: 'POST',
             headers: {
@@ -116,13 +115,14 @@ function todo_add(){
             body: jsonData,}).then(response => {
         if (response.status === 201) {
             alert("新增完成")
+
             selectedDivs = []
         } else {
             console.error(response.json);
             // 可以在这里处理失败后的逻辑
         }
     })
-
+location.reload(true)
 
 }
 // 選完後 Insert
@@ -173,6 +173,7 @@ function save(param){
                     if (response.status === 201) {
                         alert("新增完成")
                         selectedDivs = []
+                        window.location.reload()
                     } else {
                         console.error(response.json);
             // 可以在这里处理失败后的逻辑
@@ -268,6 +269,7 @@ $(document).ready(
     let firstClick = 0;
     let secondClick =0;
     $('.grid-item').click(function () {
+        console.log(selectedDivs.length)
         const div = $(this);
         if (selectedDivs.length===2){
             firstClick = toTime(startTime)

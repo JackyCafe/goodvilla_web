@@ -3,7 +3,7 @@ from django.contrib import admin
 # Register your models here.
 from django.contrib import admin
 
-from app.models import MajorItem,SubItem,DetailItem,WorkRecord
+from app.models import MajorItem, SubItem, DetailItem, WorkRecord, ToDo
 
 
 # Register your models here.
@@ -26,3 +26,8 @@ class DetailAdmin(admin.ModelAdmin):
 @admin.register(WorkRecord)
 class WorkRecordAdmin(admin.ModelAdmin):
     list_display = [field.name for field in WorkRecord._meta.fields]
+
+
+@admin.register(ToDo)
+class ToDoAdmin(admin.ModelAdmin):
+    list_display = [field.name for field in ToDo._meta.fields]

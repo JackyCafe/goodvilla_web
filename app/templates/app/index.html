@@ -309,6 +309,16 @@
                        onClick='todo_form()'>交辦事項</button>
             </ul>
     </nav>
+    <!-- todo 刪除資料
+     -->
+    <p><br></p>
+     <h6>異常紀錄刪除     </h6>
+    <nav class="navbar navbar-expand-sm bg-light navbar-dark">
+              <ul class="navbar-nav"> {% for data in datas %}
+                  <a href="{{ data.get_absolute_url }}" class="m-1 btn btn-light btn-outline-primary">{{ data.detail }}</a>
+              </ul>{% endfor %}
+    </nav>
+
 
 
   </div>
@@ -326,6 +336,7 @@
 
 
     </div>
+
 
   {% load static %}
   <script type="text/javascript" src="{% static 'jobs.js' %}"></script>
